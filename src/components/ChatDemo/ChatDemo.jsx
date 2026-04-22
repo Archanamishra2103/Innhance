@@ -1,0 +1,143 @@
+import { useState, useEffect, useRef } from 'react'
+import { motion } from 'framer-motion'
+import './ChatDemo.css'
+
+const chatMessages = [
+  { sender: 'guest', text: 'Namaste! Kya March 10-12 ke liye deluxe room available hai?', time: '2:47 AM' },
+  { sender: 'bot', text: 'Namaste ji! 🙏 Haan, March 10–12 ke liye Deluxe Room available hai.\n\n💰 ₹8,999/night (breakfast included)\n🛏️ King bed + city view\n\nConfirm karein?', time: '2:47 AM' },
+  { sender: 'guest', text: 'Haan, confirm karo. Kya breakfast included hai?', time: '2:48 AM' },
+  { sender: 'bot', text: 'Ji haan! ☕ Breakfast included hai — buffet with South Indian + North Indian options.\n\n🎉 Special offer: Couple Spa Package add karein sirf ₹1,200 mein!\n\nBooking confirm karein? UPI ya Card se payment direct yahan ho jayegi.', time: '2:48 AM' },
+  { sender: 'guest', text: 'Spa bhi add karo. UPI se payment karunga.', time: '2:49 AM' },
+  { sender: 'bot', text: '✅ Booking Confirmed!\n\n📋 2 nights × ₹8,999 = ₹17,998\n💆 Spa Package: ₹1,200\n📊 Total: ₹19,198 (incl. GST)\n\nUPI payment link bhej raha hoon... 💚', time: '2:49 AM' },
+]
+
+export default function ChatDemo() {
+  const [visibleCount, setVisibleCount] = useState(0)
+  const [showTyping, setShowTyping] = useState(false)
+  const chatRef = useRef(null)
+  const hasStarted = useRef(false)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasStarted.current) {
+          hasStarted.current = true
+          startSequence()
+        }
+      },
+      { threshold: 0.3 }
+    )
+    if (chatRef.current) observer.observe(chatRef.current)
+    return () => observer.disconnect()
+  }, [])
+
+  const startSequence = () => {
+    let idx = 0
+    const showNext = () => {
+      if (idx >= chatMessages.length) return
+      setShowTyping(true)
+      setTimeout(() => {
+        setShowTyping(false)
+        idx++
+        setVisibleCount(idx)
+        setTimeout(showNext, 1200)
+      }, chatMessages[idx].sender === 'bot' ? 1800 : 800)
+    }
+    showNext()
+  }
+
+  useEffect(() => {
+    const container = chatRef.current?.querySelector('.chat-messages')
+    if (container) {
+      container.scrollTop = container.scrollHeight
+    }
+  }, [visibleCount, showTyping])
+
+  return (
+    <section className="chat-demo section-padding" id="chat-demo">
+      <div className="container">
+        <div className="chat-demo-layout">
+          {/* Left — Info */}
+          <motion.div
+            className="chat-demo-info"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.1 }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="section-label section-label-light">Live Demo</div>
+            <h2 className="section-heading section-heading-light">
+              See it <em className="heading-green">in action</em>
+            </h2>
+            <p className="chat-demo-description">
+              This is a real conversation Innhance AI handled while the hotel owner was asleep.
+              The guest booked a room — without any human involvement.
+            </p>
+            <ul className="chat-demo-checklist">
+              <li className="chat-check-item">
+                <span className="check-icon">✓</span>
+                Guest messages in Hindi at 2:47 AM
+              </li>
+              <li className="chat-check-item">
+                <span className="check-icon">✓</span>
+                AI replies in 1.2 seconds
+              </li>
+              <li className="chat-check-item">
+                <span className="check-icon">✓</span>
+                Upsells breakfast package (+₹1,200)
+              </li>
+              <li className="chat-check-item">
+                <span className="check-icon">✓</span>
+                Booking confirmed. Payment collected.
+              </li>
+            </ul>
+            <div className="chat-demo-cta">
+              <a href="#" className="btn btn-primary btn-lg">
+                Book Free Demo <span className="btn-arrow">→</span>
+              </a>
+              <a href="#" className="btn btn-green btn-lg">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Try It Now
+              </a>
+            </div>
+          </motion.div>
+
+          {/* Right — Chat Window */}
+          <motion.div
+            className="chat-window"
+            ref={chatRef}
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false, amount: 0.1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <div className="chat-window-header">
+              <div className="chat-header-avatar">I</div>
+              <div>
+                <div className="chat-header-name">Innhance AI</div>
+                <div className="chat-header-status">● Online · Instant replies</div>
+              </div>
+            </div>
+            <div className="chat-messages">
+              {chatMessages.slice(0, visibleCount).map((msg, i) => (
+                <div key={i} className={`chat-bubble ${msg.sender}`}>
+                  <div className="chat-bubble-text">
+                    {msg.text.split('\n').map((line, j) => (
+                      <span key={j}>{line}<br /></span>
+                    ))}
+                  </div>
+                  <div className="chat-bubble-time">{msg.time}</div>
+                </div>
+              ))}
+              {showTyping && (
+                <div className="typing-indicator">
+                  <span></span><span></span><span></span>
+                </div>
+              )}
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  )
+}

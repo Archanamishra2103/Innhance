@@ -1,0 +1,264 @@
+{
+  "company": {
+    "name": "Innhance",
+    "description": "Innhance is the intelligent WhatsApp AI agent that seamlessly converts guest inquiries into confirmed reservations for your boutique hotel.",
+    "email": "hello@innhance.in",
+    "location": "Noida, Uttar Pradesh, India"
+  },
+  "hero": {
+    "headline": "Turn WhatsApp Chats into Hotel Bookings",
+    "subheadline": "Innhance is the intelligent WhatsApp AI agent that seamlessly converts guest inquiries into confirmed reservations for your boutique hotel.",
+    "badges": [
+      {
+        "icon": "trophy",
+        "text": "#1 WhatsApp AI for Indian Hotels"
+      },
+      {
+        "icon": "india",
+        "text": "Made in India · GST Compliant"
+      },
+      {
+        "icon": "card",
+        "text": "UPI + Card Payments Built-in"
+      },
+      {
+        "icon": "lock",
+        "text": "Enterprise-grade Data Privacy"
+      }
+    ],
+    "metrics": [
+      {
+        "value": "24/7",
+        "label": "Availability"
+      },
+      {
+        "value": "98%",
+        "label": "Booking Rate"
+      },
+      {
+        "value": "40+",
+        "label": "Languages"
+      }
+    ]
+  },
+  "storytelling": [
+    {
+      "heading": "The Friction",
+      "description": " Arnav sitting late night, laptop open, Multiple hotel tabs, WhatsApp chats, booking pages",
+      "dialogue": "Why is booking a hotel still this complicated?",
+      "image": "/assets/about.pics/test0.jpeg"
+    },
+    {
+      "heading": "The Frustration",
+      "description": "Hotel website: slow replies \n OTA: high commissions \n WhatsApp: no response",
+      "dialogue": "Hotels are losing customers… not because of demand but because they reply too late",
+      "image": "/assets/about.pics/test1.jpeg"
+    },
+    {
+      "heading": "The Gap",
+      "description": "This is where hotels lose money every single day",
+      "dialogue": "No reply… typing… disappears",
+      "image": "/assets/about.pics/test5.jpeg"
+    },
+    {
+      "heading": "The Realization",
+      "description": "Arnav looking at WhatsApp",
+      "dialogue": "What if bookings could happen instantly… on WhatsApp itself?",
+      "image": "/assets/about.pics/test2.jpeg"
+    },
+    
+    {
+      
+      "heading": "The Idea",
+      "description": "Arnav thinking / sketching",
+      "dialogue": "An AI that replies instantly answers queries and converts chats into bookings",
+      "image": "/assets/about.pics/test.jpeg"
+    },
+    {
+      
+      "heading": "Enters Khushi",
+      "description": "Casual conversation / coffee scene",
+      "dialogue": "I met Khushi who understood growth, distribution, and how to take this to market..\n This is not just a tool,this can change how hotels sell",
+      "image": "/assets/about.pics/test4.jpeg"
+    },
+    {
+     
+      "heading": "The Build Begins",
+      "description": "Late night calls, Figma screens, WhatsApp flows",
+      "dialogue": "Now we needed someone who could build this fast",
+      "image": "/assets/about.pics/test6.jpeg"
+    },
+    {
+      
+      "heading": "Enters Harsh (Full Stack Dev)",
+      "description": "Coding screen, APIs, WhatsApp integrations",
+      "dialogue": "Then came Harsh who turned the idea into an actual product",
+      "image": "/assets/about.pics/test7.jpeg"
+    },
+    {
+      "heading": "First Vision",
+      "description": "WhatsApp bot Working \n Our first working version was simple but it worked",
+      "dialogue": "Guest: Price? \n Bot: Here are your room options",
+      "image": "/assets/about.pics/test8.jpeg"
+    },
+    {
+      "heading": "First Wins",
+      "description": "Hotels onboarding \n Chats converting",
+      "dialogue": "Hotels started replying instantly \n  Guests started booking directly",
+      "image": "/assets/about.pics/test9.jpeg"
+    },
+    {
+      "heading": "The Shift",
+      "description": "OTA vs Direct booking visual",
+      "dialogue": "Less dependency on OTAs \n More direct bookings",
+      "image": "/assets/about.pics/test10.jpeg"
+    },
+    {
+      "heading": "Today",
+      "description": "Team together",
+      "dialogue": "Innhance was born \n to help hotels convert conversations into revenue",
+      "image": "/assets/about.pics/test11.jpeg"
+    },
+    {
+      "heading": "Clean branding frame",
+      "description": "From missed messages \n to confirmed bookings",
+      "dialogue": "This is Innhance",
+      "image": "/assets/about.pics/test12.jpeg"
+    }
+    
+
+  ],
+  "features": [
+    {
+      "icon": "MessageSquare",
+      "title": "Instant Responses",
+      "description": "AI-powered replies in seconds, ensuring no guest inquiry goes unanswered, day or night."
+    },
+    {
+      "icon": "Globe",
+      "title": "Multi-Language Support",
+      "description": "Hindi, English, Tamil, Bengali, and 40+ languages to serve all Indian guests."
+    },
+    {
+      "icon": "CalendarCheck",
+      "title": "Smart Availability",
+      "description": "Real-time sync with your booking system. Always shows accurate room availability."
+    },
+    {
+      "icon": "CreditCard",
+      "title": "UPI & Payment Integration",
+      "description": "Support for UPI, cards, and all popular Indian payment methods with secure processing."
+    },
+    {
+      "icon": "ShieldCheck",
+      "title": "Data Privacy",
+      "description": "Enterprise-grade encryption and compliance to protect guest information."
+    },
+    {
+      "icon": "LineChart",
+      "title": "Analytics Dashboard",
+      "description": "Track conversion rates, response times, and guest satisfaction metrics in real-time."
+    }
+  ],
+  "guestJourney": [
+    {
+      "step": 1,
+      "title": "Guest Sends Message",
+      "description": "A potential guest messages your hotel on WhatsApp with a booking inquiry."
+    },
+    {
+      "step": 2,
+      "title": "AI Processes Request",
+      "description": "Innhance AI understands intent, checks availability, and crafts a reply."
+    },
+    {
+      "step": 3,
+      "title": "Booking Confirmed",
+      "description": "Guest receives instant confirmation, payment link, and booking details."
+    }
+  ],
+  "results": [
+    {
+      "metric": "15+",
+      "title": "Save Hours Weekly",
+      "description": "Automate repetitive booking inquiries and free up your staff to focus on delivering exceptional guest experiences."
+    },
+    {
+      "metric": "35%",
+      "title": "Increase Revenue",
+      "description": "Never miss a booking opportunity. Our AI responds instantly, even when you're offline."
+    },
+    {
+      "metric": "98%",
+      "title": "Convert Inquiries",
+      "description": "Lightning-fast responses and personalized interactions turn inquiries into confirmed bookings."
+    },
+    {
+      "metric": "Top",
+      "title": "Boost Guest Satisfaction",
+      "description": "Guests love instant responses. Improve ratings and build loyalty from first interaction."
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Innhance ne hamari booking process completely transform kar di. Pehle hum raat ke inquiries miss kar dete the, ab 98% messages bookings mein convert ho rahe hain.",
+      "author": "Harshvardhan Singh",
+      "role": "Owner, The Heritage, Jaipur"
+    }
+  ],
+  "pricing": [
+    {
+      "tier": "Starter",
+      "subtitle": "शुरुआत",
+      "description": "Perfect for small boutique hotels getting started",
+      "features": [
+        "Up to 500 conversations/month",
+        "Hindi & English support",
+        "WhatsApp integration",
+        "Basic analytics dashboard",
+        "Email support",
+        "UPI & Card payments",
+        "24/7 AI responses"
+      ],
+      "recommended": false
+    },
+    {
+      "tier": "Professional",
+      "subtitle": "प्रोफेशनल",
+      "description": "Ideal for growing hotels with higher booking volume",
+      "features": [
+        "Up to 2,000 conversations/month",
+        "All Indian languages (15+)",
+        "WhatsApp Business API",
+        "Advanced analytics & insights",
+        "Priority phone & chat support",
+        "All payment methods",
+        "Custom branding",
+        "Guest feedback collection"
+      ],
+      "recommended": true
+    },
+    {
+      "tier": "Enterprise",
+      "subtitle": "एंटरप्राइज",
+      "description": "For hotel chains and luxury properties",
+      "features": [
+        "Unlimited conversations",
+        "40+ global languages",
+        "Multi-property management",
+        "Dedicated account manager",
+        "24/7 priority support",
+        "Custom AI training",
+        "API access",
+        "White-label solution",
+        "Advanced security & compliance",
+        "Custom integrations"
+      ],
+      "recommended": false
+    }
+  ],
+  "launchOffer": {
+    "title": "🎉 Special Launch Offer for Indian Hotels!",
+    "description": ""
+  }
+}

@@ -1,0 +1,82 @@
+/* --- Integrations Section --- */
+.integrations {
+  background: #FFFFFF;
+  position: relative;
+}
+
+.integrations-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.integrations-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.integrations-block {
+  background: #FDFBFF;
+  border: 1px solid rgb(240, 237, 255);
+  border-radius: 24px;
+  padding: 48px;
+  transition: all 0.3s ease;
+}
+
+.integrations-block:hover {
+  box-shadow: 0 24px 48px rgba(26, 30, 66, 0.05);
+  transform: translateY(-4px);
+}
+
+.integrations-block h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(26, 30, 66);
+  margin-bottom: 12px;
+}
+
+.integrations-block p {
+  font-size: 16px;
+  color: rgb(115, 115, 154);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.logo-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.logo-pill {
+  background: #FFFFFF;
+  border: 1px solid rgb(228, 220, 255);
+  padding: 12px 24px;
+  border-radius: 64px;
+  font-weight: 600;
+  color: rgb(107, 71, 255);
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(26, 30, 66, 0.02);
+}
+
+.logo-pill.dark {
+  background: rgb(26, 30, 66);
+  border-color: rgb(26, 30, 66);
+  color: #FFFFFF;
+}
+
+.logo-pill.outline {
+  background: transparent;
+  border: 1px dashed rgb(115, 115, 154);
+  color: rgb(115, 115, 154);
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .integrations-grid {
+    grid-template-columns: 1fr;
+  }
+  .integrations-block {
+    padding: 32px;
+  }
+}

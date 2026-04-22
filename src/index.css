@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+:root {
+  /* Luxury Rebranded Colors */
+  --color-racing-green: #1B3022;
+  --color-racing-green-light: #2a4732;
+  --color-antique-parchment: #FDFCF0;
+  --color-innhance-navy: #1E2B3E;
+  --color-polished-brass: #B08D57;
+  --color-polished-brass-hover: #96784a;
+  --color-faded-teal: #5F8D8A;
+  
+  /* Legacy/Variable Mapping */
+  --color-brand-teal: var(--color-racing-green);
+  --color-brand-teal-light: var(--color-racing-green-light);
+  --color-brand-lime: var(--color-polished-brass);
+  --color-brand-lime-hover: var(--color-polished-brass-hover);
+  
+  --color-surface-50: var(--color-antique-parchment);
+  --color-surface-100: #f5f4e8;
+  --color-surface-200: #eceada;
+  --color-surface-800: var(--color-racing-green);
+  --color-surface-900: #0f1c14;
+  
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  /* Layout */
+  --container-max-width: 1280px;
+
+  /* Transitions */
+  --transition-base: all 0.3s ease;
+  --transition-slow: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-surface-50);
+}
+
+body {
+  color: var(--color-innhance-navy);
+  line-height: 1.5;
+  overflow-x: hidden;
+  background-color: var(--color-surface-50);
+}
+
+.hero-title-line {
+  font-family: 'DM Serif Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-size: 1em;
+}
+
+h1, h2 {
+  color: var(--color-innhance-navy);
+  font-family: 'Outfit', var(--font-sans);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+h3, h4, h5, h6 {
+  font-family: 'Outfit', var(--font-sans);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Base Utilities */
+.container-custom {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-padding {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--color-polished-brass);
+  color: var(--color-white);
+  padding: 14px 28px;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: var(--transition-slow);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-primary:hover {
+  background: var(--color-brand-lime-hover);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: var(--color-white);
+  color: var(--color-brand-teal);
+  padding: 14px 28px;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 16px;
+  border: 1px solid var(--color-surface-200);
+  transition: var(--transition-slow);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-secondary:hover {
+  background: var(--color-surface-100);
+  transform: translateY(-2px);
+}
+
+.btn-dark {
+  background: var(--color-brand-teal);
+  color: var(--color-white);
+  padding: 14px 28px;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: var(--transition-slow);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-dark:hover {
+  background: var(--color-brand-teal-light);
+  transform: translateY(-2px);
+}
+
+/* Utilities for GSAP Hooks */
+.gsap-reveal {
+  opacity: 0;
+  visibility: hidden;
+}
