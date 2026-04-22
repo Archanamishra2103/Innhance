@@ -295,6 +295,7 @@
 
   .omni-sidebar {
     border-radius: 16px;
+    width: 100%;
   }
 
   .omni-chat-ui {

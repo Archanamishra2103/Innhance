@@ -82,6 +82,20 @@
   color: var(--color-surface-400);
   margin-bottom: 12px;
 }
+.plan-price {
+  font-size: 40px;
+  font-weight: 900;
+
+  background: linear-gradient(135deg, #c2a56a, #927139);
+
+  background-clip: text;             
+  -webkit-background-clip: text;      
+
+  color: transparent;                 
+  -webkit-text-fill-color: transparent;
+
+  margin: 12px 0;
+}
 
 .rec-card .plan-sub { color: var(--color-polished-brass); }
 
