@@ -2,7 +2,7 @@ import { Bot, MapPin, Mail, ArrowRight } from 'lucide-react'
 import data from '../../data/innhanceData.json'
 import './Footer.css'
 
-export default function Footer() {
+export default function Footer({ setCurrentView }) {
   return (
     <footer className="footer-cito">
       <div className="container-custom">
@@ -26,7 +26,7 @@ export default function Footer() {
             <ul>
               <li><a href="#features" onClick={() => setCurrentView('home')}>Features</a></li>
               <li><a href="#">Integrations</a></li>
-              <li><a href="#">Pricing</a></li>
+              <li><a href="#pricing">Pricing</a></li>
             </ul>
           </div>
           <div className="flink-col">
@@ -40,8 +40,8 @@ export default function Footer() {
           <div className="flink-col">
             <h4>Company</h4>
             <ul>
-              <li><a href="#" onClick={(e) => { e.preventDefault(); setCurrentView('about'); setMobileMenuOpen(false); window.scrollTo(0,0); }}>About Us</a></li>
-              <li><a href="#" onClick={(e) => { e.preventDefault(); setCurrentView('life'); setMobileMenuOpen(false); window.scrollTo(0,0); }}>Life At Innhance</a></li>
+              <li><a href="#about" onClick={(e) => { e.preventDefault(); setCurrentView('about'); window.scrollTo(0,0); }}>About Us</a></li>
+              <li><a href="#life" onClick={(e) => { e.preventDefault(); setCurrentView('life'); window.scrollTo(0,0); }}>Life At Innhance</a></li>
               <li><a href="#">Privacy Policy</a></li>
             </ul>
           </div>

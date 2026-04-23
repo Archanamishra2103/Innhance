@@ -73,7 +73,9 @@ export default function Navbar({ currentView, setCurrentView }) {
             <a href="#pricing" onClick={() => { setCurrentView('home'); setMobileMenuOpen(false); }}>Pricing</a>
             <hr />
             <a href="#" className="btn-life mobile-life" onClick={(e) => { e.preventDefault(); setCurrentView('life'); setMobileMenuOpen(false); window.scrollTo(0,0); }}>Life at Innhance</a>
-            <button className="btn-primary w-full">Book Demo</button>
+            <a href="https://wa.link/jkc1du" target="_blank" rel="noopener noreferrer" className="w-full">
+              <button className="btn-primary w-full">Book Demo</button>
+            </a>
           </div>
         </div>
       )}

@@ -44,7 +44,7 @@ function App() {
         )}
       </main>
       
-      <Footer />
+      <Footer setCurrentView={setCurrentView} />
     </div>
   )
 }

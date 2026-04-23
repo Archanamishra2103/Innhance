@@ -48,7 +48,9 @@ export default function AnalyticsPreview() {
               Our single, unified dashboard gives you deep insights into guest intent, 
               response efficiency, and direct booking conversion rates. Discover exactly how much revenue you're losing to the "Silence Tax" (nighttime drop-offs).
             </p>
+            <a href="https://innhance-hotels-dashboard.vercel.app/login" target="_blank" rel="noopener noreferrer ">
             <button className="btn-primary mt-8">View Live Demo Dashboard</button>
+            </a>
           </div>
 
           <div className="analytics-visual">
