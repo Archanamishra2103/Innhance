@@ -20,15 +20,12 @@ export default function Hero() {
       .from('.hero-subtitle', { y: 20, opacity: 0, duration: 1 }, "-=0.6")
       .from('.hero-buttons', { y: 20, opacity: 0 }, "-=0.8")
       .from('.hero-mockup-wrapper', { y: 100, opacity: 0, scale: 0.98 }, "-=0.9")
-      // Floaters
       .from('.floater', { y: 50, opacity: 0, stagger: 0.2, scale: 0.8 }, "-=0.8")
 
-    // Idle floating animations
     gsap.to('.floater-1', { y: -18, rotation: 4, duration: 3, repeat: -1, yoyo: true, ease: 'sine.inOut' })
     gsap.to('.floater-2', { y: 16, rotation: -4, duration: 4, repeat: -1, yoyo: true, ease: 'sine.inOut' })
     gsap.to('.floater-3', { y: -14, x: 8, duration: 3.5, repeat: -1, yoyo: true, ease: 'sine.inOut' })
 
-    // Scrub parallax on the dashboard
     gsap.to('.hero-mockup-wrapper', {
       scrollTrigger: {
         trigger: '.hero-section',
@@ -41,10 +38,15 @@ export default function Hero() {
       rotationX: 4
     })
 
-    // Scrub on background gradients
     gsap.to('.hero-bg-accent', {
-      scrollTrigger: { trigger: '.hero-section', start: 'top top', end: 'bottom top', scrub: 1 },
-      yPercent: 25, scale: 1.08
+      scrollTrigger: {
+        trigger: '.hero-section',
+        start: 'top top',
+        end: 'bottom top',
+        scrub: 1
+      },
+      yPercent: 25,
+      scale: 1.08
     })
 
   }, { scope: container })
@@ -52,7 +54,7 @@ export default function Hero() {
   return (
     <section className="hero-section" id="hero" ref={container}>
       
-      {/* Background Elements */}
+      {/* Background */}
       <div className="hero-bg-elements">
         <div className="hero-bg-accent teal-glow"></div>
         <div className="hero-bg-accent lime-glow"></div>
@@ -61,12 +63,13 @@ export default function Hero() {
 
       <div className="container-custom hero-content">
         
-        {/* Floating Accent Tiles */}
+        {/* Floaters */}
         <div className="floater floater-1"><MessageCircle size={22}/> Auto-Replies</div>
         <div className="floater floater-2"><Zap size={22}/> 0% Limits</div>
         <div className="floater floater-3"><Star size={22}/> AI Trained</div>
 
         <div className="hero-text-block">
+          
           <div className="hero-badge-pill">
             <Bot size={16} className="badge-icon" />
             <span>{data.hero.badges[0].text}</span>
@@ -74,57 +77,90 @@ export default function Hero() {
 
           <h1 className="hero-heading">
             <span className="hero-title-line">Turn</span>
-            <span className="hero-title-line">WhatsApp <span className="text-accent">Chats</span></span>
-            <span className="hero-title-line">Into <span className="hero-badge-highlight">Hotel Bookings</span></span>
+            <span className="hero-title-line">
+              WhatsApp <span className="text-accent">Chats</span>
+            </span>
+            <span className="hero-title-line">
+              Into <span className="hero-badge-highlight">Hotel Bookings</span>
+            </span>
           </h1>
 
           <p className="hero-subtitle">
             {data.hero.subheadline}
           </p>
 
+          {/* ✅ FIXED BUTTON STRUCTURE */}
           <div className="hero-buttons">
-            <a href="#journey">
-              <button className="btn-primary btn-large">
-                Get Started <ArrowRight size={18} />
-              </button>
-            </a>  
-            <a href="https://wa.link/jkc1du" target="_blank" rel="noopener noreferrer">
-            <button className="btn-dark btn-large">
+            <a href="#journey" className="btn-primary btn-large">
+              Get Started <ArrowRight size={18} />
+            </a>
+
+            <a 
+              href="https://wa.link/jkc1du" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn-dark btn-large"
+            >
               Book a Demo
-            </button>
             </a>
           </div>
+
+          {/* ✅ NEW TRUST SIGNALS */}
+          <div className="hero-trust-signals">
+            <span>No credit card</span>
+            <span>Setup in 5 min</span>
+            <span>Built for hotels</span>
+          </div>
+
         </div>
 
-        {/* Dashboard Mockup */}
+        {/* Mockup */}
         <div className="hero-mockup-wrapper">
           <div className="hero-mockup-window">
+
             <div className="hero-window-top">
               <div className="win-dot red"></div>
               <div className="win-dot yellow"></div>
               <div className="win-dot green"></div>
-              <div className="win-title">Innhance AI </div>
+              <div className="win-title">Innhance AI</div>
             </div>
             
             <div className="hero-window-body">
+
               <div className="mock-sidebar">
-                <div className="mock-nav-item active"><MessageCircle size={16}/> Messages</div>
-                <div className="mock-nav-item"><BarChart3 size={16}/> Metrics</div>
+                <div className="mock-nav-item active">
+                  <MessageCircle size={16}/> Messages
+                </div>
+                <div className="mock-nav-item">
+                  <BarChart3 size={16}/> Metrics
+                </div>
               </div>
               
               <div className="mock-main-view">
+
                 <div className="mock-chat-row received">
                   <div className="mock-chat-avatar user">U</div>
-                  <div className="mock-chat-bubble">Is the Deluxe Room available for Dec 24?</div>
+                  <div className="mock-chat-bubble">
+                    Is the Deluxe Room available for Dec 24?
+                  </div>
                 </div>
+
                 <div className="mock-chat-row sent">
-                  <div className="mock-chat-avatar bot"><Bot size={14}/></div>
-                  <div className="mock-chat-bubble lime">Yes! The Deluxe Room is available. Rate is ₹8,999/night.</div>
+                  <div className="mock-chat-avatar bot">
+                    <Bot size={14}/>
+                  </div>
+                  <div className="mock-chat-bubble lime">
+                    Yes! The Deluxe Room is available. Rate is ₹8,999/night.
+                  </div>
                 </div>
+
                 <div className="mock-chat-row sent">
                   <div className="mock-chat-avatar empty"></div>
-                  <div className="mock-chat-bubble dark">Payment link attached: <span>Pay Now</span></div>
+                  <div className="mock-chat-bubble dark">
+                    Payment link attached: <span>Pay Now</span>
+                  </div>
                 </div>
+
               </div>
             </div>
           </div>

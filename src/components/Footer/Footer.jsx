@@ -26,7 +26,7 @@ export default function Footer({ setCurrentView }) {
             <ul>
               <li><a href="#features" onClick={() => setCurrentView('home')}>Features</a></li>
               <li><a href="#">Integrations</a></li>
-              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#pricing" onClick={() => setCurrentView('home')}>Pricing</a></li>
             </ul>
           </div>
           <div className="flink-col">

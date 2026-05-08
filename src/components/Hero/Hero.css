@@ -120,6 +120,27 @@
   left: 5%;
   transform: rotate(-3deg);
 }
+/* ===== TRUST SIGNALS ===== */
+.hero-trust-signals {
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  font-size: 13px;
+  font-weight: 600;
+  color: #1B3022;
+}
+
+.hero-trust-signals span {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(27, 48, 34, 0.1);
+  padding: 6px 14px;
+  border-radius: 999px;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
 
 @media (max-width: 1024px) {
   .floater { display: none; }
@@ -263,6 +284,15 @@
 .hero-buttons .btn-dark:hover {
   background: #2a4732;
   transform: translateY(-2px);
+}
+
+.hero-trust-signals {
+  font-size: 11px;
+  gap: 8px;
+}
+
+.hero-trust-signals span {
+  padding: 5px 10px;
 }
 
 /* ===== MOCKUP ===== */
