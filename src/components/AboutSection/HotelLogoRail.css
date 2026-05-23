@@ -1,0 +1,175 @@
+.hotel-rail-section {
+  padding: 30px 0 40px;
+  background-color: #FFFFFF; /* Changed to white just behind the rail */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 60px; /* Added spacing so stats cards don't touch the white bg */
+}
+
+.hotel-rail-header {
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.hotel-rail-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: #5F8D8A;
+  text-transform: uppercase;
+}
+
+.hotel-rail-viewport {
+  width: 100%;
+  max-width: var(--container-max-width, 1400px);
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+  /* Fade mask for smooth blending on left and right - 30px fixed width for a buttery smooth fade closer to edges */
+  -webkit-mask-image: linear-gradient(to right, transparent, black 30px, black calc(100% - 30px), transparent);
+  mask-image: linear-gradient(to right, transparent, black 30px, black calc(100% - 30px), transparent);
+}
+
+.hotel-rail-track {
+  display: flex;
+  gap: 32px;
+  width: max-content;
+  /* The animation moves the track left by exactly half its width minus half the gap */
+  /* Since we duplicated the array, halfway is exactly one full set */
+  animation: scrollRail 55s linear infinite; /* Slowed down from 35s to 55s */
+  padding: 0 16px;
+}
+
+.hotel-rail-track.paused {
+  animation-play-state: paused;
+}
+
+@keyframes scrollRail {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Translate by exactly -50% of the flex track minus half the gap */
+    transform: translateX(calc(-50% - 16px)); 
+  }
+}
+
+.hotel-logo-card {
+  width: 240px; /* Increased from 200px to make logos larger */
+  height: 140px; /* Increased from 120px */
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 24px -6px rgba(0,0,0,0.05);
+  border: 1px solid rgba(35, 66, 50, 0.05);
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.hotel-logo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px -8px rgba(0,0,0,0.1);
+  border-color: rgba(35, 66, 50, 0.15);
+}
+
+/* Selected state styling */
+.hotel-logo-card.selected {
+  transform: scale(1.1) translateY(-4px);
+  border-color: #234232;
+  box-shadow: 0 15px 35px -5px rgba(35, 66, 50, 0.2), 0 0 0 2px rgba(35, 66, 50, 0.1);
+  z-index: 10;
+}
+
+.hotel-logo-img-wrapper {
+  width: 95%; /* Maximized to fill the card */
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hotel-logo-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+  mix-blend-mode: multiply; /* Removes white backgrounds from jpegs if any */
+}
+
+.hotel-logo-card:hover .hotel-logo-img,
+.hotel-logo-card.selected .hotel-logo-img {
+  opacity: 1;
+}
+
+/* Tooltip for hotel name when selected */
+.hotel-logo-tooltip {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #234232;
+  color: #FDFCF0;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  animation: fadeInTooltip 0.3s forwards;
+  pointer-events: none;
+}
+
+.hotel-logo-tooltip::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 8px;
+  height: 8px;
+  background-color: #234232;
+}
+
+@keyframes fadeInTooltip {
+  0% { opacity: 0; transform: translate(-50%, -5px); }
+  100% { opacity: 1; transform: translate(-50%, 0); }
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+  .hotel-logo-card {
+    width: 170px;
+    height: 110px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hotel-rail-section {
+    padding: 20px 0 30px;
+  }
+  
+  .hotel-logo-card {
+    width: 140px;
+    height: 90px;
+    border-radius: 16px;
+  }
+  
+  .hotel-rail-track {
+    gap: 20px;
+  }
+  
+  @keyframes scrollRail {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-50% - 10px)); }
+  }
+}

@@ -19,13 +19,47 @@
 }
 
 .text-lime-italic {
-  color: var(--color-antique-parchment);
-  background: var(--color-polished-brass);
-  padding: 0 16px;
   font-style: italic;
-  border-radius: 9999px;
   display: inline-block;
   margin-top: 12px;
+  position: relative;
+  
+  /* Metallic shine effect matching the original oval color */
+  background: linear-gradient(
+    to right, 
+    var(--color-polished-brass) 20%, 
+    #fff1cd 50%, 
+    var(--color-polished-brass) 80%
+  );
+  background-size: 200% auto;
+  color: var(--color-polished-brass); /* Fallback */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine-gj-text 3s linear infinite;
+}
+
+/* Shining pulse animation behind the text */
+.text-lime-italic::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140%;
+  height: 120%;
+  background: radial-gradient(ellipse at center, rgba(176, 141, 87, 0.25) 0%, transparent 60%);
+  z-index: -1;
+  animation: pulse-gj-glow 3s infinite alternate ease-in-out;
+  pointer-events: none;
+}
+
+@keyframes shine-gj-text {
+  to { background-position: 200% center; }
+}
+
+@keyframes pulse-gj-glow {
+  0% { opacity: 0.4; transform: translate(-50%, -50%) scale(0.9); }
+  100% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
 }
 
 .gj-container {

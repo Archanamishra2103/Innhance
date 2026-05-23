@@ -1,7 +1,10 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
-import Storytelling from './components/Storytelling/Storytelling'
+import AboutSection from './components/AboutSection/AboutSection'
 import Features from './components/Features/Features'
 import GuestJourney from './components/GuestJourney/GuestJourney'
 import OmniChannel from './components/CoreModules/OmniChannel'
@@ -11,12 +14,27 @@ import DigitalConcierge from './components/CoreModules/DigitalConcierge'
 import AnalyticsPreview from './components/AnalyticsPreview/AnalyticsPreview'
 import Testimonials from './components/Testimonials/Testimonials'
 import Pricing from './components/Pricing/Pricing'
-import CTASection from './components/CTASection/CTASection'
+import FAQ from './components/FAQ/FAQ'
 import Footer from './components/Footer/Footer'
-import LifeAtInnhance from './components/LifeAtInnhance/LifeAtInnhance'
+import Blog from './components/Blog/Blog'
+
+const RTL_LANGUAGES = ['ar']
 
 function App() {
   const [currentView, setCurrentView] = useState('home')
+  const { i18n } = useTranslation()
+
+  // Handle RTL/LTR direction based on language
+  useEffect(() => {
+    const isRtl = RTL_LANGUAGES.includes(i18n.language)
+    document.documentElement.dir = isRtl ? 'rtl' : 'ltr'
+    document.documentElement.lang = i18n.language
+
+    // Refresh ScrollTrigger after DOM layout shift
+    setTimeout(() => {
+      ScrollTrigger.refresh()
+    }, 50)
+  }, [i18n.language])
 
   return (
     <div className="app-container">
@@ -35,12 +53,12 @@ function App() {
             <AnalyticsPreview />
             <Testimonials />
             <Pricing />
-            <CTASection />
+            <FAQ />
           </>
         ) : currentView === 'about' ? (
-          <Storytelling />
+          <AboutSection />
         ) : (
-          <LifeAtInnhance />
+          <Blog />
         )}
       </main>
       

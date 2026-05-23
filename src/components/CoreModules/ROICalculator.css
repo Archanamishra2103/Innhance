@@ -1,0 +1,206 @@
+.roi-calculator-container {
+  background-color: #FFFFFF;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 25px 50px -15px rgba(0,0,0,0.1);
+  border: 1px solid rgba(27, 48, 34, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  /* Ensure it doesn't cross boundaries */
+  max-height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.roi-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  padding-bottom: 12px;
+}
+
+.roi-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 24px;
+  color: #1B3022;
+  margin: 0;
+}
+
+.roi-currency-select {
+  padding: 4px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: #fdfcfc;
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #234232;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.roi-currency-select:focus {
+  border-color: #C8A15A;
+}
+
+.roi-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.roi-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 24px;
+}
+
+.roi-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.roi-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.roi-label-row label {
+  font-family: 'Outfit', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #5F8D8A;
+  font-weight: 500;
+}
+
+.roi-val {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #234232;
+}
+
+/* Range slider styling */
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #C8A15A;
+  cursor: pointer;
+  margin-top: -6px;
+  box-shadow: 0 2px 8px rgba(200, 161, 90, 0.5);
+  transition: transform 0.2s ease;
+}
+input[type=range]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: rgba(35, 66, 50, 0.1);
+  border-radius: 4px;
+}
+
+.roi-results {
+  background: linear-gradient(135deg, #162a1f 0%, #112015 100%);
+  border-radius: 16px;
+  padding: 24px;
+  color: #FDFCF0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+}
+
+.roi-total-card {
+  text-align: center;
+  border-bottom: 1px solid rgba(253, 252, 240, 0.1);
+  padding-bottom: 16px;
+}
+
+.roi-total-label {
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(253, 252, 240, 0.6);
+  margin-bottom: 8px;
+}
+
+.roi-total-value {
+  font-family: 'DM Serif Display', serif;
+  font-size: 38px;
+  color: #C8A15A;
+  line-height: 1;
+  text-shadow: 0 10px 20px rgba(200, 161, 90, 0.2);
+}
+
+.roi-result-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  text-align: center;
+}
+
+.roi-result-label {
+  font-family: 'Outfit', sans-serif;
+  font-size: 10px;
+  color: rgba(253, 252, 240, 0.5);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.roi-result-value {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #FDFCF0;
+}
+
+.roi-cta {
+  margin-top: 8px;
+  padding: 14px;
+  font-size: 15px;
+  border-radius: 12px;
+}
+
+.roi-disclaimer {
+  font-family: 'Outfit', sans-serif;
+  font-size: 11px;
+  color: rgba(27, 48, 34, 0.4);
+  text-align: center;
+  margin-top: -4px;
+}
+
+@media (max-width: 767px) {
+  .roi-inputs {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .roi-calculator-container {
+    padding: 20px;
+    max-height: none;
+    overflow: visible;
+  }
+  .roi-result-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

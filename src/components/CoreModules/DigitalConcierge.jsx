@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
@@ -8,6 +9,7 @@ import './DigitalConcierge.css'
 gsap.registerPlugin(ScrollTrigger)
 
 export default function DigitalConcierge() {
+  const { t } = useTranslation()
   const container = useRef(null)
   const [orderSent, setOrderSent] = useState(false)
 
@@ -19,15 +21,8 @@ export default function DigitalConcierge() {
 
   useGSAP(() => {
     gsap.from('.dc-menu-item', {
-      scrollTrigger: {
-        trigger: '.dc-section',
-        start: 'top 80%'
-      },
-      scale: 0.9,
-      opacity: 0,
-      stagger: 0.1,
-      duration: 0.6,
-      ease: 'back.out(1.5)'
+      scrollTrigger: { trigger: '.dc-section', start: 'top 80%' },
+      scale: 0.9, opacity: 0, stagger: 0.1, duration: 0.6, ease: 'back.out(1.5)'
     })
   }, { scope: container })
 
@@ -35,42 +30,33 @@ export default function DigitalConcierge() {
     <section className="dc-section section-padding" id="concierge" ref={container}>
       <div className="container-custom">
         <div className="dc-layout">
-          
           <div className="dc-text">
-            <h2 className="section-title">
-              The Digital Concierge.
-            </h2>
-            <p className="dc-par">
-              Upsell amenities, handle room service, and manage housekeeping requests instantly via WhatsApp. Provide guests an interactive digital menu they can access from their own smartphones.
-            </p>
+            <h2 className="section-title">{t("digitalConcierge.title")}</h2>
+            <p className="dc-par">{t("digitalConcierge.description")}</p>
           </div>
-
           <div className="dc-visual">
             <div className="dc-phone-ui">
               <div className="dc-header-mock">
-                <div>Digital Guest Services</div>
-                <div className="room-badge">Room 402</div>
+                <div>{t("digitalConcierge.guestServices")}</div>
+                <div className="room-badge">{t("digitalConcierge.roomBadge")}</div>
               </div>
-
               <div className="dc-menu-grid">
                 <div className="dc-menu-item" onClick={handleOrder}>
                   <div className="menu-icon"><Utensils size={24}/></div>
-                  <div className="menu-title">In-Room Dining</div>
+                  <div className="menu-title">{t("digitalConcierge.inRoomDining")}</div>
                 </div>
                 <div className="dc-menu-item" onClick={handleOrder}>
                   <div className="menu-icon"><Bell size={24}/></div>
-                  <div className="menu-title">Request Towels</div>
+                  <div className="menu-title">{t("digitalConcierge.requestTowels")}</div>
                 </div>
               </div>
-
               {orderSent && (
                 <div className="dc-toast">
-                  <MessageCircle size={16}/> "Request sent to desk!"
+                  <MessageCircle size={16}/> "{t("digitalConcierge.toastMessage")}"
                 </div>
               )}
             </div>
           </div>
-
         </div>
       </div>
     </section>

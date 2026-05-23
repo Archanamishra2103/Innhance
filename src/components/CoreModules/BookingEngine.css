@@ -9,7 +9,8 @@
   position: absolute;
   top: 0;
   right: -200px;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   height: 800px;
   background: radial-gradient(circle, rgba(176,141,87,0.1) 0%, rgba(27,48,34,0) 70%);
   z-index: 0;
@@ -213,7 +214,9 @@
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .booking-visual {
-    min-height: 350px;
+    min-height: auto;
+    height: auto;
+    margin-top: 24px;
   }
 
   .mock-room-cards {

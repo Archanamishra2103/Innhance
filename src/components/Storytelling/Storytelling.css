@@ -1,13 +1,26 @@
 .comic-section {
-  background-color: var(--color-racing-green); /* Dark theme mimicking text-white */
-  background-image: radial-gradient(rgba(253, 252, 240, 0.03) 2px, transparent 2px);
+  background-color: var(--color-surface-50); /* Warm cream background */
+  background-image: radial-gradient(rgba(27, 48, 34, 0.05) 2px, transparent 2px);
   background-size: 24px 24px;
   min-height: 100vh;
   padding-top: 100px;
   padding-bottom: 140px;
   display: flex;
   flex-direction: column;
-  overflow: hidden; /* Hide horizontal overflow of the page itself */
+  position: relative;
+  z-index: 10;
+}
+
+/* Smooth gradient transition into the footer */
+.comic-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.05));
+  pointer-events: none;
 }
 
 @keyframes fadeInScale {
@@ -34,7 +47,7 @@
 .comic-sp-title {
   font-size: 36px;
   font-weight: 800;
-  color: var(--color-antique-parchment);
+  color: var(--color-racing-green);
   margin: 0;
   padding: 0 16px;
   line-height: 1.5;
@@ -65,7 +78,7 @@
 /* Swiper Parent matching style="width: fit-content; max-width: 600px" */
 .swiper-parent-mock {
   width: 100%;
-  max-width: 600px; /* Force the carousel boundaries */
+  max-width: 480px; /* Reduced from 600px to make cards slightly smaller and fit better */
   margin: 0 auto;
   position: relative;
 }
@@ -108,7 +121,7 @@
 
 /* Illustration (Top) */
 .panel-illustration-sp {
-  height: 450px;
+  height: 320px; /* Reduced from 450px */
   position: relative;
   border-bottom: 2px solid var(--color-surface-200);
   box-shadow: inset 0 -10px 20px rgba(0,0,0,0.1);
@@ -178,7 +191,7 @@
 
 /* Bold Heading and Short Description */
 .panel-text-sp {
-  padding: 48px 32px 40px;
+  padding: 32px 24px 28px; /* Reduced from 48px 32px 40px */
   background: var(--color-surface-50);
   flex: 1;
 }
@@ -204,7 +217,7 @@
 
 /* Swiper Pagination Styling (matches screenshot green!) */
 .swiper-pagination-bullet {
-  background: rgba(255, 255, 255, 0.3) !important;
+  background: rgba(27, 48, 34, 0.2) !important;
   opacity: 1 !important;
   width: 10px !important;
   height: 10px !important;
@@ -215,6 +228,51 @@
   width: 30px !important;
   border-radius: 5px !important;
   transition: all 0.3s ease !important;
+}
+
+/* ===== NAVIGATION ARROWS ===== */
+.story-nav-arrow {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 20;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(27, 48, 34, 0.15);
+  color: var(--color-racing-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.story-nav-arrow:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.story-nav-arrow:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.story-nav-prev {
+  left: -60px;
+}
+
+.story-nav-next {
+  right: -60px;
+}
+
+.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -232,6 +290,19 @@
   .comic-sp-badge {
     font-size: 20px;
     padding: 6px 16px;
+  }
+
+  .story-nav-prev {
+    left: -20px;
+  }
+  
+  .story-nav-next {
+    right: -20px;
+  }
+  
+  .story-nav-arrow {
+    width: 40px;
+    height: 40px;
   }
 
   .panel-illustration-sp {

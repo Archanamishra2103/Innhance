@@ -1,0 +1,657 @@
+{
+  "navbar": {
+    "about": "Über uns",
+    "features": "Funktionen",
+    "analytics": "Analysen",
+    "pricing": "Preise",
+    "lifeAtInnhance": "Leben bei Innhance",
+    "bookDemo": "Demo buchen"
+  },
+  "hero": {
+    "turn": "Verwandeln Sie",
+    "whatsapp": "WhatsApp",
+    "chats": "Chats",
+    "into": "in",
+    "hotelBookings": "Hotelbuchungen",
+    "badgeText": "#1 WhatsApp-KI für indische Hotels",
+    "subheadline": "Innhance ist der intelligente WhatsApp-KI-Agent, der Gästeanfragen nahtlos in bestätigte Reservierungen für Ihr Boutique-Hotel umwandelt.",
+    "getStarted": "Loslegen",
+    "bookADemo": "Demo buchen",
+    "noCreditCard": "Keine Kreditkarte",
+    "setupIn5Min": "Einrichtung in 5 Min",
+    "builtForHotels": "Für Hotels gebaut",
+    "floaterAutoReplies": "Auto-Antworten",
+    "floaterNoLimits": "0% Grenzen",
+    "floaterAiTrained": "KI Trainiert",
+    "innhanceAi": "Innhance AI",
+    "messages": "Nachrichten",
+    "metrics": "Metriken",
+    "mockUserQuestion": "Ist die Deluxe-Suite am 24. Dezember verfügbar?",
+    "mockBotReply": "Ja! Die Deluxe-Suite ist verfügbar. Preis: ₹8.999/Nacht.",
+    "mockPaymentLink": "Zahlungslink beigefügt:",
+    "payNow": "Jetzt bezahlen"
+  },
+  "features": {
+    "titleLine1": "Alle Werkzeuge, die Sie brauchen.",
+    "titleLine2": "Ohne die Komplexität.",
+    "chatBubbleReceived": "Sind Zimmer verfügbar?",
+    "chatBubbleSent": "Ja! Wir haben gerade 2 Zimmer.",
+    "items": [
+      {
+        "title": "Sofortige Antworten",
+        "description": "KI-gestützte Antworten in Sekunden — keine Gästeanfrage bleibt unbeantwortet, Tag und Nacht."
+      },
+      {
+        "title": "Mehrsprachiger Support",
+        "description": "Hindi, Englisch, Tamil, Bengali und 40+ Sprachen für alle Gäste."
+      },
+      {
+        "title": "Intelligente Verfügbarkeit",
+        "description": "Echtzeit-Synchronisierung mit Ihrem Buchungssystem. Immer genaue Zimmerverfügbarkeit."
+      },
+      {
+        "title": "UPI & Zahlungsintegration",
+        "description": "Unterstützung für UPI, Karten und alle gängigen Zahlungsmethoden mit sicherer Verarbeitung."
+      },
+      {
+        "title": "Datenschutz",
+        "description": "Verschlüsselung auf Enterprise-Niveau zum Schutz von Gästeinformationen."
+      },
+      {
+        "title": "Analyse-Dashboard",
+        "description": "Verfolgen Sie Konversionsraten, Antwortzeiten und Zufriedenheitsmetriken in Echtzeit."
+      }
+    ]
+  },
+  "guestJourney": {
+    "titleLine1": "Die automatisierte Gästereise.",
+    "titleLine2": "Vom Klick bis zum Check-in.",
+    "innhanceAiBot": "Innhance KI-Bot",
+    "steps": [
+      {
+        "title": "Gast sendet Nachricht",
+        "description": "Ein potenzieller Gast sendet eine Buchungsanfrage per WhatsApp an Ihr Hotel."
+      },
+      {
+        "title": "KI verarbeitet Anfrage",
+        "description": "Innhance KI versteht die Absicht, prüft die Verfügbarkeit und erstellt eine Antwort."
+      },
+      {
+        "title": "Buchung bestätigt",
+        "description": "Der Gast erhält sofortige Bestätigung, Zahlungslink und Buchungsdetails."
+      }
+    ],
+    "chatStep0": "Hallo! Haben Sie ein Zimmer für den 15.?",
+    "chatStep1Reply": "Prüfe unseren Kalender... Ja, eine Deluxe-Suite ist für ₹8.999 verfügbar.",
+    "chatStep2Guest": "Perfekt. Hier ist meine Zahlung.",
+    "chatStep2Bot": "Buchung bestätigt! ✅"
+  },
+  "omniChannel": {
+    "titleLine1": "Ein Hub.",
+    "titleLine2": "Jeder Kanal abgedeckt.",
+    "unifiedInbox": "Einheitlicher Posteingang",
+    "guestName1": "Raj Patel",
+    "guestMsg1": "Brauche ein Zimmer für 2 Nächte...",
+    "time1": "Jetzt",
+    "guestName2": "@wanderlust_aditi",
+    "guestMsg2": "Haben Sie ein Spa-Menü?",
+    "time2": "5m",
+    "guestName3": "Sanjay Mehra",
+    "guestMsg3": "Interesse an Firmenbuchung.",
+    "time3": "1h",
+    "onlineWhatsApp": "Online (WhatsApp)",
+    "chatOnWhatsApp": "Chat auf WhatsApp",
+    "chatReceived": "Hallo, ich möchte die Verfügbarkeit eines Doppelzimmers vom 10. bis 12. Dezember prüfen.",
+    "chatReceivedMeta": "Empfangen über WhatsApp • 10:42",
+    "chatSent": "Hallo Raj! Ja, wir haben Standard-Doppelzimmer für ₹4.500/Nacht. Möchten Sie eines reservieren?",
+    "chatSentMeta": "KI-Agent • 10:42",
+    "typingPlaceholder": "Manuelle Nachricht eingeben..."
+  },
+  "bookingEngine": {
+    "titleLine1": "Behalten Sie 100% Ihrer",
+    "titleLine2": "Einnahmen.",
+    "description": "OTAs berechnen 15-25% Provision. Innhance ermöglicht Gästen, direkt über WhatsApp ohne Provision zu buchen.",
+    "commissionBadge": "0% Provision bei Direktbuchungen",
+    "payUPI": "UPI (GPay, PhonePe)",
+    "payCards": "Kredit-/Debitkarten",
+    "payQR": "Dynamischer QR",
+    "roomTitle": "Deluxe Sonnenuntergang Suite",
+    "roomPrice": "₹8.999",
+    "perNight": "/Nacht",
+    "kingBed": "Kingsize-Bett",
+    "oceanView": "Meerblick",
+    "processingBooking": "Buchung wird verarbeitet...",
+    "upiAmount": "₹8.999",
+    "upiMerchant": "An: Heritage Hotel",
+    "upiScanToPay": "Scannen für sichere UPI-Zahlung"
+  },
+  "contextualHelp": {
+    "switchToHindi": "Zu Hindi wechseln",
+    "switchToEnglish": "Zu Englisch wechseln (EN)",
+    "faqPetPolicy": "Haustierrichtlinie",
+    "questionEN": "Erlauben Sie Haustiere?",
+    "questionHI": "क्या आप पालतू जानवरों को अनुमति देते हैं?",
+    "answerEN": "Ja! Wir sind ein haustierfreundliches Hotel. Eine Gebühr von ₹500/Nacht gilt.",
+    "answerHI": "हाँ! हमारा होटल पालतू जानवरों के अनुकूल है। ₹500/रात का शुल्क लागू होता है।",
+    "titleLine1": "Spricht die Sprache",
+    "titleLine2": "Ihrer Gäste.",
+    "description": "Verlieren Sie keine Buchung wegen Sprachbarrieren. Innhance KI erkennt 40+ Sprachen sofort.",
+    "feature1": "Dynamische Absichtserkennung",
+    "feature2": "40+ globale Sprachen",
+    "feature3": "Intelligente FAQ-Datenbanken"
+  },
+  "digitalConcierge": {
+    "title": "Der Digitale Concierge.",
+    "description": "Zusatzleistungen verkaufen, Zimmerservice und Housekeeping-Anfragen sofort über WhatsApp verwalten.",
+    "guestServices": "Digitale Gästedienste",
+    "roomBadge": "Zimmer 402",
+    "inRoomDining": "Zimmerservice",
+    "requestTowels": "Handtücher anfordern",
+    "toastMessage": "Anfrage an Rezeption gesendet!"
+  },
+  "analyticsPreview": {
+    "titleLine1": "Hören Sie auf zu raten.",
+    "titleLine2": "Fangen Sie an zu optimieren.",
+    "description": "Unser einheitliches Dashboard gibt Ihnen tiefe Einblicke in Gästeabsichten, Antwort-Effizienz und Konversionsraten.",
+    "viewDemoDashboard": "Live-Demo-Dashboard ansehen",
+    "conversionFunnel": "Konversionstrichter",
+    "totalInquiries": "Gesamtanfragen",
+    "aiHandled": "KI-verarbeitet",
+    "bookings": "Buchungen",
+    "silenceTaxTitle": "Die Stillesteuer (0-6 Uhr)",
+    "recoveredNightLeads": "Wiedergewonnene Nacht-Leads",
+    "recoveredValue": "+ ₹1,4L"
+  },
+  "testimonials": {
+    "marqueeText": "BEWERTUNGEN • ERGEBNISSE • ERFOLG • REZENSIONEN • BEWERTUNGEN • ERGEBNISSE",
+    "quote": "Innhance hat unseren Buchungsprozess komplett verändert. Früher verpassten wir nächtliche Anfragen, jetzt werden 98% in Buchungen umgewandelt.",
+    "author": "Harshvardhan Singh",
+    "role": "Besitzer, The Heritage, Jaipur",
+    "results": [
+      {
+        "metric": "15+",
+        "title": "Stunden gespart/Woche"
+      },
+      {
+        "metric": "35%",
+        "title": "Umsatzsteigerung"
+      },
+      {
+        "metric": "98%",
+        "title": "Anfragen konvertiert"
+      },
+      {
+        "metric": "Top",
+        "title": "Gästezufriedenheit"
+      }
+    ]
+  },
+  "pricing": {
+    "titleLine1": "Einfache Preisgestaltung.",
+    "titleLine2": "Keine versteckten Gebühren.",
+    "launchOfferTitle": "🎉 Spezielles Startangebot für indische Hotels!",
+    "launchOfferDesc": "",
+    "mostPopular": "Am beliebtesten",
+    "choose": "Wählen",
+    "plans": [
+      {
+        "tier": "Starter",
+        "subtitle": "",
+        "price": "₹4999/Mo",
+        "description": "Perfekt für kleine Boutique-Hotels",
+        "features": [
+          "Bis 500 Gespräche/Monat",
+          "Hindi & Englisch Support",
+          "WhatsApp-Integration",
+          "Basis-Analyse-Dashboard",
+          "E-Mail-Support",
+          "UPI & Kartenzahlung",
+          "24/7 KI-Antworten"
+        ]
+      },
+      {
+        "tier": "Professional",
+        "subtitle": "",
+        "price": "₹7999/Mo",
+        "description": "Ideal für wachsende Hotels",
+        "features": [
+          "Bis 2.000 Gespräche/Monat",
+          "Alle indischen Sprachen (15+)",
+          "WhatsApp Business API",
+          "Erweiterte Analysen",
+          "Prioritäts-Support",
+          "Alle Zahlungsmethoden",
+          "Custom Branding",
+          "Gäste-Feedback-Sammlung"
+        ]
+      },
+      {
+        "tier": "Enterprise",
+        "subtitle": "",
+        "price": "Individuell",
+        "description": "Für Hotelketten und Luxus-Immobilien",
+        "features": [
+          "Unbegrenzte Gespräche",
+          "40+ globale Sprachen",
+          "Multi-Property-Management",
+          "Dedizierter Account Manager",
+          "24/7 Prioritäts-Support",
+          "Individuelles KI-Training",
+          "API-Zugang",
+          "White-Label-Lösung",
+          "Erweiterte Sicherheit",
+          "Individuelle Integrationen"
+        ]
+      }
+    ]
+  },
+  "cta": {
+    "headingLine1": "Übernehmen Sie die Kontrolle über Ihre",
+    "headingLine2": "WhatsApp-Einnahmen.",
+    "description": "Schließen Sie sich der Bewegung zukunftsorientierter Hotels an, die ihre Gästereise mit Innhance optimieren.",
+    "bookDemoToday": "Demo heute buchen",
+    "contactSales": "Vertrieb kontaktieren"
+  },
+  "footer": {
+    "companyDescription": "Innhance ist der intelligente WhatsApp-KI-Agent, der Gästeanfragen in bestätigte Reservierungen umwandelt.",
+    "product": "Produkt",
+    "featuresLink": "Funktionen",
+    "integrationsLink": "Integrationen",
+    "pricingLink": "Preise",
+    "resources": "Ressourcen",
+    "documentation": "Dokumentation",
+    "helpCenter": "Hilfezentrum",
+    "blog": "Blog",
+    "company": "Unternehmen",
+    "aboutUs": "Über uns",
+    "lifeAtInnhance": "Leben bei Innhance",
+    "privacyPolicy": "Datenschutz",
+    "contact": "Kontakt",
+    "copyright": "© {{year}} Innhance. Alle Rechte vorbehalten."
+  },
+  "storytelling": {
+    "headerLine1": "\"Wie alles begann: \"",
+    "headerBadge": "Der Anfang von Innhance",
+    "panels": [
+      {
+        "heading": "Die Reibung",
+        "description": "Arnav spät nachts, Laptop offen, mehrere Hotel-Tabs",
+        "dialogue": "Warum ist Hotelbuchen immer noch so kompliziert?"
+      },
+      {
+        "heading": "Die Frustration",
+        "description": "Hotel-Website: langsame Antworten\nOTA: hohe Provisionen",
+        "dialogue": "Hotels verlieren Kunden… nicht wegen Nachfrage, sondern wegen später Antworten"
+      },
+      {
+        "heading": "Die Lücke",
+        "description": "Hier verlieren Hotels jeden Tag Geld",
+        "dialogue": "Keine Antwort… tippt… verschwindet"
+      },
+      {
+        "heading": "Die Erkenntnis",
+        "description": "Arnav schaut auf WhatsApp",
+        "dialogue": "Was wenn Buchungen sofort passieren könnten… auf WhatsApp selbst?"
+      },
+      {
+        "heading": "Die Idee",
+        "description": "Arnav denkt nach / skizziert",
+        "dialogue": "Eine KI die sofort antwortet und Chats in Buchungen verwandelt"
+      },
+      {
+        "heading": "Khushi tritt ein",
+        "description": "Lockeres Gespräch / Kaffee-Szene",
+        "dialogue": "Ich traf Khushi, die Wachstum und Distribution verstand"
+      },
+      {
+        "heading": "Der Bau beginnt",
+        "description": "Nachtanrufe, Figma-Screens",
+        "dialogue": "Wir brauchten jemanden der das schnell bauen konnte"
+      },
+      {
+        "heading": "Harsh tritt ein (Full Stack Dev)",
+        "description": "Code-Screen, APIs",
+        "dialogue": "Dann kam Harsh der die Idee in ein Produkt verwandelte"
+      },
+      {
+        "heading": "Erste Vision",
+        "description": "WhatsApp-Bot funktioniert\nUnsere erste Version war einfach aber funktionierte",
+        "dialogue": "Gast: Preis?\nBot: Hier sind Ihre Zimmeroptionen"
+      },
+      {
+        "heading": "Erste Erfolge",
+        "description": "Hotels einsteigend\nChats konvertierend",
+        "dialogue": "Hotels antworteten sofort\nGäste buchten direkt"
+      },
+      {
+        "heading": "Der Wandel",
+        "description": "OTA vs Direktbuchung",
+        "dialogue": "Weniger OTA-Abhängigkeit\nMehr Direktbuchungen"
+      },
+      {
+        "heading": "Heute",
+        "description": "Team zusammen",
+        "dialogue": "Innhance wurde geboren\num Hotels zu helfen Gespräche in Einnahmen zu verwandeln"
+      },
+      {
+        "heading": "Markenrahmen",
+        "description": "Von verpassten Nachrichten\nzu bestätigten Buchungen",
+        "dialogue": "Das ist Innhance"
+      }
+    ]
+  },
+  "lifeAtInnhance": {
+    "meet": "Lernen Sie kennen",
+    "teamInnhance": "TEAM INNHANCE",
+    "thisIsInnhance": "Das ist Innhance",
+    "team": [
+      {
+        "name": "Arnav",
+        "role": "Gründer",
+        "text": "Läuft auf Ideen, Ehrgeiz und… null Schlaf\n24×7 Modus ist ein Lebensstil"
+      },
+      {
+        "name": "Khushi",
+        "role": "Wachstumspartnerin",
+        "text": "Erst Kaffee, dann Strategie\nKein Kaffee, kein Wachstum"
+      },
+      {
+        "name": "Harsh",
+        "role": "Full Stack Dev",
+        "text": "\"Technisch möglich\" ist seine Liebessprache\nBaut Dinge von denen wir nicht wussten dass wir sie brauchen"
+      },
+      {
+        "name": "Alankrita",
+        "role": "Vertrieb",
+        "text": "Immer in einem Anruf oder kurz davor\nKalte Anrufe aber warme Konversionen"
+      },
+      {
+        "name": "Archana",
+        "role": "Frontend",
+        "text": "Nachteule-Energie\nUI wird nach 2 Uhr morgens besser"
+      }
+    ]
+  },
+  "aiConsole": {
+    "badge": "FÜR HOTELS GEBAUT",
+    "headingLine1": "Ihre 24/7 KI-gestützte",
+    "headingLine2": "Buchungsmaschine",
+    "description": "Verwandeln Sie das WhatsApp Ihres Hotels in eine Einnahmen-generierende Maschine.",
+    "seeAiInAction": "KI in Aktion sehen",
+    "avgResponseTime": "Durchschn. Antwortzeit",
+    "directBookings": "Direktbuchungen",
+    "queriesResolved": "Anfragen ohne menschlichen Agenten gelöst"
+  },
+  "chatDemo": {
+    "liveDemo": "Live-Demo",
+    "seeItHeading": "Sehen Sie es",
+    "inAction": "in Aktion",
+    "description": "Dies ist ein echtes Gespräch das Innhance KI führte während der Hotelbesitzer schlief.",
+    "check1": "Gast sendet Nachricht auf Hindi um 2:47 Uhr",
+    "check2": "KI antwortet in 1,2 Sekunden",
+    "check3": "Frühstückspaket Upsell (+₹1.200)",
+    "check4": "Buchung bestätigt. Zahlung eingezogen.",
+    "bookFreeDemo": "Kostenlose Demo buchen",
+    "tryItNow": "Jetzt testen",
+    "innhanceAi": "Innhance AI",
+    "onlineInstant": "● Online · Sofortige Antworten"
+  },
+  "howItWorks": {
+    "sectionLabel": "So funktioniert's",
+    "heading": "Drei Schritte zur Automatisierung",
+    "subheading": "Von der Anfrage bis zur Zahlung — Innhance übernimmt die gesamte Buchungsreise auf WhatsApp automatisch.",
+    "steps": [
+      {
+        "title": "Gast sendet Ihnen eine Nachricht",
+        "description": "Ein potenzieller Gast sendet eine Nachricht über WhatsApp zu Zimmern oder Preisen."
+      },
+      {
+        "title": "Innhance KI antwortet",
+        "description": "KI prüft Verfügbarkeit, Preise und antwortet in der Sprache des Gastes."
+      },
+      {
+        "title": "Buchung bestätigt",
+        "description": "Gast zahlt per UPI oder Karte, System aktualisiert Ihren Kalender. Alles automatisch."
+      }
+    ]
+  },
+  "results": {
+    "sectionLabel": "Echte Ergebnisse",
+    "heading": "Zahlen die",
+    "headingEmphasis": "für sich sprechen",
+    "subheading": "Daten von 200+ Hotels die Innhance zur Automatisierung von WhatsApp-Buchungen nutzen.",
+    "testimonials": [
+      {
+        "quote": "\"Früher verpassten wir nächtliche Anfragen. Jetzt werden 98% konvertiert — ohne manuellen Aufwand.\"",
+        "author": "Harshvardhan Singh",
+        "role": "Besitzer, The Heritage",
+        "stats": [
+          "+₹2,4L",
+          "98%",
+          "12 Std"
+        ],
+        "statsLabels": [
+          "Extra/Monat",
+          "Konversion",
+          "Gespart/Woche"
+        ]
+      },
+      {
+        "quote": "\"In der Saison erhalten wir 400+ Anfragen täglich. Innhance handhabt alles — Umsatz stieg um 42%.\"",
+        "author": "Priya Menon",
+        "role": "Besitzerin, Coastline Stays",
+        "stats": [
+          "400+",
+          "+42%"
+        ],
+        "statsLabels": [
+          "Msgs/Tag",
+          "Umsatz"
+        ]
+      }
+    ]
+  },
+  "roi": {
+    "title": "ROI-Rechner",
+    "monthlyInquiries": "Monatliche WhatsApp-Anfragen",
+    "currentConversion": "Aktuelle Conversion %",
+    "avgBookingValue": "Durchschn. Buchungswert",
+    "expectedImprovement": "Erwartete Verbesserung",
+    "staffCostHr": "Personalkosten/Std",
+    "estMonthlyValue": "Geschätzter monatl. Mehrwert",
+    "extraRevYr": "Zusätzl. Umsatz/Jahr",
+    "extraBookings": "Zusätzliche Buchungen",
+    "staffSavings": "Personaleinsparungen",
+    "bookDemo": "Demo Buchen",
+    "disclaimer": "Nur Schätzung. Tatsächliche Ergebnisse können abweichen.",
+    "mo": "mon",
+    "h": "std",
+    "staffHrsDay": "Staff Hrs/Day"
+  },
+  "about": {
+    "subtitle": "ÜBER INNHANCE",
+    "titleLine1": "Gebaut für Hotels, die auf",
+    "titleHighlight": "Beziehungen",
+    "titleLine2": "basieren, nicht auf Tabellenkalkulationen.",
+    "description": "Indiens Boutique-Hotels basieren auf Herzlichkeit und persönlicher Note, doch die meisten verlieren immer noch Buchungen durch unbeantwortete WhatsApp-Nachrichten um Mitternacht. Innhance ändert das.",
+    "stat1Text": "Buchungsautomatisierung",
+    "stat1TextEnd": ", sogar im Schlaf",
+    "stat2Text": "Sprachen, die von unserem",
+    "stat2TextEnd": "KI-Agenten bearbeitet werden",
+    "stat3Text": "Verloren durch unbeantwortete Anfragen,",
+    "stat3TextEnd": "nie wieder",
+    "problemHeading": "Das Problem, das wir lösen",
+    "problemText1": "Ein denkmalgeschütztes Haveli in Rajasthan sollte keinen Vollzeit-Reservierungsschalter benötigen. Wir geben Boutique-Immobilien",
+    "problemHighlight": "Buchungsintelligenz auf Unternehmensniveau",
+    "problemText2": ", bereitgestellt über die App, die Ihre Gäste bereits nutzen.",
+    "approachHeading": "Unser Ansatz",
+    "approachText1": "Wir ersetzen nicht den Gastgeber. Wir befreien ihn. Innhance kümmert sich um das Hin und Her, damit sich Hoteliers auf",
+    "approachHighlight": "die Momente konzentrieren können, die zählen",
+    "approachText2": ", die Begrüßung, die Geschichte, das Erlebnis.",
+    "beliefsTitle": "WORAN WIR GLAUBEN",
+    "belief1": "Gastfreundschaft zuerst",
+    "belief2": "Geschwindigkeit mit Herzlichkeit",
+    "belief3": "In Indien gebaut",
+    "belief4": "Eigentümerfreundlich",
+    "founderNote": "NOTIZ DES GRÜNDERS",
+    "founderQuote": "\"Wir haben Innhance gebaut, weil wir sahen, wie brillante Hoteliers Buchungen durch langsame Antworten verloren, nicht durch langsamen Service. Die Gastfreundschaft war immer da. Die Technologie war es einfach nicht. Jetzt ist sie da.\""
+  },
+  "hero_extra": {
+    "trusted": "Über 50 Hotels vertrauen uns",
+    "scroll": "Scrollen zum Entdecken",
+    "clickPhone": "Klicken Sie auf das Telefon",
+    "tryDemo": "für einen Demo-Chat"
+  },
+  "testimonials_section": {
+    "heading1": "Aufbau des Vertrauens von",
+    "heading2": "Top Hoteliers",
+    "subtitle": "Sehen Sie, wie Eigenschaften ihr Gästeerlebnis transformieren.",
+    "items": [
+      {
+        "category": "Buchungen ↑",
+        "quote": "Unsere Rezeption war früher überlastet mit WhatsApp-Nachrichten. Jetzt erledigt die KI 90 % davon und unsere Direktbuchungen sind in die Höhe geschossen.",
+        "author": "Nd Manor",
+        "role": "",
+        "property": "",
+        "location": "Dehradun",
+        "initials": "NM",
+        "featured": false
+      },
+      {
+        "category": "Gästeliebe",
+        "quote": "Was mich erstaunt, ist, wie natürlich es mit Gästen spricht. Sie denken, sie chatten mit unserem Manager. Wir sehen viel mehr bestätigte Reservierungen.",
+        "author": "Fateh Villas",
+        "role": "",
+        "property": "",
+        "location": "Udaipur",
+        "initials": "FV",
+        "featured": false
+      },
+      {
+        "category": "Einnahmen",
+        "quote": "In Manali kann das Netzwerk knifflig sein. Dieses Tool antwortet sofort. Unsere OTA-Provisionen sind gesunken, da Gäste lieber direkt buchen.",
+        "author": "14 gable",
+        "role": "",
+        "property": "",
+        "location": "Manali",
+        "initials": "1G",
+        "featured": false
+      },
+      {
+        "category": "Zeitersparnis",
+        "quote": "Wir haben viele ausländische Touristen. Der Bot antwortet in ihrer Muttersprache und wickelt die Zahlungslinks perfekt ab.",
+        "author": "Seven Seas",
+        "role": "",
+        "property": "",
+        "location": "Rishikesh",
+        "initials": "SS",
+        "featured": false
+      },
+      {
+        "category": "Buchungen ↑",
+        "quote": "Gruppenbuchungen dauerten früher Tage. Jetzt beantwortet der Bot alle häufigen Fragen sofort. Wir wachen einfach mit den Zahlungsbenachrichtigungen auf.",
+        "author": "Bindram Palace",
+        "role": "",
+        "property": "",
+        "location": "Rishikesh",
+        "initials": "BP",
+        "featured": false
+      },
+      {
+        "category": "Gästeliebe",
+        "quote": "Ich war skeptisch, aber die Einrichtung war sehr einfach. Die Gäste lieben die sofortigen Antworten. Sehr empfehlenswert für Boutique-Hotels.",
+        "author": "Meeram Ganga",
+        "role": "",
+        "property": "",
+        "location": "Rishikesh",
+        "initials": "MG",
+        "featured": true
+      },
+      {
+        "category": "Einnahmen",
+        "quote": "Der beste Teil ist, wie es nächtliche Anfragen bearbeitet. Wir verlieren keine Buchungen mehr, weil Gäste um Mitternacht schreiben.",
+        "author": "Panabi Resorts",
+        "role": "",
+        "property": "",
+        "location": "Rishikesh",
+        "initials": "PR",
+        "featured": false
+      },
+      {
+        "category": "Zeitersparnis",
+        "quote": "Unsere Konversionsrate bei WhatsApp-Chats hat sich verdoppelt. Es teilt reibungslos Bilder und die genaue Verfügbarkeit.",
+        "author": "Hotel Gorbandh",
+        "role": "",
+        "property": "",
+        "location": "Udaipur",
+        "initials": "HG",
+        "featured": false
+      },
+      {
+        "category": "Buchungen ↑",
+        "quote": "Wochenendreisende stellen die gleichen Fragen zum Parken. Der Bot kümmert sich um alles und sendet ihnen automatisch die Karte.",
+        "author": "Hotel Old Town",
+        "role": "",
+        "property": "",
+        "location": "Neemrana",
+        "initials": "HO",
+        "featured": false
+      },
+      {
+        "category": "Einnahmen",
+        "quote": "Es ist unglaublich effizient. Wir zahlen keine hohen Provisionen mehr, die KI bringt uns Direktbuchungen. Hat sich sofort rentiert.",
+        "author": "Hotel Mani International",
+        "role": "",
+        "property": "",
+        "location": "Patna",
+        "initials": "HM",
+        "featured": false
+      }
+    ]
+  },
+  "faq_section": {
+    "title": "Neugierig? Lassen Sie uns die Dinge klären.",
+    "subtitle": "Alles, was Sie über die WhatsApp-Buchungsmaschine von Innhance wissen müssen.",
+    "items": [
+      {
+        "question": "Wie schnell antwortet Innhance?",
+        "answer": "Innhance antwortet sofort, normalerweise innerhalb von Sekunden."
+      },
+      {
+        "question": "Kann ich Innhance in mein PMS integrieren?",
+        "answer": "Ja! Innhance lässt sich nahtlos in die meisten PMS integrieren."
+      },
+      {
+        "question": "Unterstützt Innhance mehrere Sprachen?",
+        "answer": "Absolut. Innhance unterstützt über 7 Sprachen."
+      },
+      {
+        "question": "Wie werden Zahlungen abgewickelt?",
+        "answer": "Wir stellen sichere Zahlungslinks direkt im Chat bereit."
+      },
+      {
+        "question": "Was passiert, wenn die KI nicht antworten kann?",
+        "answer": "Sie übergibt das Gespräch an einen menschlichen Mitarbeiter."
+      }
+    ]
+  },
+  "heroChat": {
+    "preChat1": "Hallo 👋 Willkommen bei Innhance AI<br/>Wie kann ich heute helfen?",
+    "preChat2": "Ist das Deluxe Zimmer für den 24. Dez verfügbar?",
+    "preChat3": "Ja! Das Deluxe Zimmer ist verfügbar.",
+    "preChat4": "Der Preis beträgt ₹8.999/Nacht.",
+    "preChat5": "Soll ich den Zahlungslink zur Bestätigung senden?",
+    "preChat6": "Ja, bitte senden.",
+    "preChat7": "Hier ist Ihr Zahlungslink",
+    "payNow": "🔗 Jetzt Bezahlen",
+    "initialBot": "Hallo 👋 Ich bin Ihr Innhance AI Assistent. Stellen Sie eine Frage oder wählen Sie eine Option!",
+    "greetingReply": "Wie kann ich helfen? 😊",
+    "fallbackReply": "Ich bin ein Demo-Bot! Um komplexe Fragen zu stellen, buchen Sie bitte eine Demo! 🚀",
+    "q1Text": "Was ist Innhance?",
+    "q1Answer": "Innhance hilft Hotels, die Gästekommunikation durch KI zu automatisieren.",
+    "q2Text": "Wie hilft es Hotels?",
+    "q2Answer": "Es wandelt Anfragen sofort in Buchungen um und spart Zeit.",
+    "q3Text": "Funktioniert es mit WhatsApp?",
+    "q3Answer": "Ja. Innhance interagiert direkt über WhatsApp."
+  }
+}

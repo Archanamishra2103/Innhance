@@ -1,0 +1,670 @@
+{
+  "navbar": {
+    "about": "Tentang",
+    "features": "Fitur",
+    "analytics": "Analitik",
+    "pricing": "Harga",
+    "lifeAtInnhance": "Kehidupan di Innhance",
+    "bookDemo": "Pesan Demo"
+  },
+  "hero": {
+    "turn": "Ubah",
+    "whatsapp": "WhatsApp",
+    "chats": "Obrolan",
+    "into": "Menjadi",
+    "hotelBookings": "Pemesanan Hotel",
+    "badgeText": "AI WhatsApp #1 untuk Hotel di India",
+    "subheadline": "Innhance adalah agen AI WhatsApp cerdas yang dengan mulus mengubah pertanyaan tamu menjadi pemesanan terkonfirmasi untuk hotel butik Anda.",
+    "getStarted": "Mulai",
+    "bookADemo": "Pesan Demo",
+    "noCreditCard": "Tanpa kartu kredit",
+    "setupIn5Min": "Penyiapan dalam 5 menit",
+    "builtForHotels": "Dibuat untuk hotel",
+    "floaterAutoReplies": "Balasan Otomatis",
+    "floaterNoLimits": "0% Batasan",
+    "floaterAiTrained": "Terlatih AI",
+    "innhanceAi": "Innhance AI",
+    "messages": "Pesan",
+    "metrics": "Metrik",
+    "mockUserQuestion": "Apakah Kamar Deluxe tersedia untuk 24 Des?",
+    "mockBotReply": "Ya! Kamar Deluxe tersedia. Harga ₹8,999/malam.",
+    "mockPaymentLink": "Tautan pembayaran terlampir:",
+    "payNow": "Bayar Sekarang"
+  },
+  "features": {
+    "titleLine1": "Semua alat yang Anda butuhkan.",
+    "titleLine2": "Tanpa kerumitan.",
+    "chatBubbleReceived": "Apakah kamar tersedia?",
+    "chatBubbleSent": "Ya! Kami memiliki 2 kamar saat ini.",
+    "items": [
+      {
+        "title": "Respons Instan",
+        "description": "Balasan didukung AI dalam hitungan detik, memastikan tidak ada pertanyaan tamu yang tidak terjawab, siang atau malam."
+      },
+      {
+        "title": "Dukungan Multi-Bahasa",
+        "description": "Hindi, Inggris, Tamil, Bengali, dan 40+ bahasa untuk melayani semua tamu."
+      },
+      {
+        "title": "Ketersediaan Cerdas",
+        "description": "Sinkronisasi waktu nyata dengan sistem pemesanan Anda. Selalu menampilkan ketersediaan kamar yang akurat."
+      },
+      {
+        "title": "Integrasi UPI & Pembayaran",
+        "description": "Dukungan untuk UPI, kartu, dan semua metode pembayaran populer dengan pemrosesan yang aman."
+      },
+      {
+        "title": "Privasi Data",
+        "description": "Enkripsi tingkat perusahaan dan kepatuhan untuk melindungi informasi tamu."
+      },
+      {
+        "title": "Dasbor Analitik",
+        "description": "Lacak tingkat konversi, waktu respons, dan metrik kepuasan tamu secara waktu nyata."
+      }
+    ]
+  },
+  "guestJourney": {
+    "titleLine1": "Perjalanan tamu otomatis.",
+    "titleLine2": "Dari klik hingga check-in.",
+    "innhanceAiBot": "Bot AI Innhance",
+    "steps": [
+      {
+        "title": "Tamu Mengirim Pesan",
+        "description": "Calon tamu mengirim pesan ke hotel Anda di WhatsApp dengan pertanyaan pemesanan."
+      },
+      {
+        "title": "AI Memproses Permintaan",
+        "description": "Innhance AI memahami niat, memeriksa ketersediaan, dan menyusun balasan."
+      },
+      {
+        "title": "Pemesanan Terkonfirmasi",
+        "description": "Tamu menerima konfirmasi instan, tautan pembayaran, dan detail pemesanan."
+      }
+    ],
+    "chatStep0": "Hai! Apakah Anda memiliki kamar untuk tanggal 15?",
+    "chatStep1Reply": "Memeriksa kalender langsung kami... Ya, kami memiliki Suite Deluxe yang tersedia seharga ₹8,999.",
+    "chatStep2Guest": "Sempurna. Ini pembayaran saya.",
+    "chatStep2Bot": "Pemesanan Terkonfirmasi! ✅"
+  },
+  "omniChannel": {
+    "titleLine1": "Satu Hub.",
+    "titleLine2": "Setiap Saluran tercakup.",
+    "unifiedInbox": "Kotak Masuk Terpadu",
+    "guestName1": "Raj Patel",
+    "guestMsg1": "Butuh kamar untuk 2 malam...",
+    "time1": "Sekarang",
+    "guestName2": "@wanderlust_aditi",
+    "guestMsg2": "Apakah Anda memiliki menu spa?",
+    "time2": "5m",
+    "guestName3": "Sanjay Mehra",
+    "guestMsg3": "Tertarik dengan pemesanan korporat massal.",
+    "time3": "1j",
+    "onlineWhatsApp": "Online (WhatsApp)",
+    "chatOnWhatsApp": "Obrolan di WhatsApp",
+    "chatReceived": "Hai, saya ingin memeriksa ketersediaan untuk kamar double dari 10 Des hingga 12 Des.",
+    "chatReceivedMeta": "Diterima melalui WhatsApp • 10:42 AM",
+    "chatSent": "Halo Raj! Ya, kami memiliki kamar double standar yang tersedia untuk tanggal tersebut dengan harga ₹4,500/malam. Apakah Anda ingin saya memesankan satu untuk Anda?",
+    "chatSentMeta": "Agen AI • 10:42 AM",
+    "typingPlaceholder": "Mengetik pesan penimpaan manual..."
+  },
+  "bookingEngine": {
+    "titleLine1": "Simpan 100% dari",
+    "titleLine2": "pendapatan Anda.",
+    "description": "OTA mengenakan komisi 15-25%. Innhance memungkinkan tamu untuk memesan langsung di WhatsApp dengan nol biaya komisi, mendukung pembayaran UPI dan Kartu yang mulus secara instan.",
+    "commissionBadge": "Komisi 0% untuk Pemesanan Langsung",
+    "payUPI": "UPI (GPay, PhonePe)",
+    "payCards": "Kartu Kredit / Debit",
+    "payQR": "QR Dinamis",
+    "roomTitle": "Suite Deluxe Sunset",
+    "roomPrice": "₹8,999",
+    "perNight": "/malam",
+    "kingBed": "Tempat Tidur King",
+    "oceanView": "Pemandangan Laut",
+    "processingBooking": "Memproses Pemesanan...",
+    "upiAmount": "₹8,999",
+    "upiMerchant": "Ke: Hotel Heritage",
+    "upiScanToPay": "Pindai untuk Membayar dengan aman melalui UPI"
+  },
+  "contextualHelp": {
+    "switchToHindi": "Beralih ke Bahasa Hindi",
+    "switchToEnglish": "Beralih ke Bahasa Inggris (EN)",
+    "faqPetPolicy": "Kebijakan Hewan Peliharaan",
+    "questionEN": "Apakah Anda mengizinkan hewan peliharaan?",
+    "questionHI": "क्या आप पालतू जानवरों को अनुमति देते हैं?",
+    "answerEN": "Ya! Kami adalah hotel ramah hewan peliharaan. Biaya nominal ₹500/malam berlaku. Kami bahkan menyediakan tempat tidur hewan peliharaan!",
+    "answerHI": "हाँ! हमारा होटल पालतू जानवरों के अनुकूल है। ₹500/रात का मामूली शुल्क लागू होता है। हम पालतू जानवरों के लिए बिस्तर भी प्रदान करते हैं!",
+    "titleLine1": "Berbicara dalam bahasa",
+    "titleLine2": "tamu Anda.",
+    "description": "Jangan kehilangan pemesanan karena kendala bahasa. AI Kontekstual Innhance mengenali 40+ bahasa secara instan dan membalas dengan konteks sadar budaya—mulai dari FAQ tentang kebijakan hewan peliharaan hingga pemesanan kamar lengkap.",
+    "feature1": "Pengenalan niat dinamis",
+    "feature2": "40+ Bahasa Global & India",
+    "feature3": "Basis data FAQ yang telah ditentukan"
+  },
+  "digitalConcierge": {
+    "title": "Pramutamu Digital.",
+    "description": "Jual fasilitas, tangani layanan kamar, dan kelola permintaan tata graha secara instan melalui WhatsApp. Berikan tamu menu digital interaktif yang dapat mereka akses dari ponsel cerdas mereka sendiri.",
+    "guestServices": "Layanan Tamu Digital",
+    "roomBadge": "Kamar 402",
+    "inRoomDining": "Makan di Kamar",
+    "requestTowels": "Minta Handuk",
+    "toastMessage": "Permintaan dikirim ke meja!"
+  },
+  "analyticsPreview": {
+    "titleLine1": "Berhenti menebak.",
+    "titleLine2": "Mulai mengoptimalkan.",
+    "description": "Dasbor tunggal terpadu kami memberi Anda wawasan mendalam tentang niat tamu, efisiensi respons, dan tingkat konversi pemesanan langsung. Temukan dengan tepat berapa banyak pendapatan yang hilang karena \"Pajak Keheningan\" (penurunan malam hari).",
+    "viewDemoDashboard": "Lihat Dasbor Demo Langsung",
+    "conversionFunnel": "Corong Konversi",
+    "totalInquiries": "Total Pertanyaan",
+    "aiHandled": "Ditangani AI",
+    "bookings": "Pemesanan",
+    "silenceTaxTitle": "Pajak Keheningan (12AM - 6AM)",
+    "recoveredNightLeads": "Prospek Malam yang Dipulihkan",
+    "recoveredValue": "+ ₹1.4L"
+  },
+  "testimonials": {
+    "marqueeText": "TESTIMONI • HASIL • KESUKSESAN • ULASAN • TESTIMONI • HASIL",
+    "quote": "Innhance ne hamari booking process completely transform kar di. Pehle hum raat ke inquiries miss kar dete the, ab 98% messages bookings mein convert ho rahe hain.",
+    "author": "Harshvardhan Singh",
+    "role": "Pemilik, The Heritage, Jaipur",
+    "results": [
+      {
+        "metric": "15+",
+        "title": "Hemat Jam Mingguan"
+      },
+      {
+        "metric": "35%",
+        "title": "Tingkatkan Pendapatan"
+      },
+      {
+        "metric": "98%",
+        "title": "Konversi Pertanyaan"
+      },
+      {
+        "metric": "Top",
+        "title": "Tingkatkan Kepuasan Tamu"
+      }
+    ]
+  },
+  "pricing": {
+    "titleLine1": "Harga langsung.",
+    "titleLine2": "Tanpa biaya tersembunyi.",
+    "launchOfferTitle": "🎉 Penawaran Peluncuran Khusus untuk Hotel di India!",
+    "launchOfferDesc": "",
+    "mostPopular": "Paling Populer",
+    "choose": "Pilih",
+    "plans": [
+      {
+        "tier": "Pemula",
+        "subtitle": "",
+        "price": "₹4999/bln",
+        "description": "Sempurna untuk hotel butik kecil yang baru memulai",
+        "features": [
+          "Hingga 500 percakapan/bulan",
+          "Dukungan Hindi & Inggris",
+          "Integrasi WhatsApp",
+          "Dasbor analitik dasar",
+          "Dukungan email",
+          "Pembayaran UPI & Kartu",
+          "Respons AI 24/7"
+        ]
+      },
+      {
+        "tier": "Profesional",
+        "subtitle": "",
+        "price": "₹7999/bln",
+        "description": "Ideal untuk hotel yang berkembang dengan volume pemesanan lebih tinggi",
+        "features": [
+          "Hingga 2.000 percakapan/bulan",
+          "Semua bahasa India (15+)",
+          "WhatsApp Business API",
+          "Analitik & wawasan tingkat lanjut",
+          "Dukungan telepon & obrolan prioritas",
+          "Semua metode pembayaran",
+          "Pencitraan merek kustom",
+          "Pengumpulan umpan balik tamu"
+        ]
+      },
+      {
+        "tier": "Perusahaan",
+        "subtitle": "",
+        "price": "Harga Kustom",
+        "description": "Untuk jaringan hotel dan properti mewah",
+        "features": [
+          "Percakapan tanpa batas",
+          "40+ bahasa global",
+          "Manajemen multi-properti",
+          "Manajer akun khusus",
+          "Dukungan prioritas 24/7",
+          "Pelatihan AI kustom",
+          "Akses API",
+          "Solusi label putih",
+          "Keamanan & kepatuhan tingkat lanjut",
+          "Integrasi kustom"
+        ]
+      }
+    ]
+  },
+  "cta": {
+    "headingLine1": "Kendalikan",
+    "headingLine2": "pendapatan WhatsApp Anda.",
+    "description": "Bergabunglah dengan gerakan hotel berpikiran maju yang mengoptimalkan perjalanan tamu mereka dengan Innhance.",
+    "bookDemoToday": "Pesan Demo Hari Ini",
+    "contactSales": "Hubungi Penjualan"
+  },
+  "footer": {
+    "companyDescription": "Innhance adalah agen AI WhatsApp cerdas yang dengan mulus mengubah pertanyaan tamu menjadi pemesanan terkonfirmasi untuk hotel butik Anda.",
+    "product": "Produk",
+    "featuresLink": "Fitur",
+    "integrationsLink": "Integrasi",
+    "pricingLink": "Harga",
+    "resources": "Sumber Daya",
+    "documentation": "Dokumentasi",
+    "helpCenter": "Pusat Bantuan",
+    "blog": "Blog",
+    "company": "Perusahaan",
+    "aboutUs": "Tentang Kami",
+    "lifeAtInnhance": "Kehidupan Di Innhance",
+    "privacyPolicy": "Kebijakan Privasi",
+    "contact": "Kontak",
+    "copyright": "© {{year}} Innhance. Semua hak dilindungi undang-undang."
+  },
+  "storytelling": {
+    "headerLine1": "\"Bagaimana Semua Ini Dimulai: \"",
+    "headerBadge": "Awal dari Innhance",
+    "panels": [
+      {
+        "heading": "Gesekan",
+        "description": "Arnav duduk larut malam, laptop terbuka, Beberapa tab hotel, obrolan WhatsApp, halaman pemesanan",
+        "dialogue": "Mengapa memesan hotel masih serumit ini?",
+        "stage": ""
+      },
+      {
+        "heading": "Frustrasi",
+        "description": "Situs web hotel: balasan lambat \n OTA: komisi tinggi \n WhatsApp: tidak ada tanggapan",
+        "dialogue": "Hotel kehilangan pelanggan… bukan karena permintaan tetapi karena mereka menjawab terlalu lambat",
+        "stage": ""
+      },
+      {
+        "heading": "Kesenjangan",
+        "description": "Di sinilah hotel kehilangan uang setiap hari",
+        "dialogue": "Tidak ada balasan… mengetik… menghilang",
+        "stage": ""
+      },
+      {
+        "heading": "Kesadaran",
+        "description": "Arnav melihat WhatsApp",
+        "dialogue": "Bagaimana jika pemesanan bisa terjadi secara instan… di WhatsApp itu sendiri?",
+        "stage": ""
+      },
+      {
+        "heading": "Ide",
+        "description": "Arnav berpikir / membuat sketsa",
+        "dialogue": "AI yang membalas secara instan menjawab pertanyaan dan mengubah obrolan menjadi pemesanan",
+        "stage": ""
+      },
+      {
+        "heading": "Masuk Khushi",
+        "description": "Percakapan santai / adegan kopi",
+        "dialogue": "Saya bertemu Khushi yang memahami pertumbuhan, distribusi, dan cara membawa ini ke pasar..\n Ini bukan hanya alat, ini dapat mengubah cara hotel menjual",
+        "stage": ""
+      },
+      {
+        "heading": "Pembangunan Dimulai",
+        "description": "Panggilan larut malam, layar Figma, alur WhatsApp",
+        "dialogue": "Sekarang kami membutuhkan seseorang yang dapat membangun ini dengan cepat",
+        "stage": ""
+      },
+      {
+        "heading": "Masuk Harsh (Pengembang Full Stack)",
+        "description": "Layar pengkodean, API, integrasi WhatsApp",
+        "dialogue": "Lalu datanglah Harsh yang mengubah ide menjadi produk nyata",
+        "stage": ""
+      },
+      {
+        "heading": "Visi Pertama",
+        "description": "Bot WhatsApp Bekerja \n Versi kerja pertama kami sederhana tetapi berhasil",
+        "dialogue": "Tamu: Harga? \n Bot: Berikut adalah opsi kamar Anda",
+        "stage": ""
+      },
+      {
+        "heading": "Kemenangan Pertama",
+        "description": "Pendaftaran hotel \n Obrolan yang mengkonversi",
+        "dialogue": "Hotel mulai membalas secara instan \n Tamu mulai memesan langsung",
+        "stage": ""
+      },
+      {
+        "heading": "Pergeseran",
+        "description": "Visual OTA vs Pemesanan langsung",
+        "dialogue": "Kurangnya ketergantungan pada OTA \n Lebih banyak pemesanan langsung",
+        "stage": ""
+      },
+      {
+        "heading": "Hari Ini",
+        "description": "Tim bersama",
+        "dialogue": "Innhance lahir \n untuk membantu hotel mengubah percakapan menjadi pendapatan",
+        "stage": ""
+      },
+      {
+        "heading": "Bingkai branding bersih",
+        "description": "Dari pesan yang terlewat \n hingga pemesanan yang terkonfirmasi",
+        "dialogue": "Ini Innhance",
+        "stage": ""
+      }
+    ]
+  },
+  "lifeAtInnhance": {
+    "meet": "Temui",
+    "teamInnhance": "TIM INNHANCE",
+    "thisIsInnhance": "Ini Innhance",
+    "team": [
+      {
+        "name": "Arnav",
+        "role": "Pendiri",
+        "text": "Berjalan pada ide, ambisi, dan entah bagaimana… nol tidur\nMode 24×7 bukanlah sebuah fase, ini adalah gaya hidup"
+      },
+      {
+        "name": "Khushi",
+        "role": "Mitra Pertumbuhan",
+        "text": "Kopi pertama, strategi belakangan\nJika kopi berhenti, pertumbuhan berhenti"
+      },
+      {
+        "name": "Harsh",
+        "role": "Pengembang Full Stack",
+        "text": "\"Secara teknis mungkin\" adalah bahasa cintanya\nMembangun hal-hal yang bahkan tidak kami sadari kami butuhkan"
+      },
+      {
+        "name": "Alankrita",
+        "role": "Penjualan",
+        "text": "Selalu di telepon atau akan di telepon\nPanggilan dingin tetapi konversi hangat"
+      },
+      {
+        "name": "Archana",
+        "role": "Frontend",
+        "text": "Energi burung hantu malam\nUI menjadi lebih baik setelah jam 2 pagi"
+      }
+    ]
+  },
+  "aiConsole": {
+    "badge": "DIBUAT UNTUK HOTEL",
+    "headingLine1": "Mesin Pemesanan Bertenaga AI",
+    "headingLine2": "24/7 Anda",
+    "description": "Ubah WhatsApp hotel Anda menjadi mesin penghasil pendapatan. Secara instan menjawab pertanyaan tamu, membagikan ketersediaan, dan menyelesaikan pemesanan langsung dengan autopilot saat meja depan Anda tidur.",
+    "seeAiInAction": "Lihat AI Beraksi",
+    "avgResponseTime": "Rata-rata Waktu Respons",
+    "directBookings": "Pemesanan Langsung",
+    "queriesResolved": "Pertanyaan Terselesaikan Tanpa Agen Manusia"
+  },
+  "chatDemo": {
+    "liveDemo": "Demo Langsung",
+    "seeItHeading": "Lihat",
+    "inAction": "beraksi",
+    "description": "Ini adalah percakapan nyata yang ditangani Innhance AI saat pemilik hotel tertidur. Tamu memesan kamar — tanpa keterlibatan manusia sedikit pun.",
+    "check1": "Tamu mengirim pesan dalam bahasa Hindi pada pukul 2:47 AM",
+    "check2": "AI membalas dalam 1.2 detik",
+    "check3": "Menawarkan paket sarapan (+₹1,200)",
+    "check4": "Pemesanan terkonfirmasi. Pembayaran dikumpulkan.",
+    "bookFreeDemo": "Pesan Demo Gratis",
+    "tryItNow": "Coba Sekarang",
+    "innhanceAi": "Innhance AI",
+    "onlineInstant": "● Online · Balasan instan"
+  },
+  "howItWorks": {
+    "sectionLabel": "Cara Kerjanya",
+    "heading": "Tiga Langkah Menuju Otomatisasi",
+    "subheading": "Dari pertanyaan hingga pembayaran, Innhance menangani seluruh perjalanan pemesanan di WhatsApp — secara otomatis.",
+    "steps": [
+      {
+        "title": "Tamu Mengirim Pesan Kepada Anda",
+        "description": "Calon tamu mengirim pesan ke hotel Anda di WhatsApp, menanyakan tentang kamar, ketersediaan, atau harga."
+      },
+      {
+        "title": "Innhance AI Membalas",
+        "description": "AI secara instan memeriksa ketersediaan, harga, dan menjawab dalam bahasa tamu — Hindi, Tamil, Inggris, atau salah satu dari 15+ bahasa yang didukung."
+      },
+      {
+        "title": "Pemesanan Terkonfirmasi",
+        "description": "Tamu membayar melalui UPI atau kartu, sistem memperbarui kalender Anda, dan hotel Anda mendapatkan notifikasi. Semuanya otomatis."
+      }
+    ]
+  },
+  "results": {
+    "sectionLabel": "Hasil Nyata",
+    "heading": "Angka yang",
+    "headingEmphasis": "berbicara sendiri",
+    "subheading": "Dikumpulkan dari 200+ hotel yang menggunakan Innhance untuk mengotomatiskan pemesanan WhatsApp selama 12 bulan terakhir.",
+    "testimonials": [
+      {
+        "quote": "\"Pehle hum night inquiries miss kar dete the. Ab 98% inquiries convert hoti hain — without any manual effort.\"",
+        "author": "Harshvardhan Singh",
+        "role": "Pemilik, The Heritage",
+        "stats": [
+          "+₹2.4L",
+          "98%",
+          "12 jam"
+        ],
+        "statsLabels": [
+          "Ekstra/bulan",
+          "Konversi",
+          "Dihemat/minggu"
+        ]
+      },
+      {
+        "quote": "\"Season mein 400+ inquiries per day aate hain. Innhance sab handle karta hai — sales up by 42%.\"",
+        "author": "Priya Menon",
+        "role": "Pemilik, Coastline Stays",
+        "stats": [
+          "400+",
+          "+42%"
+        ],
+        "statsLabels": [
+          "Pesan/hari",
+          "Pendapatan"
+        ]
+      }
+    ]
+  },
+  "roi": {
+    "title": "Kalkulator ROI",
+    "monthlyInquiries": "Pertanyaan WhatsApp Bulanan",
+    "currentConversion": "Konversi Saat Ini %",
+    "avgBookingValue": "Nilai Rata-rata Pemesanan",
+    "expectedImprovement": "Peningkatan yang Diharapkan",
+    "staffCostHr": "Biaya Staf/Jam",
+    "estMonthlyValue": "Perkiraan Nilai Bulanan Dibuat",
+    "extraRevYr": "Pendapatan Ekstra/thn",
+    "extraBookings": "Pemesanan Ekstra",
+    "staffSavings": "Penghematan Staf",
+    "bookDemo": "Pesan Demo",
+    "disclaimer": "Hanya perkiraan. Hasil aktual mungkin berbeda.",
+    "mo": "bln",
+    "h": "j",
+    "staffHrsDay": "Staff Hrs/Day"
+  },
+  "about": {
+    "subtitle": "TENTANG INNHANCE",
+    "titleLine1": "Dibuat untuk hotel yang berjalan pada",
+    "titleHighlight": "hubungan",
+    "titleLine2": ", bukan spreadsheet.",
+    "description": "Hotel butik di India dibangun di atas kehangatan dan sentuhan pribadi, namun sebagian besar masih kehilangan pemesanan karena pesan WhatsApp tengah malam yang tidak terjawab. Innhance mengubah itu.",
+    "stat1Text": "Otomatisasi pemesanan",
+    "stat1TextEnd": ", bahkan saat Anda tidur",
+    "stat2Text": "Bahasa yang ditangani oleh",
+    "stat2TextEnd": "Agen AI",
+    "stat3Text": "Hilang karena pertanyaan tidak terjawab,",
+    "stat3TextEnd": "tidak pernah lagi",
+    "problemHeading": "Masalah yang kami selesaikan",
+    "problemText1": "Sebuah haveli warisan di Rajasthan tidak seharusnya membutuhkan meja reservasi penuh waktu. Kami memberikan properti butik",
+    "problemHighlight": "kecerdasan pemesanan tingkat perusahaan",
+    "problemText2": "disampaikan melalui aplikasi yang sudah digunakan tamu Anda.",
+    "approachHeading": "Pendekatan kami",
+    "approachText1": "Kami tidak menggantikan tuan rumah. Kami membebaskan mereka. Innhance menangani percakapan sehingga pemilik hotel dapat",
+    "approachHighlight": "fokus pada momen yang penting",
+    "approachText2": ", penyambutan, cerita, pengalaman.",
+    "beliefsTitle": "APA YANG KAMI YAKINI",
+    "belief1": "Keramahan diutamakan",
+    "belief2": "Kecepatan dengan kehangatan",
+    "belief3": "Dibuat di India",
+    "belief4": "Ramah bagi pemilik",
+    "founderNote": "CATATAN PENDIRI",
+    "founderQuote": "\"Kami membangun Innhance karena kami melihat pengusaha hotel yang brilian kehilangan pemesanan karena balasan yang lambat, bukan layanan yang lambat. Keramahan selalu ada. Teknologinya saja yang tidak. Sekarang sudah ada.\""
+  },
+  "hero_extra": {
+    "trusted": "Dipercaya oleh 50+ hotel",
+    "scroll": "Gulir untuk menjelajahi",
+    "clickPhone": "Klik pada telepon",
+    "tryDemo": "untuk mencoba obrolan demo"
+  },
+  "testimonials_section": {
+    "heading1": "Membangun kepercayaan",
+    "heading2": "Pemilik Hotel Teratas",
+    "subtitle": "Lihat bagaimana properti mengubah pengalaman tamu mereka.",
+    "items": [
+      {
+        "category": "Pemesanan ↑",
+        "quote": "Resepsionis kami dulu kewalahan dengan pesan WhatsApp. Sekarang AI menangani 90% darinya dan pemesanan langsung kami melonjak tajam.",
+        "author": "Nd Manor",
+        "role": "",
+        "property": "",
+        "location": "Dehradun",
+        "initials": "NM",
+        "featured": false
+      },
+      {
+        "category": "Kepuasan Tamu",
+        "quote": "Yang membuat saya kagum adalah betapa alaminya ia berbicara. Mereka pikir mereka mengobrol dengan manajer kami.",
+        "author": "Fateh Villas",
+        "role": "",
+        "property": "",
+        "location": "Udaipur",
+        "initials": "FV",
+        "featured": false
+      },
+      {
+        "category": "Pendapatan",
+        "quote": "Di Manali jaringan bisa bermasalah. Alat ini membalas secara instan. Komisi OTA kami telah turun secara signifikan.",
+        "author": "14 gable",
+        "role": "",
+        "property": "",
+        "location": "Manali",
+        "initials": "1G",
+        "featured": false
+      },
+      {
+        "category": "Hemat Waktu",
+        "quote": "Kami mendapat banyak turis asing. Bot membalas dalam bahasa ibu mereka dan menangani tautan pembayaran dengan sempurna.",
+        "author": "Seven Seas",
+        "role": "",
+        "property": "",
+        "location": "Rishikesh",
+        "initials": "SS",
+        "featured": false
+      },
+      {
+        "category": "Pemesanan ↑",
+        "quote": "Mengelola pemesanan grup dulu memakan waktu berhari-hari. Sekarang bot menjawab semua pertanyaan umum secara instan.",
+        "author": "Bindram Palace",
+        "role": "",
+        "property": "",
+        "location": "Rishikesh",
+        "initials": "BP",
+        "featured": false
+      },
+      {
+        "category": "Kepuasan Tamu",
+        "quote": "Saya skeptis, tetapi penyiapannya sangat mudah. Tamu menyukai balasan instan. Sangat direkomendasikan untuk hotel butik.",
+        "author": "Meeram Ganga",
+        "role": "",
+        "property": "",
+        "location": "Rishikesh",
+        "initials": "MG",
+        "featured": true
+      },
+      {
+        "category": "Pendapatan",
+        "quote": "Bagian terbaiknya adalah bagaimana ia menangani pertanyaan larut malam. Kami tidak lagi kehilangan pemesanan.",
+        "author": "Panabi Resorts",
+        "role": "",
+        "property": "",
+        "location": "Rishikesh",
+        "initials": "PR",
+        "featured": false
+      },
+      {
+        "category": "Hemat Waktu",
+        "quote": "Tingkat konversi obrolan WhatsApp kami telah berlipat ganda. Ini berbagi gambar dan ketersediaan yang tepat dengan lancar.",
+        "author": "Hotel Gorbandh",
+        "role": "",
+        "property": "",
+        "location": "Udaipur",
+        "initials": "HG",
+        "featured": false
+      },
+      {
+        "category": "Pemesanan ↑",
+        "quote": "Wisatawan akhir pekan menanyakan pertanyaan yang sama tentang parkir. Bot mengurus semua itu secara otomatis.",
+        "author": "Hotel Old Town",
+        "role": "",
+        "property": "",
+        "location": "Neemrana",
+        "initials": "HO",
+        "featured": false
+      },
+      {
+        "category": "Pendapatan",
+        "quote": "Sangat efisien. Kami dulu membayar komisi besar, tetapi sekarang AI mendorong pemesanan langsung ke akun kami.",
+        "author": "Hotel Mani International",
+        "role": "",
+        "property": "",
+        "location": "Patna",
+        "initials": "HM",
+        "featured": false
+      }
+    ]
+  },
+  "faq_section": {
+    "title": "Penasaran? Mari perjelas.",
+    "subtitle": "Segala yang perlu Anda ketahui tentang mesin pemesanan WhatsApp Innhance.",
+    "items": [
+      {
+        "question": "Seberapa cepat Innhance merespons?",
+        "answer": "Innhance merespons secara instan, biasanya dalam hitungan detik."
+      },
+      {
+        "question": "Dapatkah saya mengintegrasikan Innhance dengan PMS saya?",
+        "answer": "Ya! Innhance terintegrasi mulus dengan sebagian besar PMS."
+      },
+      {
+        "question": "Apakah Innhance mendukung banyak bahasa?",
+        "answer": "Tentu. Innhance mendukung lebih dari 7 bahasa."
+      },
+      {
+        "question": "Bagaimana pembayaran ditangani di WhatsApp?",
+        "answer": "Kami menyediakan tautan pembayaran yang aman langsung di dalam obrolan."
+      },
+      {
+        "question": "Apa yang terjadi jika AI tidak dapat menjawab?",
+        "answer": "Ini mentransfer percakapan ke anggota staf manusia tanpa disadari tamu."
+      }
+    ]
+  },
+  "heroChat": {
+    "preChat1": "Halo 👋 Selamat datang di Innhance AI<br/>Bagaimana saya bisa membantu?",
+    "preChat2": "Apakah Kamar Deluxe tersedia untuk 24 Des?",
+    "preChat3": "Ya! Kamar Deluxe tersedia.",
+    "preChat4": "Tarifnya ₹8,999/malam.",
+    "preChat5": "Haruskah saya membagikan tautan pembayaran?",
+    "preChat6": "Ya, tolong bagikan.",
+    "preChat7": "Berikut tautan pembayaran Anda",
+    "payNow": "🔗 Bayar Sekarang",
+    "initialBot": "Halo 👋 Saya asisten Innhance AI Anda. Ajukan pertanyaan atau pilih opsi!",
+    "greetingReply": "Bagaimana saya bisa membantu? 😊",
+    "fallbackReply": "Saya bot demo! Untuk melihat kemampuan penuh saya, pesan demo! 🚀",
+    "q1Text": "Apa itu Innhance?",
+    "q1Answer": "Innhance membantu hotel mengotomatiskan komunikasi tamu dengan AI.",
+    "q2Text": "Bagaimana itu membantu hotel?",
+    "q2Answer": "Ini mengubah pertanyaan menjadi pemesanan langsung, menghemat waktu.",
+    "q3Text": "Apakah ini berfungsi dengan WhatsApp?",
+    "q3Answer": "Ya. Innhance berinteraksi langsung melalui WhatsApp."
+  }
+}

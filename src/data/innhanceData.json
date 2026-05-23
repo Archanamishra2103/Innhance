@@ -66,31 +66,26 @@
       "dialogue": "What if bookings could happen instantly… on WhatsApp itself?",
       "image": "/assets/about.pics/test2.jpeg"
     },
-    
     {
-      
       "heading": "The Idea",
       "description": "Arnav thinking / sketching",
       "dialogue": "An AI that replies instantly answers queries and converts chats into bookings",
       "image": "/assets/about.pics/test.jpeg"
     },
     {
-      
-      "heading": "Enters Khushi",
+      "heading": "Partners",
       "description": "Casual conversation / coffee scene",
-      "dialogue": "I met Khushi who understood growth, distribution, and how to take this to market..\n This is not just a tool,this can change how hotels sell",
+      "dialogue": "I met people who understood growth, distribution, and how to take this to market..\n This is not just a tool,this can change how hotels sell",
       "image": "/assets/about.pics/test4.jpeg"
     },
     {
-     
       "heading": "The Build Begins",
       "description": "Late night calls, Figma screens, WhatsApp flows",
       "dialogue": "Now we needed someone who could build this fast",
       "image": "/assets/about.pics/test6.jpeg"
     },
     {
-      
-      "heading": "Enters Harsh (Full Stack Dev)",
+      "heading": "Developing Phase",
       "description": "Coding screen, APIs, WhatsApp integrations",
       "dialogue": "Then came Harsh who turned the idea into an actual product",
       "image": "/assets/about.pics/test7.jpeg"
@@ -125,8 +120,6 @@
       "dialogue": "This is Innhance",
       "image": "/assets/about.pics/test12.jpeg"
     }
-    
-
   ],
   "features": [
     {
@@ -137,7 +130,7 @@
     {
       "icon": "Globe",
       "title": "Multi-Language Support",
-      "description": "Hindi, English, Tamil, Bengali, and 40+ languages to serve all Indian guests."
+      "description": "Hindi, English, Arabic, Spanish, and more languages to serve all  guests."
     },
     {
       "icon": "CalendarCheck",
@@ -230,7 +223,6 @@
       "description": "Ideal for growing hotels with higher booking volume",
       "features": [
         "Up to 2,000 conversations/month",
-        "All Indian languages (15+)",
         "WhatsApp Business API",
         "Advanced analytics & insights",
         "Priority phone & chat support",
@@ -247,7 +239,7 @@
       "description": "For hotel chains and luxury properties",
       "features": [
         "Unlimited conversations",
-        "40+ global languages",
+        "5+ global languages",
         "Multi-property management",
         "Dedicated account manager",
         "24/7 priority support",
@@ -263,5 +255,27 @@
   "launchOffer": {
     "title": "🎉 Special Launch Offer for Indian Hotels!",
     "description": ""
-  }
+  },
+  "faqs": [
+    {
+      "question": "How quickly does Innhance respond to guests?",
+      "answer": "Innhance responds to guests instantly, usually within seconds. This ensures that no inquiry goes unanswered and helps improve booking conversion rates."
+    },
+    {
+      "question": "Can I integrate Innhance with my existing property management system (PMS)?",
+      "answer": "Yes! Innhance integrates seamlessly with most major PMS and booking engines, allowing real-time availability sync and instant booking confirmation."
+    },
+    {
+      "question": "Does Innhance support multiple languages?",
+      "answer": "Absolutely. Innhance supports over 7 languages, including Hindi, English,Spanish,Arabic etc. ensuring you can serve guests from anywhere in their preferred language."
+    },
+    {
+      "question": "How are payments handled on WhatsApp?",
+      "answer": "We provide secure UPI and Card payment links directly within the WhatsApp chat. Guests can pay quickly and safely, and the payment is routed directly to your hotel's account."
+    },
+    {
+      "question": "What happens if the AI cannot answer a question?",
+      "answer": "If Innhance encounters a complex query it cannot handle, it seamlessly transfers the conversation to a human staff member, notifying them so they can take over without the guest noticing."
+    }
+  ]
 }

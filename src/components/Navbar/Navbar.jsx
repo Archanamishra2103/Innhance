@@ -1,9 +1,12 @@
 import { useState, useRef, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 import gsap from 'gsap'
 import { Bot, Menu, X } from 'lucide-react'
+import LanguageSwitcher from './LanguageSwitcher'
 import './Navbar.css'
 
 export default function Navbar({ currentView, setCurrentView }) {
+  const { t, i18n } = useTranslation()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const navRef = useRef(null)
 
@@ -43,19 +46,32 @@ export default function Navbar({ currentView, setCurrentView }) {
         <ul className="navbar-links desktop-only">
           <li>
             <a href="#" onClick={(e) => { e.preventDefault(); setCurrentView('about'); window.scrollTo(0,0); }} className={currentView === 'about' ? 'active-link' : ''}>
-              About
+              {t("navbar.about")}
             </a>
           </li>
-          <li><a href="#features" onClick={() => setCurrentView('home')}>Features</a></li>
-          <li><a href="#analytics" onClick={() => setCurrentView('home')}>Analytics</a></li>
-          <li><a href="#pricing" onClick={() => setCurrentView('home')}>Pricing</a></li>
+          <li><a href="#features" onClick={() => setCurrentView('home')}>{t("navbar.features")}</a></li>
+          <li><a href="#analytics" onClick={() => setCurrentView('home')}>{t("navbar.analytics")}</a></li>
+          <li><a href="#pricing" onClick={() => setCurrentView('home')}>{t("navbar.pricing")}</a></li>
         </ul>
 
         <div className="navbar-actions desktop-only">
-          <a href="https://wa.link/jkc1du" className="btn-life" onClick={(e) => { e.preventDefault(); setCurrentView('life'); window.scrollTo(0,0); }}>Life at Innhance</a>
-          <a href="https://wa.link/jkc1du" target="_blank" rel="noopener noreferrer">
-          <button className="btn-primary">Book Demo</button>
-          </a>
+          {i18n.language === 'ar' ? (
+            <>
+              <LanguageSwitcher />
+              <a href="https://wa.link/jkc1du" target="_blank" rel="noopener noreferrer">
+                <button className="btn-primary">{t("navbar.bookDemo")}</button>
+              </a>
+              <a href="#" className="btn-life" onClick={(e) => { e.preventDefault(); setCurrentView('blog'); window.scrollTo(0,0); }}>{t("navbar.blog")}</a>
+            </>
+          ) : (
+            <>
+              <a href="#" className="btn-life" onClick={(e) => { e.preventDefault(); setCurrentView('blog'); window.scrollTo(0,0); }}>{t("navbar.blog")}</a>
+              <a href="https://wa.link/jkc1du" target="_blank" rel="noopener noreferrer">
+                <button className="btn-primary">{t("navbar.bookDemo")}</button>
+              </a>
+              <LanguageSwitcher />
+            </>
+          )}
         </div>
 
         <button className="mobile-toggle" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -67,15 +83,28 @@ export default function Navbar({ currentView, setCurrentView }) {
       {mobileMenuOpen && (
         <div className="mobile-menu-overlay">
           <div className="mobile-menu-content">
-            <a href="#" onClick={(e) => { e.preventDefault(); setCurrentView('about'); setMobileMenuOpen(false); window.scrollTo(0,0); }}>About</a>
-            <a href="#features" onClick={() => { setCurrentView('home'); setMobileMenuOpen(false); }}>Features</a>
-            <a href="#analytics" onClick={() => { setCurrentView('home'); setMobileMenuOpen(false); }}>Analytics</a>
-            <a href="#pricing" onClick={() => { setCurrentView('home'); setMobileMenuOpen(false); }}>Pricing</a>
+            <a href="#" onClick={(e) => { e.preventDefault(); setCurrentView('about'); setMobileMenuOpen(false); window.scrollTo(0,0); }}>{t("navbar.about")}</a>
+            <a href="#features" onClick={() => { setCurrentView('home'); setMobileMenuOpen(false); }}>{t("navbar.features")}</a>
+            <a href="#analytics" onClick={() => { setCurrentView('home'); setMobileMenuOpen(false); }}>{t("navbar.analytics")}</a>
+            <a href="#pricing" onClick={() => { setCurrentView('home'); setMobileMenuOpen(false); }}>{t("navbar.pricing")}</a>
             <hr />
-            <a href="#" className="btn-life mobile-life" onClick={(e) => { e.preventDefault(); setCurrentView('life'); setMobileMenuOpen(false); window.scrollTo(0,0); }}>Life at Innhance</a>
-            <a href="https://wa.link/jkc1du" target="_blank" rel="noopener noreferrer" className="w-full">
-              <button className="btn-primary w-full">Book Demo</button>
-            </a>
+            {i18n.language === 'ar' ? (
+              <>
+                <LanguageSwitcher mobile={true} />
+                <a href="https://wa.link/jkc1du" target="_blank" rel="noopener noreferrer" className="w-full">
+                  <button className="btn-primary w-full">{t("navbar.bookDemo")}</button>
+                </a>
+                <a href="#" className="btn-life mobile-life" onClick={(e) => { e.preventDefault(); setCurrentView('blog'); setMobileMenuOpen(false); window.scrollTo(0,0); }}>{t("navbar.blog")}</a>
+              </>
+            ) : (
+              <>
+                <a href="#" className="btn-life mobile-life" onClick={(e) => { e.preventDefault(); setCurrentView('blog'); setMobileMenuOpen(false); window.scrollTo(0,0); }}>{t("navbar.blog")}</a>
+                <a href="https://wa.link/jkc1du" target="_blank" rel="noopener noreferrer" className="w-full">
+                  <button className="btn-primary w-full">{t("navbar.bookDemo")}</button>
+                </a>
+                <LanguageSwitcher mobile={true} />
+              </>
+            )}
           </div>
         </div>
       )}
