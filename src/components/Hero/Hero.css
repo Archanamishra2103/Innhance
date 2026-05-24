@@ -30,7 +30,6 @@
 .blob {
   position: absolute;
   border-radius: 50%;
-  filter: blur(120px);
   z-index: 0;
   opacity: 0.16;
 }
@@ -38,31 +37,28 @@
 .blob-green {
   width: 800px;
   height: 800px;
-  background: var(--color-racing-green);
+  background: radial-gradient(circle, var(--color-racing-green) 0%, transparent 70%);
   bottom: 0%;
   right: -5%;
   opacity: 0.14;
-  filter: blur(140px);
 }
 
 .blob-gold {
   width: 700px;
   height: 700px;
-  background: var(--color-polished-brass);
+  background: radial-gradient(circle, var(--color-polished-brass) 0%, transparent 70%);
   top: 30%;
   right: 25%;
   opacity: 0.12;
-  filter: blur(120px);
 }
 
 .blob-cream {
   width: 300px;
   height: 300px;
-  background: #ffffff;
+  background: radial-gradient(circle, #ffffff 0%, transparent 70%);
   top: 15%;
   left: 20%;
   opacity: 0.2;
-  filter: blur(80px);
 }
 
 /* ===== LAYOUT ===== */
@@ -313,8 +309,8 @@
   width: 560px;
   height: 560px;
   border-radius: 50%;
-  filter: blur(85px);
   opacity: 0.95;
+  will-change: transform;
 }
 
 .hero-blob-gold {
@@ -467,10 +463,10 @@
   width: 220px;
   height: 14px;
   background: radial-gradient(ellipse at center, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 70%);
-  filter: blur(5px);
   border-radius: 50%;
   z-index: 2;
   pointer-events: none;
+  will-change: transform, opacity;
 }
 
 .hero-phone-frame {
@@ -525,10 +521,9 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('/assets/blurhotel.png');
+  background-image: url('/assets/blurhotel.webp');
   background-size: cover;
   background-position: center;
-  filter: blur(4px) brightness(0.6);
   z-index: 0;
   pointer-events: none;
 }

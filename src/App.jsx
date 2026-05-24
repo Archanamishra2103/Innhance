@@ -1,22 +1,27 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, lazy, Suspense } from 'react'
 import { useTranslation } from 'react-i18next'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+// Eagerly loaded (Above the fold)
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
-import AboutSection from './components/AboutSection/AboutSection'
-import Features from './components/Features/Features'
-import GuestJourney from './components/GuestJourney/GuestJourney'
-import OmniChannel from './components/CoreModules/OmniChannel'
-import BookingEngine from './components/CoreModules/BookingEngine'
-import ContextualHelp from './components/CoreModules/ContextualHelp'
-import DigitalConcierge from './components/CoreModules/DigitalConcierge'
-import AnalyticsPreview from './components/AnalyticsPreview/AnalyticsPreview'
-import Testimonials from './components/Testimonials/Testimonials'
-import Pricing from './components/Pricing/Pricing'
-import FAQ from './components/FAQ/FAQ'
-import Footer from './components/Footer/Footer'
-import Blog from './components/Blog/Blog'
+
+// Lazy loaded (Below the fold)
+const Features = lazy(() => import('./components/Features/Features'))
+const GuestJourney = lazy(() => import('./components/GuestJourney/GuestJourney'))
+const OmniChannel = lazy(() => import('./components/CoreModules/OmniChannel'))
+const BookingEngine = lazy(() => import('./components/CoreModules/BookingEngine'))
+const ContextualHelp = lazy(() => import('./components/CoreModules/ContextualHelp'))
+const DigitalConcierge = lazy(() => import('./components/CoreModules/DigitalConcierge'))
+const AnalyticsPreview = lazy(() => import('./components/AnalyticsPreview/AnalyticsPreview'))
+const Testimonials = lazy(() => import('./components/Testimonials/Testimonials'))
+const Pricing = lazy(() => import('./components/Pricing/Pricing'))
+const FAQ = lazy(() => import('./components/FAQ/FAQ'))
+const Footer = lazy(() => import('./components/Footer/Footer'))
+const AboutSection = lazy(() => import('./components/AboutSection/AboutSection'))
+const Blog = lazy(() => import('./components/Blog/Blog'))
+const PrivacyPolicy = lazy(() => import('./components/PrivacyPolicy/PrivacyPolicy'))
 
 const RTL_LANGUAGES = ['ar']
 
@@ -44,25 +49,37 @@ function App() {
         {currentView === 'home' ? (
           <>
             <Hero />
-            <Features />
-            <GuestJourney />
-            <OmniChannel />
-            <BookingEngine />
-            <ContextualHelp />
-            <DigitalConcierge />
-            <AnalyticsPreview />
-            <Testimonials />
-            <Pricing />
-            <FAQ />
+            <Suspense fallback={<div style={{ minHeight: '100vh' }}></div>}>
+              <Features />
+              <GuestJourney />
+              <OmniChannel />
+              <BookingEngine />
+              <ContextualHelp />
+              <DigitalConcierge />
+              <AnalyticsPreview />
+              <Testimonials />
+              <Pricing />
+              <FAQ />
+            </Suspense>
           </>
         ) : currentView === 'about' ? (
-          <AboutSection />
+          <Suspense fallback={<div style={{ minHeight: '100vh' }}></div>}>
+            <AboutSection />
+          </Suspense>
+        ) : currentView === 'privacy' ? (
+          <Suspense fallback={<div style={{ minHeight: '100vh' }}></div>}>
+            <PrivacyPolicy />
+          </Suspense>
         ) : (
-          <Blog />
+          <Suspense fallback={<div style={{ minHeight: '100vh' }}></div>}>
+            <Blog />
+          </Suspense>
         )}
       </main>
       
-      <Footer setCurrentView={setCurrentView} />
+      <Suspense fallback={<div style={{ minHeight: '200px' }}></div>}>
+        <Footer setCurrentView={setCurrentView} />
+      </Suspense>
     </div>
   )
 }

@@ -38,7 +38,15 @@ export default function GuestJourney() {
     })
     mm.add("(max-width: 1023px)", () => {
       gsap.utils.toArray('.gj-step-card').forEach(panel => {
-        gsap.from(panel, { scrollTrigger: { trigger: panel, start: "top 80%" }, y: 30, opacity: 0, duration: 0.6 })
+        ScrollTrigger.create({
+          trigger: panel,
+          start: "top center+=20%",
+          end: "bottom center",
+          onEnter: () => gsap.to(panel, { opacity: 1, duration: 0.3 }),
+          onEnterBack: () => gsap.to(panel, { opacity: 1, duration: 0.3 }),
+          onLeave: () => gsap.to(panel, { opacity: 0.3, duration: 0.3 }),
+          onLeaveBack: () => gsap.to(panel, { opacity: 0.3, duration: 0.3 })
+        })
       })
     })
     return () => mm.revert()

@@ -108,7 +108,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  padding: 4px;
+  padding: 12px; /* Increase to ensure 48x48px target */
   pointer-events: auto;
 }
 
@@ -148,6 +148,8 @@
   transition: color 0.3s ease;
   text-align: center;
   text-decoration: none;
+  display: block;
+  padding: 12px; /* Ensure sufficient tap target */
 }
 
 .mobile-menu-content a:hover {

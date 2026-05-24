@@ -39,7 +39,7 @@ export default function Navbar({ currentView, setCurrentView }) {
     <div className="navbar-wrapper">
       <nav ref={navRef} className="navbar-capsule">
         <div className="navbar-logo" onClick={(e) => handleNavClick('home', e)}>
-          <img src="/assets/logo.jpeg" alt="Innhance Logo" className="logo-img" />
+          <img src="/assets/logo.webp" alt="Innhance Logo" className="logo-img" />
           <span className="logo-text">Innhance</span>
         </div>
 

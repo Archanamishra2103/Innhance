@@ -114,12 +114,15 @@ export default function Hero() {
 
     // Mouse Parallax for background blobs AND phone
     const blobs = gsap.utils.toArray('.hero-blob')
-    const phoneEl = document.querySelector('.hero-phone-entrance-wrapper')
+    const xTo = gsap.quickTo(blobs, "x", { duration: 2, ease: "power2.out" })
+    const yTo = gsap.quickTo(blobs, "y", { duration: 2, ease: "power2.out" })
+
     const handleMouseMove = (e) => {
       const { innerWidth, innerHeight } = window
       const xPos = (e.clientX / innerWidth - 0.5) * 40
       const yPos = (e.clientY / innerHeight - 0.5) * 40
-      gsap.to(blobs, { x: xPos, y: yPos, duration: 2, ease: "power2.out", stagger: 0.1 })
+      xTo(xPos)
+      yTo(yPos)
     }
     window.addEventListener('mousemove', handleMouseMove)
 
@@ -317,10 +320,10 @@ export default function Hero() {
           <div className="hero-social-proof">
             <div className="avatar-group">
               {/* Fallback to simple colored circles if images aren't found */}
-              <div className="proof-avatar" style={{backgroundImage: "url('/assets/hotels.img/bindramhotels.jpeg')"}}></div>
-              <div className="proof-avatar" style={{backgroundImage: "url('/assets/hotels.img/hyathotel.jpeg')"}}></div>
-              <div className="proof-avatar" style={{backgroundImage: "url('/assets/hotels.img/kashmirhotel.jpeg')"}}></div>
-              <div className="proof-avatar" style={{backgroundImage: "url('/assets/hotels.img/manihotel.jpeg')"}}></div>
+              <div className="proof-avatar" style={{backgroundImage: "url('/assets/hotels.img/bindramhotels.webp')"}}></div>
+              <div className="proof-avatar" style={{backgroundImage: "url('/assets/hotels.img/hyathotel.webp')"}}></div>
+              <div className="proof-avatar" style={{backgroundImage: "url('/assets/hotels.img/kashmirhotel.webp')"}}></div>
+              <div className="proof-avatar" style={{backgroundImage: "url('/assets/hotels.img/manihotel.webp')"}}></div>
             </div>
             <div className="proof-text">
               <div className="stars">

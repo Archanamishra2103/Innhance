@@ -250,7 +250,7 @@ export default function AboutSection() {
 
       {/* 4. WHAT WE BELIEVE IN */}
       <section className="about-beliefs-container">
-        <h4 className="beliefs-title">{t("about.beliefsTitle")}</h4>
+        <h3 className="beliefs-title">{t("about.beliefsTitle")}</h3>
         <div className="beliefs-pill-wrap">
           <div className="belief-pill" onMouseMove={handlePillMove} onMouseLeave={handlePillLeave}>
             <span>❤️</span> {t("about.belief1")}
@@ -271,16 +271,16 @@ export default function AboutSection() {
       <section className="founder-note-container">
         <div className="founder-note-card">
           <div className="founder-avatar-wrap">
-            <img src="/assets/founderimg.png" alt="Founder" className="founder-avatar" loading="lazy" />
+            <img src="/assets/founderimg.webp" alt="Founder" className="founder-avatar" loading="lazy" />
           </div>
           <div className="founder-content">
-            <h5 className="founder-heading">
+            <h2 className="founder-heading">
               {(t("about.founderNote") || "FOUNDER'S NOTE").split('').map((char, index) => (
                 <span key={index} className="founder-char">{char === ' ' ? '\u00A0' : char}</span>
               ))}
-            </h5>
+            </h2>
             <h3 className="founder-name">Arnav Prabhakar</h3>
-            <h6 className="founder-subheading">Founder & CEO, Innhance.in</h6>
+            <h4 className="founder-subheading">Founder & CEO, Innhance.in</h4>
             <p className="founder-quote">
               {t("about.founderQuote")}
             </p>

@@ -90,7 +90,13 @@ export default function Testimonials() {
       xPercent: -50,
       ease: "none",
       duration: 160, // Slower duration to account for double the items (from 80)
-      repeat: -1
+      repeat: -1,
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: "top bottom",
+        end: "bottom top",
+        toggleActions: "play pause resume pause"
+      }
     });
 
     return () => {
@@ -177,9 +183,9 @@ export default function Testimonials() {
       <div className="container-custom">
         <div className="testi-header">
           <div className="testi-avatar-group">
-            <div className="testi-avatar" style={{backgroundImage: "url('/assets/hotels.img/fatehvhotel.jpeg')"}}></div>
-            <div className="testi-avatar" style={{backgroundImage: "url('/assets/hotels.img/gorbandhhotel.jpeg')"}}></div>
-            <div className="testi-avatar" style={{backgroundImage: "url('/assets/hotels.img/himalayanhotel.jpeg')"}}></div>
+            <div className="testi-avatar" style={{backgroundImage: "url('/assets/hotels.img/fatehvhotel.webp')"}}></div>
+            <div className="testi-avatar" style={{backgroundImage: "url('/assets/hotels.img/gorbandhhotel.webp')"}}></div>
+            <div className="testi-avatar" style={{backgroundImage: "url('/assets/hotels.img/himalayanhotel.webp')"}}></div>
             <div className="testi-avatar-count">50+</div>
           </div>
           <h2 className="testi-title">

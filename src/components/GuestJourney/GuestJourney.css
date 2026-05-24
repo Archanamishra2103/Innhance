@@ -97,9 +97,7 @@
   transition: opacity 0.3s ease;
 }
 
-@media (max-width: 1023px) {
-  .gj-step-card { opacity: 1; }
-}
+
 
 .step-num {
   font-size: 64px;
@@ -277,6 +275,8 @@
 
   .step-num {
     font-size: 48px;
+    color: var(--color-innhance-navy) !important;
+    opacity: 1 !important;
   }
 
   .step-head {
@@ -306,6 +306,8 @@
 
   .step-num {
     font-size: 36px;
+    color: var(--color-innhance-navy) !important;
+    opacity: 1 !important;
   }
 
   .step-head {

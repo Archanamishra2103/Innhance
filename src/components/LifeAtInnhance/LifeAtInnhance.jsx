@@ -8,11 +8,11 @@ import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(ScrollTrigger);
 
 const teamImages = [
-  "/assets/pics.LAI/arnav.jpeg",
-  "/assets/pics.LAI/khushi.jpeg",
-  "/assets/pics.LAI/harsh.jpeg",
-  "/assets/pics.LAI/alankrita.jpeg",
-  "/assets/pics.LAI/archana.jpeg",
+  "/assets/pics.LAI/arnav.webp",
+  "/assets/pics.LAI/khushi.webp",
+  "/assets/pics.LAI/harsh.webp",
+  "/assets/pics.LAI/alankrita.webp",
+  "/assets/pics.LAI/archana.webp",
 ];
 
 export default function LifeAtInnhance() {
@@ -99,7 +99,7 @@ export default function LifeAtInnhance() {
           </div>
           <div className="member-card-wrapper">
             <div className="member-img-box">
-              <img src={teamImages[i]} alt={member.name} />
+              <img src={teamImages[i]} alt={member.name} loading="lazy" decoding="async" />
             </div>
             <div className="member-content">
               <p className="member-role">{member.role}</p>
@@ -119,7 +119,7 @@ export default function LifeAtInnhance() {
         <div className="hero-content">
           <h1 className="hero-title"></h1>
           <div className="hero-image-box">
-            <img src="/assets/pics.LAI/team.jpeg" alt="Hero" />
+            <img src="/assets/pics.LAI/team.webp" alt="Hero" loading="lazy" decoding="async" />
           </div>
           <div className="hero-highlight">{t("lifeAtInnhance.thisIsInnhance")}</div>
         </div>
