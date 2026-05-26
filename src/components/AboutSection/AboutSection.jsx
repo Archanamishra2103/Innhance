@@ -215,15 +215,15 @@ export default function AboutSection() {
       <section className="about-stats-container">
         <div className="about-stat-card">
           <div className="stat-number">24/7</div>
-          <div className="stat-text"><span className="golden-highlight">{t("about.stat1Text")}</span>{t("about.stat1TextEnd")}</div>
+          <div className="stat-text">{t("about.stat1Text")}{t("about.stat1TextEnd")}</div>
         </div>
         <div className="about-stat-card">
           <div className="stat-number"><span className="stat-num-val" data-val="40">0</span>+</div>
-          <div className="stat-text">{t("about.stat2Text")} <span className="golden-highlight">{t("about.stat2TextEnd")}</span></div>
+          <div className="stat-text">{t("about.stat2Text")} {t("about.stat2TextEnd")}</div>
         </div>
         <div className="about-stat-card">
           <div className="stat-number">₹<span className="stat-num-val" data-val="0">0</span></div>
-          <div className="stat-text">{t("about.stat3Text")} <span className="golden-highlight">{t("about.stat3TextEnd")}</span></div>
+          <div className="stat-text">{t("about.stat3Text")} {t("about.stat3TextEnd")}</div>
         </div>
       </section>
 
@@ -234,7 +234,7 @@ export default function AboutSection() {
           <Target size={40} className="split-icon" strokeWidth={1.5} />
           <h2 className="split-heading">{t("about.problemHeading")}</h2>
           <p className="split-content">
-            {t("about.problemText1")} <span className="golden-highlight">{t("about.problemHighlight")}</span> {t("about.problemText2")}
+            {t("about.problemText1")} {t("about.problemHighlight")} {t("about.problemText2")}
           </p>
         </div>
         
@@ -243,7 +243,7 @@ export default function AboutSection() {
           <HeartHandshake size={40} className="split-icon" strokeWidth={1.5} />
           <h2 className="split-heading">{t("about.approachHeading")}</h2>
           <p className="split-content">
-            {t("about.approachText1")} <span className="golden-highlight">{t("about.approachHighlight")}</span>{t("about.approachText2")}
+            {t("about.approachText1")} {t("about.approachHighlight")}{t("about.approachText2")}
           </p>
         </div>
       </section>

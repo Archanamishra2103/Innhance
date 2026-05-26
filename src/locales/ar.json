@@ -623,7 +623,7 @@
       },
       {
         "question": "هل يدعم إنهاوس لغات متعددة؟",
-        "answer": "بالتأكيد. يدعم أكثر من 7 لغات."
+        "answer": "بالتأكيد. يدعم أكثر من 20 لغة."
       },
       {
         "question": "كيف يتم التعامل مع المدفوعات على واتساب؟",
@@ -653,5 +653,702 @@
     "q2Answer": "يحول الاستفسارات إلى حجوزات مؤكدة على الفور، مما يوفر الوقت.",
     "q3Text": "هل يعمل مع واتساب؟",
     "q3Answer": "نعم. يساعد Innhance في التفاعل مباشرة عبر واتساب."
+  },
+  "blog": {
+    "latestInsights": "آخر الآراء",
+    "titlePrefix": "مجلة ",
+    "titleHighlight": "إينهانس",
+    "subtitle": "رؤى واستراتيجيات وتحديثات من تقاطع الضيافة والذكاء الاصطناعي.",
+    "comingSoon": "قريباً",
+    "readArticle": "اقرأ المقال",
+    "posts": [
+      {
+        "id": 1,
+        "title": "كيفية تقليل الاحتكاك عند تسجيل وصول الضيوف باستخدام الأتمتة",
+        "excerpt": "لقد تغير تعريف تجربة الفندق الجيدة. تعرف على كيفية استخدام الفنادق للأتمتة للتخلص من اختناقات تسجيل الوصول.",
+        "date": "26 مايو 2026",
+        "readTime": "قراءة 8 دقائق",
+        "category": "الاستراتيجية",
+        "subtitle": "الدليل خطوة بخطوة لتحسين أوقات تجهيز الغرف",
+        "introductionTitle": "الضيوف المعاصرون لا يريدون 'انتظار الضيافة' بعد الآن",
+        "introductionText": "The definition of a good hotel experience has changed dramatically. Guests still care about comfort, service, cleanliness, and personalization. But increasingly, they also expect instant communication, faster check-ins, real-time updates, and smooth digital experiences. After a long journey, even a 15-minute delay at reception feels frustrating. And for hotels, those delays create operational pressure that spreads across the property: crowded lobbies, stressed front desk teams, delayed housekeeping coordination, slower room allocation, and lower guest satisfaction. This is why hotels are increasingly turning toward automation not to remove hospitality, but to remove friction around it.",
+        "disconnectTitle": "The Real Problem Isn’t Check-In, It’s Operational Disconnect",
+        "disconnectText": "Most hotels already have hardworking teams. The issue is usually not effort. The issue is that operations are still heavily manual and disconnected. A room may already be cleaned, but reception hasn’t received the update yet. A guest may already have completed payment, but staff still manually verify details at the desk. Housekeeping, front office, reservations, and guest communication systems often operate separately. That disconnect creates delays guests immediately feel.",
+        "trendsTitle": "Why Guests Expect Faster Experiences Today",
+        "trendsText": "Traveler behavior has shifted rapidly toward mobile-first convenience. People are used to checking into flights digitally, tracking deliveries in real time, messaging businesses instantly, and completing payments online. Naturally, they now expect hotels to work similarly.",
+        "table1HeaderTrend": "اتجاه سلوك الضيوف",
+        "table1HeaderData": "البيانات",
+        "table1Rows": [
+          {
+            "label": "الضيوف الذين يفضلون تسجيل الوصول عبر الهاتف المحمول",
+            "val": "73%"
+          },
+          {
+            "label": "المسافرون الراغبون في تخطي موظفي الاستقبال",
+            "val": "70%"
+          },
+          {
+            "label": "الضيوف الذين يفضلون الرسائل على المكالمات",
+            "val": "89%"
+          },
+          {
+            "label": "معدل فتح رسائل الواتساب/الرسائل النصية",
+            "val": "98%"
+          }
+        ],
+        "table1Source": "المصدر: Oracle Hospitality, Guestara Hospitality Research (guestara.com)",
+        "stepsTitle": "5 Steps to Frictionless Operations",
+        "steps": [
+          {
+            "num": "Step 1",
+            "title": "Automate Pre-Arrival Communication",
+            "desc": "The guest experience should begin before arrival. Hotels can automatically send booking confirmations, payment reminders, hotel directions, ID upload links, and check-in instructions through WhatsApp or SMS immediately after booking. This reduces confusion and significantly decreases front desk workload during arrival hours. It also creates a smoother, more professional first impression."
+          },
+          {
+            "num": "Step 2",
+            "title": "Enable Digital Guest Registration",
+            "desc": "One of the biggest causes of reception bottlenecks is manual paperwork. Guests repeatedly filling ID details, signatures, registration forms, and payment confirmations creates unnecessary waiting. Hotels using digital check-in systems allow guests to complete these steps beforehand through mobile devices. That means guests arrive ready to collect keys instead of standing in queues."
+          },
+          {
+            "num": "Step 3",
+            "title": "Use AI-Powered Guest Communication",
+            "desc": "Most guest queries during arrival are repetitive: 'Is my room ready?', 'Can I check in early?', 'Where is parking?', and 'What documents are needed?'. AI-powered WhatsApp automation can answer these instantly 24/7. This helps hotels reduce missed inquiries, lower front desk pressure, improve guest satisfaction, and maintain response consistency. Research shows hotels using automated messaging systems significantly reduce average response time."
+          }
+        ],
+        "table2HeaderArea": "المجال التشغيلي",
+        "table2HeaderImprovement": "متوسط التحسين",
+        "table2Rows": [
+          {
+            "label": "وقت الاستجابة للضيوف",
+            "val": "انخفض من 47 دقيقة إلى أقل من دقيقتين"
+          },
+          {
+            "label": "عبء العمل على مكتب الاستقبال",
+            "val": "انخفض بنسبة 20-40%"
+          },
+          {
+            "label": "استفسارات الضيوف التي تم حلها تلقائياً",
+            "val": "55-65%"
+          }
+        ],
+        "table2Source": "المصدر: SendSquared Hospitality AI Research (sendsquared.com)",
+        "step4Title": "Step 4: Create Real-Time Room Visibility",
+        "step4Desc": "This is where many hotels still struggle operationally. Housekeeping may clean rooms quickly, but updates often move slowly between departments. Without real-time visibility, reception delays check-ins unnecessarily, guests wait longer in the lobby, and staff repeatedly coordinate manually. Automation platforms help hotels track room cleaning status, inspection progress, maintenance blocks, and ready-to-check-in inventory in real time. This improves room allocation speed significantly.",
+        "step5Title": "Step 5: Optimize Room Turnover Workflows",
+        "step5Desc": "Room turnover is one of the most overlooked operational drivers in hospitality. But turnover speed directly affects guest wait times, occupancy utilization, early check-in flexibility, operational efficiency, and review scores. Hotels with slow turnover coordination often experience operational bottlenecks throughout the day.",
+        "turnoverDelayTitle": "Why Room Turnover Delays Usually Happen",
+        "turnoverDelayText": "The problem is rarely housekeeping speed alone. The bigger issue is workflow coordination. Many hotels still rely on manual calls between teams, spreadsheets, delayed room updates, and fragmented operational systems. This creates communication gaps between housekeeping, maintenance, reception, and reservations. Even a small delay in updates affects guest flow significantly.",
+        "turnoverOptimizedTitle": "What Optimized Turnover Operations Look Like",
+        "turnoverOptimizedText": "In a connected operational workflow, instead of teams manually coordinating every step, the workflow moves continuously. That operational visibility creates faster room readiness and smoother guest experiences.",
+        "table3HeaderDept": "القسم",
+        "table3HeaderAction": "الإجراء المؤتمت",
+        "table3Rows": [
+          {
+            "label": "الضيف يقوم بتسجيل الخروج",
+            "val": "يقوم نظام إدارة الفندق (PMS) بتحديث حالة الغرفة فوراً"
+          },
+          {
+            "label": "تعيين تنظيف الغرفة تلقائياً",
+            "val": "يتم تشغيل تدفق عمل التنظيف"
+          },
+          {
+            "label": "فحص الغرفة",
+            "val": "يتم إخطار مكتب الاستقبال في الوقت الفعلي"
+          },
+          {
+            "label": "الغرفة جاهزة",
+            "val": "يتم إعطاء الأولوية تلقائياً لوصول الضيف"
+          }
+        ],
+        "stressTitle": "Automation Doesn’t Replace Hospitality, It Removes Operational Stress",
+        "stressText": "One of the biggest misconceptions around hotel automation is that it removes the human side of service. In reality, good automation gives hotel teams more time to focus on hospitality itself. Instead of spending hours answering repetitive queries, chasing room updates, and coordinating manually, staff can focus more on personalized service, guest engagement, problem-solving, and creating memorable experiences. The human side of hospitality becomes stronger when operations feel smoother behind the scenes.",
+        "futureTitle": "Hotels Are Moving Toward Operational Intelligence",
+        "futureText": "The future of hospitality is not simply 'digital.' It is connected. Hotels are increasingly moving toward AI-assisted operations, WhatsApp-first communication, real-time operational coordination, predictive guest communication, and mobile-first guest journeys. The goal is no longer just automation. The goal is operational simplicity.",
+        "innhanceHelpTitle": "How Innhance Helps Hotels Simplify Guest Operations",
+        "innhanceHelpText": "Innhance helps hotels streamline guest communication and operational workflows using AI-powered hospitality automation. The platform helps properties automate WhatsApp guest communication, reduce missed inquiries, improve response speed, simplify operational coordination, and support smoother guest journeys.",
+        "faqsTitle": "الأسئلة الشائعة",
+        "faqs": [
+          {
+            "q": "ما هي أتمتة تسجيل الوصول في الفنادق؟",
+            "a": "تساعد أتمتة تسجيل الوصول في تبسيط عملية الوصول باستخدام التسجيل الرقمي، والتواصل المدعوم بالذكاء الاصطناعي، وتدفقات العمل غير التلامسية."
+          },
+          {
+            "q": "كيف تعمل الأتمتة على تحسين رضا الضيوف؟",
+            "a": "تقدر الأتمتة فترات الانتظار، وتزيد من سرعة التواصل، وتخلق تجارب ضيوف أكثر سلاسة عند الوصول وطوال فترة الإقامة."
+          },
+          {
+            "q": "لماذا يعد تحسين تدوير وتجهيز الغرف أمراً مهماً؟",
+            "a": "يؤدي تدوير الغرف بشكل أسرع إلى تحسين كفاءة الإشغال، وتقليل فترات انتظار الضيوف، ومساعدة الفنادق على إدارة العمليات بشكل أكثر فعالية خلال الفترات المزدحمة."
+          },
+          {
+            "q": "هل تحل الأتمتة محل موظفي الفندق؟",
+            "a": "لا. تقلل الأتمتة من المهام التشغيلية المتكررة لتمكين فرق الفندق من التركيز بشكل أكبر على تجربة الضيوف وجودة الخدمة."
+          }
+        ],
+        "conclusionText": "Guests may not always remember every operational detail of a stay. But they remember whether check-in felt smooth, how quickly the hotel responded, and whether the experience felt effortless. Increasingly, the hotels creating those seamless experiences are the ones using automation not to replace hospitality, but to make it feel better.",
+        "image": "/assets/blog/blog_img_1.webp",
+        "contentBlocks": [
+          {
+            "type": "h3",
+            "text": "الضيوف المعاصرون لم يعودوا يرغبون في \"انتظار الضيافة\" بعد الآن"
+          },
+          {
+            "type": "p",
+            "text": "لقد تغير مفهوم تجربة الفندق الجيدة بشكل كبير."
+          },
+          {
+            "type": "p",
+            "text": "لا يزال الضيوف يهتمون بـ:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "الراحة",
+              "الخدمة",
+              "النظافة",
+              "التخصيص"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "ولكن بشكل متزايد، يتوقعون أيضاً:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "التواصل الفوري",
+              "تسجيل وصول أسرع",
+              "التحديثات في الوقت الفعلي",
+              "التجارب الرقمية السلسة"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "بعد رحلة طويلة، حتى التأخير لمدة 15 دقيقة في الاستقبال يبدو محبطاً."
+          },
+          {
+            "type": "p",
+            "text": "وبالنسبة للفنادق، فإن هذه التأخيرات تخلق ضغطاً تشغيلياً يمتد عبر المنشأة بأكملها:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "ردهات مزدحمة",
+              "فرق عمل مكتب الاستقبال مجهدة",
+              "تأخر تنسيق خدمات تنظيف الغرف",
+              "بطء تخصيص الغرف",
+              "انخفاض رضا الضيوف"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "هذا هو السبب في أن الفنادق تتجه بشكل متزايد نحو الأتمتة، ليس لإلغاء الضيافة، ولكن لإزالة العقبات والتعقيدات المحيطة بها."
+          },
+          {
+            "type": "h3",
+            "text": "المشكلة الحقيقية ليست في تسجيل الوصول، بل في الانفصال التشغيلي"
+          },
+          {
+            "type": "p",
+            "text": "تمتلك معظم الفنادق بالفعل فرق عمل مجتهدة."
+          },
+          {
+            "type": "p",
+            "text": "المشكلة عادة لا تكمن في الجهد المبذول."
+          },
+          {
+            "type": "p",
+            "text": "المشكلة هي أن العمليات لا تزال يدوية للغاية وغير مترابطة."
+          },
+          {
+            "type": "list",
+            "items": [
+              "قد تكون الغرفة قد تم تنظيفها بالفعل، ولكن الاستقبال لم يتلقَ التحديث بعد.",
+              "قد يكون الضيف قد أكمل الدفع بالفعل، ولكن الموظفين لا يزالون يتحققون من التفاصيل يدوياً عند المكتب.",
+              "غالباً ما تعمل أنظمة تنظيف الغرف، والمكتب الأمامي، والحجوزات، والتواصل مع الضيوف بشكل منفصل."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "هذا الانفصال يخلق تأخيرات يشعر بها الضيوف على الفور."
+          },
+          {
+            "type": "h3",
+            "text": "لماذا يتوقع الضيوف تجارب أسرع اليوم"
+          },
+          {
+            "type": "p",
+            "text": "تحول سلوك المسافرين بسرعة نحو الراحة التي تركز على الهاتف المحمول أولاً."
+          },
+          {
+            "type": "p",
+            "text": "الناس معتادون على:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "تسجيل الوصول للرحلات الجوية رقمياً",
+              "تتبع الشحنات في الوقت الفعلي",
+              "مراسلة الشركات فورياً",
+              "إتمام المدفوعات عبر الإنترنت"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "وبطبيعة الحال، يتوقعون الآن أن تعمل الفنادق بطريقة مماثلة."
+          },
+          {
+            "type": "p",
+            "text": "تظهر الأبحاث الحديثة في مجال الضيافة ما يلي:"
+          },
+          {
+            "type": "table1"
+          },
+          {
+            "type": "p",
+            "text": "الفنادق التي تستمر في الاعتماد الكامل على التنسيق اليدوي غالباً ما تواجه صعوبة في تلبية هذه التوقعات المتطورة."
+          },
+          {
+            "type": "h4",
+            "text": "الخطوة 1: أتمتة التواصل قبل الوصول"
+          },
+          {
+            "type": "p",
+            "text": "يجب أن تبدأ تجربة الضيف قبل وصوله."
+          },
+          {
+            "type": "p",
+            "text": "يمكن للفنادق إرسال ما يلي تلقائياً:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "تأكيدات الحجز",
+              "تذكيرات الدفع",
+              "اتجاهات الفندق",
+              "روابط تحميل الهوية",
+              "تعليمات تسجيل الوصول"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "عبر الواتساب أو الرسائل النصية القصيرة فوراً بعد الحجز."
+          },
+          {
+            "type": "p",
+            "text": "هذا يقلل من الارتباك ويقلل بشكل كبير من عبء العمل على مكتب الاستقبال خلال ساعات الوصول."
+          },
+          {
+            "type": "p",
+            "text": "كما أنه يخلق انطباعاً أولياً أكثر سلاسة واحترافية."
+          },
+          {
+            "type": "h4",
+            "text": "الخطوة 2: تمكين تسجيل الضيوف رقمياً"
+          },
+          {
+            "type": "p",
+            "text": "أحد أكبر أسباب الاختناقات في الاستقبال هو الأوراق اليدوية."
+          },
+          {
+            "type": "p",
+            "text": "قيام الضيوف بملء البيانات بشكل متكرر لـ:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "تفاصيل الهوية",
+              "التوقيعات",
+              "نماذج التسجيل",
+              "تأكيدات الدفع"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "يخلق انتظاراً غير ضروري."
+          },
+          {
+            "type": "p",
+            "text": "الفنادق التي تستخدم أنظمة تسجيل الوصول الرقمية تتيح للضيوف إكمال هذه الخطوات مسبقاً عبر الأجهزة المحمولة."
+          },
+          {
+            "type": "p",
+            "text": "هذا يعني أن الضيوف يصلون وهم جاهزون لاستلام المفاتيح بدلاً من الوقوف في طوابير."
+          },
+          {
+            "type": "h4",
+            "text": "الخطوة 3: استخدام تواصل الضيوف المدعوم بالذكاء الاصطناعي"
+          },
+          {
+            "type": "p",
+            "text": "معظم استفسارات الضيوف أثناء الوصول تكون متكررة:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "“هل غرفتي جاهزة؟”",
+              "“هل يمكنني تسجيل الوصول مبكراً؟”",
+              "“أين تقع مواقف السيارات؟”",
+              "“ما هي المستندات المطلوبة؟”"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "يمكن لأتمتة الواتساب المدعومة بالذكاء الاصطناعي الإجابة على هذه الاستفسارات فورياً على مدار الساعة طوال أيام الأسبوع."
+          },
+          {
+            "type": "p",
+            "text": "هذا يساعد الفنادق على:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "تقليل الاستفسارات الفائتة",
+              "تخفيف الضغط على مكتب الاستقبال",
+              "تحسين رضا الضيوف",
+              "الحفاظ على اتساق الإجابات"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "تظهر الأبحاث أن الفنادق التي تستخدم أنظمة المراسلة المؤتمتة تقلل بشكل كبير من متوسط وقت الاستجابة."
+          },
+          {
+            "type": "table2"
+          },
+          {
+            "type": "h4",
+            "text": "الخطوة 4: توفير رؤية فورية لحالة الغرف في الوقت الفعلي"
+          },
+          {
+            "type": "p",
+            "text": "هذا هو الجانب الذي لا تزال العديد من الفنادق تعاني منه تشغيلياً."
+          },
+          {
+            "type": "p",
+            "text": "قد تقوم خدمات تنظيف الغرف بتنظيف الغرف بسرعة، ولكن التحديثات غالباً ما تنتقل ببطء بين الأقسام."
+          },
+          {
+            "type": "p",
+            "text": "بدون رؤية فورية في الوقت الفعلي:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "يؤخر الاستقبال تسجيل الوصول دون داعٍ",
+              "ينتظر الضيوف لفترة أطول في الردهة",
+              "يقوم الموظفون بالتنسيق اليدوي المتكرر"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "تساعد منصات الأتمتة الفنادق على تتبع:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "حالة تنظيف الغرف",
+              "تقدم الفحص",
+              "حجوزات الصيانة",
+              "المخزون الجاهز لتسجيل الوصول"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "في الوقت الفعلي."
+          },
+          {
+            "type": "p",
+            "text": "هذا يحسن سرعة تخصيص الغرف بشكل كبير."
+          },
+          {
+            "type": "h4",
+            "text": "الخطوة 5: تحسين تدفقات عمل تجهيز وتدوير الغرف"
+          },
+          {
+            "type": "p",
+            "text": "تجهيز وتدوير الغرف هو أحد أكثر المحركات التشغيلية التي يتم التغاضي عنها في قطاع الضيافة."
+          },
+          {
+            "type": "p",
+            "text": "لكن سرعة تجهيز الغرفة تؤثر بشكل مباشر على:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "أوقات انتظار الضيوف",
+              "استغلال نسبة الإشغال",
+              "مرونة تسجيل الوصول المبكر",
+              "الكفاءة التشغيلية",
+              "تقييمات المراجعات"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "غالباً ما تواجه الفنادق ذات التنسيق البطيء لتجهيز الغرف اختناقات تشغيلية طوال اليوم."
+          },
+          {
+            "type": "h3",
+            "text": "لماذا تحدث تأخيرات تجهيز وتدوير الغرف عادةً"
+          },
+          {
+            "type": "p",
+            "text": "نادراً ما تكون المشكلة في سرعة تنظيف الغرف بمفردها."
+          },
+          {
+            "type": "p",
+            "text": "المشكلة الأكبر هي تنسيق تدفق العمل."
+          },
+          {
+            "type": "p",
+            "text": "لا تزال العديد من الفنادق تعتمد على:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "المكالمات اليدوية بين الفرق",
+              "الجداول الحسابية",
+              "تحديثات الغرف المتأخرة",
+              "الأنظمة التشغيلية المجزأة"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "هذا يخلق فجوات اتصال بين:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "تنظيف الغرف",
+              "الصيانة",
+              "الاستقبال",
+              "الحجوزات"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "حتى التأخير البسيط في التحديثات يؤثر على تدفق الضيوف بشكل كبير."
+          },
+          {
+            "type": "h3",
+            "text": "كيف تبدو عمليات تجهيز وتدوير الغرف المحسنة"
+          },
+          {
+            "type": "p",
+            "text": "في تدفق عمل تشغيلي متصل:"
+          },
+          {
+            "type": "table3"
+          },
+          {
+            "type": "p",
+            "text": "بدلاً من قيام الفرق بالتنسيق اليدوي لكل خطوة، يتحرك تدفق العمل بشكل مستمر."
+          },
+          {
+            "type": "p",
+            "text": "هذه الرؤية التشغيلية تخلق جاهزية أسرع للغرف وتجارب ضيوف أكثر سلاسة."
+          },
+          {
+            "type": "h3",
+            "text": "الأتمتة لا تحل محل الضيافة، بل تزيل الضغط التشغيلي"
+          },
+          {
+            "type": "p",
+            "text": "أحد أكبر المفاهيم الخاطئة حول أتمتة الفنادق هو أنها تلغي الجانب الإنساني من الخدمة."
+          },
+          {
+            "type": "p",
+            "text": "في الواقع، تمنح الأتمتة الجيدة فرق العمل في الفنادق مزيداً من الوقت للتركيز على الضيافة نفسها."
+          },
+          {
+            "type": "p",
+            "text": "بدلاً من قضاء ساعات في:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "الإجابة على الاستفسارات المتكررة",
+              "متابعة تحديثات الغرف",
+              "التنسيق يدوياً"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "يمكن للموظفين التركيز بشكل أكبر على:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "الخدمة الشخصية",
+              "التفاعل مع الضيوف",
+              "حل المشكلات",
+              "خلق تجارب لا تُنسى"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "يصبح الجانب الإنساني للضيافة أقوى عندما تبدو العمليات أكثر سلاسة خلف الكواليس."
+          },
+          {
+            "type": "h3",
+            "text": "الفنادق تتحرك نحو الذكاء التشغيلي"
+          },
+          {
+            "type": "p",
+            "text": "مستقبل الضيافة ليس مجرد “رقمي”."
+          },
+          {
+            "type": "p",
+            "text": "إنه مترابط."
+          },
+          {
+            "type": "p",
+            "text": "تتحرك الفنادق بشكل متزايد نحو:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "العمليات بمساعدة الذكاء الاصطناعي",
+              "التواصل عبر الواتساب أولاً",
+              "التنسيق التشغيلي في الوقت الفعلي",
+              "التواصل التنبؤي مع الضيوف",
+              "رحلات الضيوف التي تركز على الهاتف المحمول أولاً"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "لم يعد الهدف مجرد الأتمتة."
+          },
+          {
+            "type": "p",
+            "text": "الهدف هو البساطة التشغيلية."
+          },
+          {
+            "type": "h3",
+            "text": "كيف يساعد Innhance الفنادق على تبسيط عمليات الضيوف"
+          },
+          {
+            "type": "p",
+            "text": "يساعد Innhance الفنادق على تبسيط التواصل مع الضيوف وتدفقات العمل التشغيلية باستخدام أتمتة الضيافة المدعومة بالذكاء الاصطناعي."
+          },
+          {
+            "type": "p",
+            "text": "تساعد المنصة المنشآت على:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "أتمتة التواصل مع الضيوف عبر الواتساب",
+              "تقليل الاستفسارات الفائتة",
+              "تحسين سرعة الاستجابة",
+              "تبسيط التنسيق التشغيلي",
+              "دعم رحلات ضيوف أكثر سلاسة"
+            ]
+          },
+          {
+            "type": "faqs"
+          },
+          {
+            "type": "conclusion",
+            "text": "قد لا يتذكر الضيوف دائماً كل تفصيل تشغيلي للإقامة."
+          },
+          {
+            "type": "conclusion",
+            "text": "لكنهم يتذكرون:"
+          },
+          {
+            "type": "conclusion_list",
+            "items": [
+              "ما إذا كان تسجيل الوصول سلساً",
+              "مدى سرعة استجابة الفندق",
+              "ما إذا كانت التجربة خالية من الجهد"
+            ]
+          },
+          {
+            "type": "conclusion",
+            "text": "بشكل متزايد، الفنادق التي تخلق تلك التجارب السلسة هي التي تستخدم الأتمتة ليس كبديل للضيافة، ولكن لجعلها تبدو أفضل."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "الدليل النهائي للتسويق عبر الواتساب للمنتجعات",
+        "excerpt": "أصبح الواتساب القناة الأساسية للضيوف الهنود. تعرف على أفضل الممارسات لإشراك جمهورك وزيادة الحجوزات المباشرة.",
+        "date": "28 سبتمبر 2026",
+        "readTime": "قراءة 7 دقائق",
+        "category": "التسويق"
+      },
+      {
+        "id": 3,
+        "title": "لماذا الحجوزات المباشرة بدون عمولة هي المستقبل",
+        "excerpt": "توقف عن دفع 15-25% لوكالات السفر عبر الإنترنت. نستكشف الاستراتيجيات التي تستخدمها الفنادق المستقلة الكبرى لاستعادة هوامش ربحها.",
+        "date": "15 سبتمبر 2026",
+        "readTime": "قراءة 4 دقائق",
+        "category": "الاستراتيجية"
+      }
+    ],
+    "backToJournal": "العودة إلى المجلة",
+    "ctaTitle": "هل أنت جاهز لتحسين عمليات فندقك؟",
+    "ctaDesc": "احجز عرضاً توضيحياً مباشراً لتكتشف كيف يمكن لـ Innhance أتمتة التواصل مع ضيوفك.",
+    "ctaBtn": "احجز عرضاً توضيحياً اليوم"
+  },
+  "privacy": {
+    "badgeText": "آمن وشفاف",
+    "title": "سياسة الخصوصية",
+    "subtitle": "في إينهانس، خصوصيتك تهمنا. نحن نؤمن بأن الثقة تُبنى من خلال الشفافية، ونلتزم بالتعامل مع معلوماتك بمسؤولية.",
+    "lastUpdated": "آخر تحديث: مايو 2026",
+    "sections": {
+      "collect": {
+        "title": "المعلومات التي نجمعها",
+        "intro": "قد نجمع المعلومات التي تقدمها لنا مباشرة، بما في ذلك:",
+        "items": [
+          "الاسم ومعلومات الاتصال",
+          "تفاصيل الفندق أو العمل",
+          "معلومات الحجز والاستعلام",
+          "تفاعلات الواتساب وبيانات الاتصال",
+          "بيانات الاستخدام والتحليلات المتعلقة بمنصتنا"
+        ]
+      },
+      "use": {
+        "title": "كيف نستخدم المعلومات",
+        "intro": "نحن نستخدم المعلومات التي تم جمعها من أجل:",
+        "items": [
+          "تقديم خدمات إينهانس وتحسينها",
+          "أتمتة وإدارة تفاعلات الضيوف",
+          "تعزيز تجارب الحجز",
+          "تقديم الدعم للعملاء",
+          "تحسين أداء المنصة واستجابات الذكاء الاصطناعي",
+          "تحليل الاتجاهات وتحسين تجربة المستخدم"
+        ]
+      },
+      "communication": {
+        "title": "بيانات الاتصال",
+        "text": "قد تقوم إينهانس بمعالجة الرسائل والاستفسارات والمحادثات التي تتم مشاركتها من خلال القنوات المدعومة مثل واتساب أو منصات الاتصال ذات الصلة. تُستخدم هذه المعلومات فقط لتمكين الاستجابات الذكية وتحسين جودة الخدمة."
+      },
+      "security": {
+        "title": "أمن البيانات",
+        "text": "نحن ننفذ التدابير الفنية والتنظيمية المناسبة لحماية بيانات المستخدم من الوصول غير المصرح به أو سوء الاستخدام أو الإفصاح."
+      },
+      "thirdParty": {
+        "title": "خدمات الطرف الثالث",
+        "text": "قد تتضمن بعض الخدمات المتكاملة مع إينهانس موفري خدمات موثوقين من أطراف خارجية. يعالج هؤلاء الموفرون المعلومات فقط عند الضرورة لدعم وظائف منصتنا."
+      },
+      "cookies": {
+        "title": "ملفات تعريف الارتباط والتحليلات",
+        "text": "قد نستخدم ملفات تعريف الارتباط وأدوات التحليل لفهم سلوك المستخدم وتحسين أداء الموقع الإلكتروني وتعزيز التجربة العامة."
+      },
+      "rights": {
+        "title": "حقوقك",
+        "text": "يجوز لك طلب الوصول إلى معلوماتك الشخصية أو تصحيحها أو حذفها عند الاقتضاء."
+      },
+      "updates": {
+        "title": "تحديثات السياسة",
+        "text": "قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. وسيتم عكس أي تغييرات على هذه الصفحة."
+      },
+      "contact": {
+        "title": "الاتصال",
+        "text": "إذا كان لديك أي أسئلة بخصوص سياسة الخصوصية هذه، يرجى الاتصال بنا من خلال قنواتنا الرسمية."
+      }
+    }
   }
 }

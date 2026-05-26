@@ -1,10 +1,12 @@
 import { useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { Shield, Lock, Eye, CheckCircle2 } from 'lucide-react'
 import './PrivacyPolicy.css'
 
 export default function PrivacyPolicy() {
+  const { t } = useTranslation()
   const container = useRef(null)
 
   useGSAP(() => {
@@ -52,11 +54,11 @@ export default function PrivacyPolicy() {
         <div className="container-custom privacy-hero-content">
           <div className="privacy-badge">
             <Shield size={16} />
-            <span>Secure & Transparent</span>
+            <span>{t("privacy.badgeText")}</span>
           </div>
-          <h1 className="privacy-title">Privacy Policy</h1>
+          <h1 className="privacy-title">{t("privacy.title")}</h1>
           <p className="privacy-subtitle">
-            At Innhance, your privacy matters to us. We believe trust is built through transparency, and we are committed to handling your information responsibly.
+            {t("privacy.subtitle")}
           </p>
         </div>
       </section>
@@ -85,78 +87,65 @@ export default function PrivacyPolicy() {
             <div className="privacy-main">
               
               <div className="privacy-section">
-                <h2>Information We Collect</h2>
-                <p>We may collect information that you provide directly to us, including:</p>
+                <h2>{t("privacy.sections.collect.title")}</h2>
+                <p>{t("privacy.sections.collect.intro")}</p>
                 <ul className="privacy-list">
-                  <li>Name and contact information</li>
-                  <li>Hotel or business details</li>
-                  <li>Booking and inquiry information</li>
-                  <li>WhatsApp interactions and communication data</li>
-                  <li>Usage and analytics data related to our platform</li>
+                  {(() => {
+                    const items = t("privacy.sections.collect.items", { returnObjects: true });
+                    return Array.isArray(items) ? items.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    )) : null;
+                  })()}
                 </ul>
               </div>
 
               <div className="privacy-section">
-                <h2>How We Use Information</h2>
-                <p>We use collected information to:</p>
+                <h2>{t("privacy.sections.use.title")}</h2>
+                <p>{t("privacy.sections.use.intro")}</p>
                 <ul className="privacy-list">
-                  <li>Deliver and improve Innhance services</li>
-                  <li>Automate and manage guest interactions</li>
-                  <li>Enhance booking experiences</li>
-                  <li>Provide customer support</li>
-                  <li>Improve platform performance and AI responses</li>
-                  <li>Analyze trends and optimize user experience</li>
+                  {(() => {
+                    const items = t("privacy.sections.use.items", { returnObjects: true });
+                    return Array.isArray(items) ? items.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    )) : null;
+                  })()}
                 </ul>
               </div>
 
               <div className="privacy-section">
-                <h2>Communication Data</h2>
-                <p>
-                  Innhance may process messages, inquiries, and conversations shared through supported channels such as WhatsApp or related communication platforms. This information is used solely to enable intelligent responses and improve service quality.
-                </p>
+                <h2>{t("privacy.sections.communication.title")}</h2>
+                <p>{t("privacy.sections.communication.text")}</p>
               </div>
 
               <div className="privacy-section">
-                <h2>Data Security</h2>
-                <p>
-                  We implement appropriate technical and organizational measures to protect user data against unauthorized access, misuse, or disclosure.
-                </p>
+                <h2>{t("privacy.sections.security.title")}</h2>
+                <p>{t("privacy.sections.security.text")}</p>
               </div>
 
               <div className="privacy-section">
-                <h2>Third-Party Services</h2>
-                <p>
-                  Certain services integrated with Innhance may involve trusted third-party providers. These providers process information only where necessary to support our platform functionality.
-                </p>
+                <h2>{t("privacy.sections.thirdParty.title")}</h2>
+                <p>{t("privacy.sections.thirdParty.text")}</p>
               </div>
 
               <div className="privacy-section">
-                <h2>Cookies & Analytics</h2>
-                <p>
-                  We may use cookies and analytics tools to understand user behavior, improve website performance, and enhance overall experience.
-                </p>
+                <h2>{t("privacy.sections.cookies.title")}</h2>
+                <p>{t("privacy.sections.cookies.text")}</p>
               </div>
 
               <div className="privacy-section">
-                <h2>Your Rights</h2>
-                <p>
-                  You may request access, correction, or deletion of your personal information where applicable.
-                </p>
+                <h2>{t("privacy.sections.rights.title")}</h2>
+                <p>{t("privacy.sections.rights.text")}</p>
               </div>
 
               <div className="privacy-section">
-                <h2>Policy Updates</h2>
-                <p>
-                  We may update this Privacy Policy from time to time. Any changes will be reflected on this page.
-                </p>
+                <h2>{t("privacy.sections.updates.title")}</h2>
+                <p>{t("privacy.sections.updates.text")}</p>
               </div>
 
               <div className="privacy-section">
-                <h2>Contact</h2>
-                <p>
-                  If you have any questions regarding this Privacy Policy, please contact us through our official channels.
-                </p>
-                <p className="privacy-date">Last Updated: May 2026</p>
+                <h2>{t("privacy.sections.contact.title")}</h2>
+                <p>{t("privacy.sections.contact.text")}</p>
+                <p className="privacy-date">{t("privacy.lastUpdated")}</p>
               </div>
 
             </div>

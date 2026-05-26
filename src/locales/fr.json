@@ -623,7 +623,7 @@
       },
       {
         "question": "Innhance supporte-t-il plusieurs langues ?",
-        "answer": "Absolument. Innhance supporte plus de 7 langues."
+        "answer": "Absolument. Innhance supporte plus de 20 langues."
       },
       {
         "question": "Comment sont gérés les paiements ?",
@@ -653,5 +653,694 @@
     "q2Answer": "Il convertit les demandes en réservations instantanément.",
     "q3Text": "Est-ce que ça marche avec WhatsApp ?",
     "q3Answer": "Oui. Innhance interagit directement via WhatsApp."
+  },
+  "blog": {
+    "latestInsights": "Dernières Analyses",
+    "titlePrefix": "Le Journal d'",
+    "titleHighlight": "Innhance",
+    "subtitle": "Perspectives, stratégies et mises à jour à l'intersection de l'hôtellerie et de l'intelligence artificielle.",
+    "comingSoon": "Bientôt disponible",
+    "readArticle": "Lire l'article",
+    "posts": [
+      {
+        "id": 1,
+        "title": "Comment réduire la friction lors de l'enregistrement des clients grâce à l'automatisation",
+        "excerpt": "La définition d'une bonne expérience hôtelière a changé. Découvrez comment les hôtels éliminent les goulots d'étranglement de l'enregistrement.",
+        "date": "26 mai 2026",
+        "readTime": "8 min de lecture",
+        "category": "Stratégie",
+        "subtitle": "Le guide étape par étape pour optimiser le temps de rotation des chambres",
+        "introductionTitle": "Les clients modernes ne veulent plus « attendre l'hospitalité »",
+        "introductionText": "The definition of a good hotel experience has changed dramatically. Guests still care about comfort, service, cleanliness, and personalization. But increasingly, they also expect instant communication, faster check-ins, real-time updates, and smooth digital experiences. After a long journey, even a 15-minute delay at reception feels frustrating. And for hotels, those delays create operational pressure that spreads across the property: crowded lobbies, stressed front desk teams, delayed housekeeping coordination, slower room allocation, and lower guest satisfaction. This is why hotels are increasingly turning toward automation not to remove hospitality, but to remove friction around it.",
+        "disconnectTitle": "The Real Problem Isn’t Check-In, It’s Operational Disconnect",
+        "disconnectText": "Most hotels already have hardworking teams. The issue is usually not effort. The issue is that operations are still heavily manual and disconnected. A room may already be cleaned, but reception hasn’t received the update yet. A guest may already have completed payment, but staff still manually verify details at the desk. Housekeeping, front office, reservations, and guest communication systems often operate separately. That disconnect creates delays guests immediately feel.",
+        "trendsTitle": "Why Guests Expect Faster Experiences Today",
+        "trendsText": "Traveler behavior has shifted rapidly toward mobile-first convenience. People are used to checking into flights digitally, tracking deliveries in real time, messaging businesses instantly, and completing payments online. Naturally, they now expect hotels to work similarly.",
+        "table1HeaderTrend": "Comportement du client",
+        "table1HeaderData": "Données",
+        "table1Rows": [
+          {
+            "label": "Clients préférant l'enregistrement mobile",
+            "val": "73%"
+          },
+          {
+            "label": "Voyageurs souhaitant éviter la réception",
+            "val": "70%"
+          },
+          {
+            "label": "Clients préférant les messages aux appels",
+            "val": "89%"
+          },
+          {
+            "label": "Taux d'ouverture des messages/WhatsApp",
+            "val": "98%"
+          }
+        ],
+        "table1Source": "Source: Oracle Hospitality, Guestara Hospitality Research (guestara.com)",
+        "stepsTitle": "5 Steps to Frictionless Operations",
+        "steps": [
+          {
+            "num": "Step 1",
+            "title": "Automate Pre-Arrival Communication",
+            "desc": "The guest experience should begin before arrival. Hotels can automatically send booking confirmations, payment reminders, hotel directions, ID upload links, and check-in instructions through WhatsApp or SMS immediately after booking. This reduces confusion and significantly decreases front desk workload during arrival hours. It also creates a smoother, more professional first impression."
+          },
+          {
+            "num": "Step 2",
+            "title": "Enable Digital Guest Registration",
+            "desc": "One of the biggest causes of reception bottlenecks is manual paperwork. Guests repeatedly filling ID details, signatures, registration forms, and payment confirmations creates unnecessary waiting. Hotels using digital check-in systems allow guests to complete these steps beforehand through mobile devices. That means guests arrive ready to collect keys instead of standing in queues."
+          },
+          {
+            "num": "Step 3",
+            "title": "Use AI-Powered Guest Communication",
+            "desc": "Most guest queries during arrival are repetitive: 'Is my room ready?', 'Can I check in early?', 'Where is parking?', and 'What documents are needed?'. AI-powered WhatsApp automation can answer these instantly 24/7. This helps hotels reduce missed inquiries, lower front desk pressure, improve guest satisfaction, and maintain response consistency. Research shows hotels using automated messaging systems significantly reduce average response time."
+          }
+        ],
+        "table2HeaderArea": "Domaine opérationnel",
+        "table2HeaderImprovement": "Amélioration moyenne",
+        "table2Rows": [
+          {
+            "label": "Temps de réponse client",
+            "val": "Réduit de 47 min à moins de 2 min"
+          },
+          {
+            "label": "Charge de travail réception",
+            "val": "Réduite de 20 à 40%"
+          },
+          {
+            "label": "Demandes clients résolues automatiquement",
+            "val": "55 à 65%"
+          }
+        ],
+        "table2Source": "Source: SendSquared Hospitality AI Research (sendsquared.com)",
+        "step4Title": "Step 4: Create Real-Time Room Visibility",
+        "step4Desc": "This is where many hotels still struggle operationally. Housekeeping may clean rooms quickly, but updates often move slowly between departments. Without real-time visibility, reception delays check-ins unnecessarily, guests wait longer in the lobby, and staff repeatedly coordinate manually. Automation platforms help hotels track room cleaning status, inspection progress, maintenance blocks, and ready-to-check-in inventory in real time. This improves room allocation speed significantly.",
+        "step5Title": "Step 5: Optimize Room Turnover Workflows",
+        "step5Desc": "Room turnover is one of the most overlooked operational drivers in hospitality. But turnover speed directly affects guest wait times, occupancy utilization, early check-in flexibility, operational efficiency, and review scores. Hotels with slow turnover coordination often experience operational bottlenecks throughout the day.",
+        "turnoverDelayTitle": "Why Room Turnover Delays Usually Happen",
+        "turnoverDelayText": "The problem is rarely housekeeping speed alone. The bigger issue is workflow coordination. Many hotels still rely on manual calls between teams, spreadsheets, delayed room updates, and fragmented operational systems. This creates communication gaps between housekeeping, maintenance, reception, and reservations. Even a small delay in updates affects guest flow significantly.",
+        "turnoverOptimizedTitle": "What Optimized Turnover Operations Look Like",
+        "turnoverOptimizedText": "In a connected operational workflow, instead of teams manually coordinating every step, the workflow moves continuously. That operational visibility creates faster room readiness and smoother guest experiences.",
+        "table3HeaderDept": "Département",
+        "table3HeaderAction": "Action automatisée",
+        "table3Rows": [
+          {
+            "label": "Le client fait son check-out",
+            "val": "Le PMS met à jour le statut de la chambre immédiatement"
+          },
+          {
+            "label": "Ménage attribué automatiquement",
+            "val": "Le flux de nettoyage est déclenché"
+          },
+          {
+            "label": "Chambre inspectée",
+            "val": "La réception est notifiée en temps réel"
+          },
+          {
+            "label": "Chambre prête",
+            "val": "Le client arrivant est priorisé automatiquement"
+          }
+        ],
+        "stressTitle": "Automation Doesn’t Replace Hospitality, It Removes Operational Stress",
+        "stressText": "One of the biggest misconceptions around hotel automation is that it removes the human side of service. In reality, good automation gives hotel teams more time to focus on hospitality itself. Instead of spending hours answering repetitive queries, chasing room updates, and coordinating manually, staff can focus more on personalized service, guest engagement, problem-solving, and creating memorable experiences. The human side of hospitality becomes stronger when operations feel smoother behind the scenes.",
+        "futureTitle": "Hotels Are Moving Toward Operational Intelligence",
+        "futureText": "The future of hospitality is not simply 'digital.' It is connected. Hotels are increasingly moving toward AI-assisted operations, WhatsApp-first communication, real-time operational coordination, predictive guest communication, and mobile-first guest journeys. The goal is no longer just automation. The goal is operational simplicity.",
+        "innhanceHelpTitle": "How Innhance Helps Hotels Simplify Guest Operations",
+        "innhanceHelpText": "Innhance helps hotels streamline guest communication and operational workflows using AI-powered hospitality automation. The platform helps properties automate WhatsApp guest communication, reduce missed inquiries, improve response speed, simplify operational coordination, and support smoother guest journeys.",
+        "faqsTitle": "Foire Aux Questions",
+        "faqs": [
+          {
+            "q": "Qu'est-ce que l'automatisation de l'enregistrement ?",
+            "a": "L'enregistrement automatisé simplifie l'arrivée des clients grâce à l'enregistrement en ligne, aux échanges par IA et à des parcours sans contact."
+          },
+          {
+            "q": "Comment l'automatisation améliore-t-elle la satisfaction ?",
+            "a": "Elle réduit le temps d'attente, accélère les réponses et offre un séjour plus fluide dès les premières minutes."
+          },
+          {
+            "q": "Pourquoi optimiser la rotation des chambres ?",
+            "a": "Une rotation rapide améliore le taux d'occupation, évite l'attente et facilite la gestion lors des pics d'activité."
+          },
+          {
+            "q": "L'automatisation remplace-t-elle le personnel ?",
+            "a": "Non. Elle supprime les tâches répétitives pour permettre aux équipes de se recentrer sur l'attention portée aux clients."
+          }
+        ],
+        "conclusionText": "Guests may not always remember every operational detail of a stay. But they remember whether check-in felt smooth, how quickly the hotel responded, and whether the experience felt effortless. Increasingly, the hotels creating those seamless experiences are the ones using automation not to replace hospitality, but to make it feel better.",
+        "image": "/assets/blog/blog_img_1.webp",
+        "contentBlocks": [
+          {
+            "type": "h3",
+            "text": "Les clients modernes ne veulent plus « attendre l'hospitalité »"
+          },
+          {
+            "type": "p",
+            "text": "La définition d'une bonne expérience hôtelière a changé de manière spectaculaire."
+          },
+          {
+            "type": "p",
+            "text": "Les clients se soucient toujours de :"
+          },
+          {
+            "type": "list",
+            "items": [
+              "le confort",
+              "le service",
+              "la propreté",
+              "la personnalisation"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Mais de plus en plus, ils s'attendent également à :"
+          },
+          {
+            "type": "list",
+            "items": [
+              "une communication instantanée",
+              "des enregistrements plus rapides",
+              "des mises à jour en temps réel",
+              "des expériences numériques fluides"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Après un long voyage, même un retard de 15 minutes à la réception s'avère frustrant."
+          },
+          {
+            "type": "p",
+            "text": "Et pour les hôtels, ces retards créent une pression opérationnelle qui se propage dans tout l'établissement :"
+          },
+          {
+            "type": "list",
+            "items": [
+              "halls d'entrée encombrés",
+              "équipes de réception stressées",
+              "coordination du ménage retardée",
+              "attribution plus lente des chambres",
+              "satisfaction client en baisse"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "C'est pourquoi les hôtels se tournent de plus en plus vers l'automatisation, non pas pour éliminer l'hospitalité, mais pour en supprimer les frictions."
+          },
+          {
+            "type": "h3",
+            "text": "Le vrai problème n'est pas l'enregistrement, c'est la déconnexion opérationnelle"
+          },
+          {
+            "type": "p",
+            "text": "La plupart des hôtels disposent déjà d'équipes travailleuses."
+          },
+          {
+            "type": "p",
+            "text": "Le problème n'est généralement pas le manque d'efforts."
+          },
+          {
+            "type": "p",
+            "text": "Le problème réside dans le fait que les opérations sont encore largement manuelles et déconnectées."
+          },
+          {
+            "type": "list",
+            "items": [
+              "Une chambre peut déjà être nettoyée, mais la réception n'a pas encore reçu la mise à jour.",
+              "Un client peut avoir finalisé son paiement, mais le personnel vérifie toujours manuellement les détails au comptoir.",
+              "Les systèmes de ménage, de réception, de réservation et de communication fonctionnent souvent séparément."
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Cette déconnexion crée des retards que les clients ressentent immédiatement."
+          },
+          {
+            "type": "h3",
+            "text": "Pourquoi les clients s'attendent à des expériences plus rapides aujourd'hui"
+          },
+          {
+            "type": "p",
+            "text": "Le comportement des voyageurs s'est rapidement orienté vers le confort mobile."
+          },
+          {
+            "type": "p",
+            "text": "Les gens ont l'habitude de :"
+          },
+          {
+            "type": "list",
+            "items": [
+              "s'enregistrer numériquement pour les vols",
+              "suivre les livraisons en temps réel",
+              "envoyer des messages instantanés aux entreprises",
+              "effectuer des paiements en ligne"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Naturellement, ils s'attendent désormais à ce que les hôtels fonctionnent de la même manière."
+          },
+          {
+            "type": "p",
+            "text": "Des recherches récentes sur l'hôtellerie montrent :"
+          },
+          {
+            "type": "table1"
+          },
+          {
+            "type": "p",
+            "text": "Les hôtels qui continuent de s'appuyer entièrement sur une coordination manuelle ont souvent du mal à répondre à ces attentes en constante évolution."
+          },
+          {
+            "type": "h4",
+            "text": "Étape 1 : Automatiser la communication pré-arrivée"
+          },
+          {
+            "type": "p",
+            "text": "L'expérience client doit commencer avant l'arrivée."
+          },
+          {
+            "type": "p",
+            "text": "Les hôtels peuvent envoyer automatiquement :"
+          },
+          {
+            "type": "list",
+            "items": [
+              "confirmations de réservation",
+              "rappels de paiement",
+              "itinéraires d'accès",
+              "liens de téléchargement de pièces d'identité",
+              "instructions d'enregistrement"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "via WhatsApp ou SMS immédiatement après la réservation."
+          },
+          {
+            "type": "p",
+            "text": "Cela réduit la confusion et diminue considérablement la charge de travail à la réception pendant les heures d'arrivée."
+          },
+          {
+            "type": "p",
+            "text": "Cela crée également une première impression plus fluide et plus professionnelle."
+          },
+          {
+            "type": "h4",
+            "text": "Étape 2 : Permettre l'enregistrement numérique des clients"
+          },
+          {
+            "type": "p",
+            "text": "L'une des principales causes d'engorgement à la réception est la paperasse manuelle."
+          },
+          {
+            "type": "p",
+            "text": "Le fait de devoir remplir à plusieurs reprises :"
+          },
+          {
+            "type": "list",
+            "items": [
+              "détails d'identité",
+              "signatures",
+              "formulaires d'enregistrement",
+              "confirmations de paiement"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "génère une attente inutile."
+          },
+          {
+            "type": "p",
+            "text": "Les hôtels équipés de systèmes d'enregistrement numérique permettent aux clients d'effectuer ces étapes en amont sur leurs appareils mobiles."
+          },
+          {
+            "type": "p",
+            "text": "Ainsi, les clients arrivent prêts à récupérer leurs clés plutôt que de faire la queue."
+          },
+          {
+            "type": "h4",
+            "text": "Étape 3 : Utiliser une communication client assistée par IA"
+          },
+          {
+            "type": "p",
+            "text": "La plupart des questions des clients lors de l'arrivée sont répétitives :"
+          },
+          {
+            "type": "list",
+            "items": [
+              "« Ma chambre est-elle prête ? »",
+              "« Puis-je m'enregistrer plus tôt ? »",
+              "« Où se trouve le parking ? »",
+              "« Quels documents sont nécessaires ? »"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "L'automatisation WhatsApp basée sur l'IA peut y répondre instantanément 24h/24 et 7j/7."
+          },
+          {
+            "type": "p",
+            "text": "Cela aide les hôtels à :"
+          },
+          {
+            "type": "list",
+            "items": [
+              "réduire les demandes manquées",
+              "soulager la pression à la réception",
+              "améliorer la satisfaction des clients",
+              "maintenir la cohérence des réponses"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Les recherches montrent que les hôtels utilisant des systèmes de messagerie automatisés réduisent considérablement le temps de réponse moyen."
+          },
+          {
+            "type": "table2"
+          },
+          {
+            "type": "h4",
+            "text": "Étape 4 : Créer une visibilité des chambres en temps réel"
+          },
+          {
+            "type": "p",
+            "text": "C'est un point sur lequel de nombreux hôtels ont encore des difficultés opérationnelles."
+          },
+          {
+            "type": "p",
+            "text": "Le service d'étage nettoie les chambres rapidement, mais les mises à jour se propagent lentement."
+          },
+          {
+            "type": "p",
+            "text": "Sans visibilité en temps réel :"
+          },
+          {
+            "type": "list",
+            "items": [
+              "la réception retarde inutilement les enregistrements",
+              "les clients attendent plus longtemps dans le hall",
+              "le personnel multiplie les relances manuelles"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Les plateformes d'automatisation aident à suivre :"
+          },
+          {
+            "type": "list",
+            "items": [
+              "statut de nettoyage des chambres",
+              "état d'avancement des inspections",
+              "blocages pour maintenance",
+              "inventaire des chambres prêtes"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "en temps réel."
+          },
+          {
+            "type": "p",
+            "text": "Cela améliore considérablement la rapidité d'attribution des chambres."
+          },
+          {
+            "type": "h4",
+            "text": "Étape 5 : Optimiser les flux de rotation des chambres"
+          },
+          {
+            "type": "p",
+            "text": "La rotation des chambres est l'un des leviers opérationnels les plus négligés."
+          },
+          {
+            "type": "p",
+            "text": "Pourtant, sa rapidité affecte directement :"
+          },
+          {
+            "type": "list",
+            "items": [
+              "les temps d'attente des clients",
+              "l'optimisation du taux d'occupation",
+              "la flexibilité des arrivées anticipées",
+              "l'efficacité opérationnelle",
+              "les notes des avis clients"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Les établissements ayant une mauvaise coordination de rotation subissent des goulots d'étranglement toute la journée."
+          },
+          {
+            "type": "h3",
+            "text": "Pourquoi les retards de rotation des chambres surviennent généralement"
+          },
+          {
+            "type": "p",
+            "text": "Le problème vient rarement de la seule vitesse de nettoyage."
+          },
+          {
+            "type": "p",
+            "text": "Le point noir est la coordination des flux."
+          },
+          {
+            "type": "p",
+            "text": "De nombreux hôtels dépendent encore de :"
+          },
+          {
+            "type": "list",
+            "items": [
+              "appels manuels entre équipes",
+              "tableurs",
+              "mises à jour de chambres tardives",
+              "systèmes opérationnels fragmentés"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Cela crée des ruptures de communication entre :"
+          },
+          {
+            "type": "list",
+            "items": [
+              "le ménage",
+              "la maintenance",
+              "la réception",
+              "les réservations"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Même un léger retard de mise à jour affecte significativement l'expérience client."
+          },
+          {
+            "type": "h3",
+            "text": "À quoi ressemble une gestion de rotation optimisée"
+          },
+          {
+            "type": "p",
+            "text": "Dans un flux opérationnel connecté :"
+          },
+          {
+            "type": "table3"
+          },
+          {
+            "type": "p",
+            "text": "Au lieu d'une coordination manuelle étape par étape, le processus avance de manière continue."
+          },
+          {
+            "type": "p",
+            "text": "Cette visibilité opérationnelle accélère la disponibilité des chambres et fluidifie l'accueil."
+          },
+          {
+            "type": "h3",
+            "text": "L'automatisation ne remplace pas l'humain, elle supprime le stress"
+          },
+          {
+            "type": "p",
+            "text": "Penser que l'automatisation déshumanise le service est une idée reçue."
+          },
+          {
+            "type": "p",
+            "text": "En réalité, elle libère du temps pour l'accueil et le service personnalisé."
+          },
+          {
+            "type": "p",
+            "text": "Au lieu de passer des heures à :"
+          },
+          {
+            "type": "list",
+            "items": [
+              "répondre à des questions répétitives",
+              "vérifier l'état des chambres",
+              "coordonner manuellement les tâches"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "le personnel peut se concentrer sur :"
+          },
+          {
+            "type": "list",
+            "items": [
+              "le service personnalisé",
+              "la relation client",
+              "la résolution de problèmes spécifiques",
+              "la création de souvenirs mémorables"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Le côté humain de l'accueil ressort renforcé par des opérations fluides en coulisses."
+          },
+          {
+            "type": "h3",
+            "text": "Les hôtels s'orientent vers l'intelligence opérationnelle"
+          },
+          {
+            "type": "p",
+            "text": "L'avenir de l'hôtellerie n'est pas seulement numérique, il est connecté."
+          },
+          {
+            "type": "p",
+            "text": "Les établissements adoptent de plus en plus :"
+          },
+          {
+            "type": "list",
+            "items": [
+              "les opérations assistées par l'IA",
+              "la communication orientée WhatsApp",
+              "la coordination opérationnelle en temps réel",
+              "la relation client prédictive",
+              "des parcours clients sur mobile"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "L'objectif n'est plus seulement d'automatiser, mais de simplifier."
+          },
+          {
+            "type": "h3",
+            "text": "Comment Innhance simplifie les opérations hôtelières"
+          },
+          {
+            "type": "p",
+            "text": "Innhance aide à rationaliser la communication et les tâches grâce à l'automatisation par l'IA."
+          },
+          {
+            "type": "p",
+            "text": "La plateforme permet aux établissements de :"
+          },
+          {
+            "type": "list",
+            "items": [
+              "automatiser la relation client sur WhatsApp",
+              "réduire les demandes sans réponse",
+              "accélérer la vitesse de retour",
+              "simplifier l'organisation interne",
+              "fluidifier l'accueil des voyageurs"
+            ]
+          },
+          {
+            "type": "faqs"
+          },
+          {
+            "type": "conclusion",
+            "text": "Les clients ne retiendront pas tous les détails de l'organisation."
+          },
+          {
+            "type": "conclusion",
+            "text": "Mais ils se souviendront de :"
+          },
+          {
+            "type": "conclusion_list",
+            "items": [
+              "la fluidité de l'enregistrement",
+              "la rapidité de réponse de l'hôtel",
+              "la simplicité globale de leur séjour"
+            ]
+          },
+          {
+            "type": "conclusion",
+            "text": "Les hôtels qui tirent leur épingle du jeu sont ceux qui automatisent non pour remplacer le service, mais pour le sublimer."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Le guide ultime du marketing WhatsApp pour les complexes hôteliers",
+        "excerpt": "WhatsApp est devenu le canal principal pour les clients. Apprenez les meilleures pratiques pour engager votre public et générer des réservations directes.",
+        "date": "28 Sep, 2026",
+        "readTime": "7 min de lecture",
+        "category": "Marketing"
+      },
+      {
+        "id": 3,
+        "title": "Pourquoi les réservations directes sans commission sont l'avenir",
+        "excerpt": "Arrêtez de payer 15 à 25 % aux OTA. Nous explorons les stratégies utilisées par les hôtels indépendants pour récupérer leurs marges via les canaux directs.",
+        "date": "15 Sep, 2026",
+        "readTime": "4 min de lecture",
+        "category": "Stratégie"
+      }
+    ],
+    "backToJournal": "Retour au Journal",
+    "ctaTitle": "Prêt à optimiser la gestion de votre hôtel ?",
+    "ctaDesc": "Planifiez une démonstration en direct pour découvrir comment Innhance peut automatiser la relation client.",
+    "ctaBtn": "Réserver une démo aujourd'hui"
+  },
+  "privacy": {
+    "badgeText": "Sécurisé et Transparent",
+    "title": "Politique de Confidentialité",
+    "subtitle": "Chez Innhance, votre vie privée nous tient à cœur. Nous croyons que la confiance se construit par la transparence et nous nous engageons à traiter vos informations de manière responsable.",
+    "lastUpdated": "Dernière mise à jour : Mai 2026",
+    "sections": {
+      "collect": {
+        "title": "Informations que Nous Collectons",
+        "intro": "Nous pouvons collecter des informations que vous nous fournissez directement, notamment :",
+        "items": [
+          "Nom et coordonnées",
+          "Informations sur l'hôtel ou l'entreprise",
+          "Informations sur les réservations et les demandes",
+          "Interactions WhatsApp et données de communication",
+          "Données d'utilisation et d'analyse liées à notre plateforme"
+        ]
+      },
+      "use": {
+        "title": "Comment Nous Utilisons les Informations",
+        "intro": "Nous utilisons les informations collectées pour :",
+        "items": [
+          "Fournir et améliorer les services d'Innhance",
+          "Automatiser et gérer les interactions avec les clients",
+          "Améliorer les expériences de réservation",
+          "Fournir un support client",
+          "Améliorer les performances de la plateforme et les réponses de l'IA",
+          "Analyser les tendances et optimiser l'expérience utilisateur"
+        ]
+      },
+      "communication": {
+        "title": "Données de Communication",
+        "text": "Innhance peut traiter les messages, demandes et conversations partagés via des canaux pris en charge tels que WhatsApp ou des plateformes de communication associées. Ces informations sont utilisées uniquement pour permettre des réponses intelligentes et améliorer la qualité du service."
+      },
+      "security": {
+        "title": "Sécurité des Données",
+        "text": "Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger les données des utilisateurs contre tout accès non autorisé, utilisation abusive ou divulgation."
+      },
+      "thirdParty": {
+        "title": "Services Tiers",
+        "text": "Certains services intégrés à Innhance peuvent impliquer des prestataires tiers de confiance. Ces prestataires traitent les informations uniquement dans la mesure nécessaire au fonctionnement de notre plateforme."
+      },
+      "cookies": {
+        "title": "Cookies et Analyses",
+        "text": "Nous pouvons utiliser des cookies et des outils d'analyse pour comprendre le comportement des utilisateurs, améliorer les performances du site Web et optimiser l'expérience globale."
+      },
+      "rights": {
+        "title": "Vos Droits",
+        "text": "Vous pouvez demander l'accès, la rectification ou la suppression de vos informations personnelles, le cas échéant."
+      },
+      "updates": {
+        "title": "Mises à jour de la Politique",
+        "text": "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Tout changement sera publié sur cette page."
+      },
+      "contact": {
+        "title": "Contact",
+        "text": "Si vous avez des questions concernant cette politique de confidentialité, veuillez nous contacter via nos canaux officiels."
+      }
+    }
   }
 }

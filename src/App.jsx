@@ -39,7 +39,7 @@ function App() {
     setTimeout(() => {
       ScrollTrigger.refresh()
     }, 50)
-  }, [i18n.language])
+  }, [i18n.language, currentView])
 
   return (
     <div className="app-container">

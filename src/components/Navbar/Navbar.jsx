@@ -28,6 +28,17 @@ export default function Navbar({ currentView, setCurrentView }) {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [mobileMenuOpen])
 
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [mobileMenuOpen])
+
   const handleNavClick = (view, e) => {
     if (e) e.preventDefault()
     setCurrentView(view)
