@@ -36,7 +36,7 @@ export default function ContextualHelp() {
 
   useGSAP(() => {
     gsap.from('.ctx-visual-box', {
-      scrollTrigger: { trigger: '.ctx-section', start: 'top 80%' },
+      scrollTrigger: { trigger: container.current, start: 'top 80%' },
       scale: 0.9, opacity: 0, duration: 0.8, ease: 'power3.out'
     })
   }, { scope: container })

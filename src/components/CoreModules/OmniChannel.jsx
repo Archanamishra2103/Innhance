@@ -14,11 +14,11 @@ export default function OmniChannel() {
 
   useGSAP(() => {
     gsap.from('.inbox-row', {
-      scrollTrigger: { trigger: '.omni-section', start: 'top 70%' },
+      scrollTrigger: { trigger: container.current, start: 'top 70%' },
       x: -50, opacity: 0, stagger: 0.15, duration: 0.6, ease: 'power3.out'
     })
     gsap.from('.omni-chat-ui', {
-      scrollTrigger: { trigger: '.omni-section', start: 'top 60%' },
+      scrollTrigger: { trigger: container.current, start: 'top 60%' },
       y: 50, opacity: 0, scale: 0.95, duration: 0.8, ease: 'power4.out', delay: 0.3
     })
   }, { scope: container })

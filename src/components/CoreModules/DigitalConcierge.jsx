@@ -19,12 +19,7 @@ export default function DigitalConcierge() {
     setTimeout(() => setOrderSent(false), 3000)
   }
 
-  useGSAP(() => {
-    gsap.from('.dc-menu-item', {
-      scrollTrigger: { trigger: '.dc-section', start: 'top 80%' },
-      scale: 0.9, opacity: 0, stagger: 0.1, duration: 0.6, ease: 'back.out(1.5)'
-    })
-  }, { scope: container })
+  // Animation removed to prevent visibility bugs with ScrollTrigger
 
   return (
     <section className="dc-section section-padding" id="concierge" ref={container}>

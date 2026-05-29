@@ -1,10 +1,39 @@
 import { useTranslation } from 'react-i18next'
+import { useNavigate, useLocation } from 'react-router-dom'
 import { MapPin, Mail } from 'lucide-react'
 import data from '../../data/innhanceData.json'
 import './Footer.css'
 
-export default function Footer({ setCurrentView }) {
+export default function Footer() {
   const { t } = useTranslation()
+  const navigate = useNavigate()
+  const location = useLocation()
+
+  const handleNavClick = (path, e) => {
+    if (e) e.preventDefault()
+    if (location.pathname !== path) {
+      navigate(path)
+    }
+    window.scrollTo(0,0)
+  }
+
+  const handleSectionClick = (e, path, sectionId) => {
+    e.preventDefault()
+    if (location.pathname !== path) {
+      navigate(path)
+      setTimeout(() => {
+        const el = document.getElementById(sectionId)
+        if (el) el.scrollIntoView({ behavior: 'smooth' })
+        else window.scrollTo(0,0)
+      }, 300)
+    } else {
+      setTimeout(() => {
+        const el = document.getElementById(sectionId)
+        if (el) el.scrollIntoView({ behavior: 'smooth' })
+        else window.scrollTo(0,0)
+      }, 100)
+    }
+  }
   return (
     <footer className="footer-cito">
       <div className="container-custom">
@@ -22,21 +51,21 @@ export default function Footer({ setCurrentView }) {
           <div className="flink-col">
             <h3>{t("footer.product")}</h3>
             <ul>
-              <li><a href="#features" onClick={() => setCurrentView('home')}>{t("footer.featuresLink")}</a></li>
-              <li><a href="#pricing" onClick={() => setCurrentView('home')}>{t("footer.pricingLink")}</a></li>
+              <li><a href="#features" onClick={(e) => handleSectionClick(e, '/', 'features')}>{t("footer.featuresLink")}</a></li>
+              <li><a href="#pricing" onClick={(e) => handleSectionClick(e, '/', 'pricing')}>{t("footer.pricingLink")}</a></li>
             </ul>
           </div>
           <div className="flink-col">
             <h3>{t("footer.resources")}</h3>
             <ul>
-              <li><a href="#blog" onClick={(e) => { e.preventDefault(); setCurrentView('blog'); window.scrollTo(0,0); }}>{t("footer.blog")}</a></li>
+              <li><a href="/blog" onClick={(e) => handleNavClick('/blog', e)}>{t("footer.blog")}</a></li>
             </ul>
           </div>
           <div className="flink-col">
             <h3>{t("footer.company")}</h3>
             <ul>
-              <li><a href="#about" onClick={(e) => { e.preventDefault(); setCurrentView('about'); window.scrollTo(0,0); }}>{t("footer.aboutUs")}</a></li>
-              <li><a href="#privacy" onClick={(e) => { e.preventDefault(); setCurrentView('privacy'); window.scrollTo(0,0); }}>{t("footer.privacyPolicy")}</a></li>
+              <li><a href="/about" onClick={(e) => handleNavClick('/about', e)}>{t("footer.aboutUs")}</a></li>
+              <li><a href="/privacy" onClick={(e) => handleNavClick('/privacy', e)}>{t("footer.privacyPolicy")}</a></li>
             </ul>
           </div>
           <div className="flink-col contact-col">

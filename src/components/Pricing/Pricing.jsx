@@ -15,7 +15,7 @@ export default function Pricing() {
 
   useGSAP(() => {
     gsap.from('.price-card', {
-      scrollTrigger: { trigger: '.pricing-section', start: 'top 70%' },
+      scrollTrigger: { trigger: container.current, start: 'top 70%' },
       y: 50, opacity: 0, stagger: 0.2, duration: 0.8, ease: 'power3.out'
     })
   }, { scope: container })

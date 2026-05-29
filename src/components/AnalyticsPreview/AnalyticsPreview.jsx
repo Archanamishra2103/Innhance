@@ -14,11 +14,11 @@ export default function AnalyticsPreview() {
 
   useGSAP(() => {
     gsap.from('.dash-mockup-layer', {
-      scrollTrigger: { trigger: '.analytics-section', start: 'top bottom', end: 'bottom top', scrub: 1 },
+      scrollTrigger: { trigger: container.current, start: 'top bottom', end: 'bottom top', scrub: 1 },
       y: 100, ease: 'none'
     })
     gsap.from('.silence-tax-card', {
-      scrollTrigger: { trigger: '.analytics-section', start: 'top bottom', end: 'bottom top', scrub: 1.5 },
+      scrollTrigger: { trigger: container.current, start: 'top bottom', end: 'bottom top', scrub: 1.5 },
       y: -50, x: -30, rotation: -2, ease: 'none'
     })
     ScrollTrigger.create({

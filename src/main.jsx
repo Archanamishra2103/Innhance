@@ -7,10 +7,17 @@ import gsap from 'gsap'
 
 gsap.config({ force3D: true })
 
+import { BrowserRouter } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Suspense fallback={<div style={{display:'flex',alignItems:'center',justifyContent:'center',height:'100vh',background:'var(--color-surface-50)'}}>Loading...</div>}>
-      <App />
-    </Suspense>
+    <HelmetProvider>
+      <BrowserRouter>
+        <Suspense fallback={<div style={{display:'flex',alignItems:'center',justifyContent:'center',height:'100vh',background:'var(--color-surface-50)'}}>Loading...</div>}>
+          <App />
+        </Suspense>
+      </BrowserRouter>
+    </HelmetProvider>
   </React.StrictMode>,
 )

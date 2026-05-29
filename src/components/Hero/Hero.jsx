@@ -307,7 +307,7 @@ export default function Hero() {
           </p>
 
           <div className="hero-buttons">
-            <a href="#journey" className="btn-primary btn-large">
+            <a href="#journey" className="btn-primary btn-large" onClick={(e) => { e.preventDefault(); document.getElementById('journey')?.scrollIntoView({behavior: 'smooth'}) }}>
               {t("hero.getStarted")} <ArrowRight size={18} />
             </a>
             <a href="https://wa.link/jkc1du" target="_blank" rel="noopener noreferrer">
