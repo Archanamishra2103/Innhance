@@ -117,14 +117,18 @@ export default function Hero() {
     const xTo = gsap.quickTo(blobs, "x", { duration: 2, ease: "power2.out" })
     const yTo = gsap.quickTo(blobs, "y", { duration: 2, ease: "power2.out" })
 
+    let rafId = null;
     const handleMouseMove = (e) => {
-      const { innerWidth, innerHeight } = window
-      const xPos = (e.clientX / innerWidth - 0.5) * 40
-      const yPos = (e.clientY / innerHeight - 0.5) * 40
-      xTo(xPos)
-      yTo(yPos)
+      if (rafId) cancelAnimationFrame(rafId);
+      rafId = requestAnimationFrame(() => {
+        const { innerWidth, innerHeight } = window
+        const xPos = (e.clientX / innerWidth - 0.5) * 40
+        const yPos = (e.clientY / innerHeight - 0.5) * 40
+        xTo(xPos)
+        yTo(yPos)
+      });
     }
-    window.addEventListener('mousemove', handleMouseMove)
+    window.addEventListener('mousemove', handleMouseMove, { passive: true })
 
     // Orbit Particle Animations using GSAP
     gsap.to('.orbit-particle-1', {
@@ -242,7 +246,10 @@ export default function Hero() {
       // Hold both for reading before repeating
       .to({}, { duration: 3.5 })
 
-    return () => window.removeEventListener('mousemove', handleMouseMove)
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      if (rafId) cancelAnimationFrame(rafId);
+    }
   }, { scope: container, dependencies: [i18n.language] })
 
   // Interactive Phone Transition
@@ -558,7 +565,7 @@ export default function Hero() {
                       />
                       <span className="wa-attach">📎</span>
                     </div>
-                    <button type="submit" className="wa-send-btn" disabled={!inputValue.trim()} onClick={(e) => e.stopPropagation()}>
+                    <button type="submit" className="wa-send-btn" disabled={!inputValue.trim()} onClick={(e) => e.stopPropagation()} aria-label="Send message">
                       <Send size={14}/>
                     </button>
                   </form>

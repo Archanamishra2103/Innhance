@@ -56,6 +56,8 @@ export default function Storytelling() {
                       src={data.storytelling[idx]?.image}
                       alt={panel.heading}
                       className="panel-img-main"
+                      loading="lazy"
+                      decoding="async"
                     />
                     {panel.stage && <div className="panel-badge-sp">{panel.stage}</div>}
                     {panel.dialogue && (

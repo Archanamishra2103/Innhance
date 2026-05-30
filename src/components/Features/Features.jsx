@@ -107,7 +107,7 @@ export default function Features() {
                   <div className="bento-icon-wrapper dark">
                     {(() => { const Icon = iconMap[iconKeys[1]]; return <Icon size={64} strokeWidth={1.2} className="gsap-icon-float-delayed" style={{ filter: "drop-shadow(0 0 10px rgba(0,0,0,0.15))" }} /> })()}
                   </div>
-                  <button className="icon-btn"><ArrowUpRight size={24}/></button>
+                  <button className="icon-btn" aria-label="View more details"><ArrowUpRight size={24}/></button>
                 </div>
                 <div className="bento-text">
                   <h3 className="bento-title">{features[1]?.title}</h3>

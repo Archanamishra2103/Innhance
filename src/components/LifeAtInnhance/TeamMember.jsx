@@ -59,7 +59,7 @@ export default function TeamMember({ member }) {
     <section className="member-section" ref={sectionRef}>
       <div className="member-card-wrapper">
         <div className="member-img-box" ref={imgRef}>
-          <img src={member.image} alt={member.name} />
+          <img src={member.image} alt={member.name} loading="lazy" decoding="async" />
         </div>
         <div className="member-content">
           <h2 className="member-name" ref={nameRef}>{member.name}</h2>
